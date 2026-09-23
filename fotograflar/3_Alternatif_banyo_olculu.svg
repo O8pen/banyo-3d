@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1060" viewBox="0 0 900 1060"><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M6 0L0 3L6 6" fill="none" stroke="#454a40"/></marker></defs><style>text{font-family:Arial,sans-serif;fill:#33392f;font-size:17px}.small{font-size:14px}.dim{stroke:#74796d;stroke-width:1;marker-start:url(#arrow);marker-end:url(#arrow)}</style><rect width="900" height="1060" fill="#f4f1e9"/>
+<text x="450" y="58" text-anchor="middle" class="">03 / Alternatif yerleşim</text>
+<text x="450" y="87" text-anchor="middle" class="small">İç ölçüler · santimetre · şematik plan</text>
+<rect x="130.0" y="180.0" width="596.25" height="728.75" rx="0" fill="#e4dfd3" stroke="#6e7465" stroke-width="1.5"/>
+<rect x="130.0" y="180.0" width="318.0" height="265.0" rx="0" fill="#d3e3df" stroke="#6e7465" stroke-width="1.5"/>
+<text x="289.0" y="312.5" text-anchor="middle" class="">DUŞ</text>
+<text x="289.0" y="332.5" text-anchor="middle" class="">120 × 100</text>
+<rect x="453.3" y="180.0" width="272.95" height="53.0" rx="0" fill="#bdb5a4" stroke="#6e7465" stroke-width="1.5"/>
+<text x="589.775" y="206.5" text-anchor="middle" class="">103 × 20</text>
+<rect x="542.075" y="244.925" width="95.39999999999999" height="145.75" rx="25" fill="#fff" stroke="#6e7465" stroke-width="1.5"/>
+<text x="589.775" y="317.79999999999995" text-anchor="middle" class="">WC</text>
+<text x="589.775" y="337.79999999999995" text-anchor="middle" class="">36 × 55</text>
+<rect x="593.75" y="458.25" width="132.5" height="318.0" rx="3" fill="#c6a178" stroke="#6e7465" stroke-width="1.5"/>
+<text x="660.0" y="617.25" text-anchor="middle" class="">120 × 50</text>
+<text x="660.0" y="637.25" text-anchor="middle" class="">Lavabo</text>
+<rect x="593.75" y="776.25" width="132.5" height="132.5" rx="3" fill="#a88057" stroke="#6e7465" stroke-width="1.5"/>
+<text x="660.0" y="842.5" text-anchor="middle" class="">50 × 50</text>
+<text x="660.0" y="862.5" text-anchor="middle" class="">Boy dolabı</text>
+<path d="M726.25,451.625L805,411.625" stroke="#90602b" fill="none"/>
+<text x="795" y="386.625" text-anchor="middle" class="small">5 cm nominal</text>
+<text x="795" y="406.625" text-anchor="middle" class="small">boşluk</text>
+<text x="450" y="110" text-anchor="middle" class="small">Tavan 231 cm · dolap alt kotu 30 cm</text>
+<path d="M130.0,467.0L448.0,467.0" class="dim"/>
+<text x="289.0" y="488.0" text-anchor="middle" class="small">120</text>
+<path d="M130.0,908.75H357.9" stroke="#f4f1e9" stroke-width="7"/>
+<path d="M130.0,908.75V680.8499999999999 M130.0,680.8499999999999 A227.9,227.9 0 0 1 357.9,908.75" stroke="#879079" stroke-dasharray="6 5" fill="none"/>
+<path d="M130.0,145.0L726.25,145.0" class="dim"/>
+<text x="428.125" y="131.0" text-anchor="middle" class="small">225</text>
+<path d="M90.0,908.75L90.0,180.0" class="dim"/>
+<text x="65.0" y="544.375" text-anchor="middle" class="small">275</text>
+<path d="M130.0,943.75L357.9,943.75" class="dim"/>
+<text x="243.95" y="966.75" text-anchor="middle" class="small">86 · kapı</text>
+<path d="M357.9,943.75L726.25,943.75" class="dim"/>
+<text x="542.075" y="966.75" text-anchor="middle" class="small">139 · kalan duvar</text>
+<path d="M726.25,349.6V211.8" stroke="#558f98" stroke-width="7"/>
+<text x="450" y="1001" text-anchor="middle" class="small">Mavi: havalandırma. Kapı yayı temsili; açılma yönü ölçülmedi.</text>
+<text x="450" y="1028" text-anchor="middle" class="small">Ürün boşlukları ve uygulama toleransları ayrıca doğrulanmalıdır.</text>
+</svg>
