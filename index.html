@@ -11,10 +11,9 @@
 </head>
 <body>
 <section id="ust">
-  <canvas id="view" aria-label="Üç boyutlu banyo, sürükleyerek etrafa bakın"></canvas>
+  <canvas id="view" tabindex="0" aria-label="Üç boyutlu banyo, sürükleyerek etrafa bakın"></canvas>
   <div id="secim" role="group" aria-label="Banyo seç">
-    <button data-model="2" aria-pressed="true">Planlanan</button>
-    <button data-model="3" aria-pressed="false">Alternatif</button>
+    <select id="scene" aria-label="Banyo seçimi"></select>
   </div>
   <div id="araclar">
     <button id="home" aria-label="Başlangıç konumuna dön">⟲</button>

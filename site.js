@@ -6,7 +6,14 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
-const SLUGS = { 2: '2_Planlanan_banyo', 3: '3_Alternatif_banyo' };
+const SCENES = await fetch('sahneler.json').then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
+const SLUGS = Object.fromEntries(SCENES.map(c => [c.id, c.slug]));
+const chooser = $('#scene');
+for (const title of ['planned', 'alternative']) {
+  const group = document.createElement('optgroup'); group.label = title === 'planned' ? 'Planlanan seçenekler' : 'Alternatif seçenekler';
+  for (const c of SCENES.filter(c => c.layout === title)) { const option = new Option(c.label, String(c.id)); group.append(option); }
+  chooser.append(group);
+}
 const FOTOLAR = ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
 const HIZ = 0.4; // metre / saniye
 
@@ -130,7 +137,7 @@ function resetInputs() {
 window.addEventListener('blur', resetInputs);
 document.addEventListener('visibilitychange', () => { if (document.hidden) resetInputs(); });
 const allowed = ['KeyW', 'KeyA', 'KeyS', 'KeyD', 'KeyQ', 'KeyE', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
-window.addEventListener('keydown', e => { if (!allowed.includes(e.code)) return; e.preventDefault(); keys.add(e.code); });
+window.addEventListener('keydown', e => { if (!allowed.includes(e.code) || ['SELECT', 'INPUT'].includes(e.target.tagName)) return; e.preventDefault(); keys.add(e.code); });
 window.addEventListener('keyup', e => keys.delete(e.code));
 canvas.addEventListener('webglcontextlost', e => { e.preventDefault(); status.hidden = false; status.textContent = 'Grafik belleği sıfırlandı. Sayfayı yenileyin.'; });
 
@@ -174,7 +181,7 @@ function galeriGoster(index) {
   for (const ad of FOTOLAR) {
     const kare = document.createElement('div'); kare.className = 'kare';
     const durum = document.createElement('span'); durum.className = 'durum'; durum.textContent = 'Yükleniyor…';
-    const img = document.createElement('img'); img.alt = ''; img.decoding = 'async'; img.draggable = false;
+    const img = document.createElement('img'); img.alt = `${SCENES.find(c => c.id === index).label} · ${ad.startsWith('referans') ? 'stil referansı' : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
     kare.append(durum, img); galeri.append(kare);
     resimYukle(img, `fotograflar/${SLUGS[index]}_${ad}`, durum);
     noktalar.append(document.createElement('i'));
@@ -193,15 +200,12 @@ galeri.addEventListener('scroll', noktaGuncelle, { passive: true });
 // ------------------------------------------------------------ banyo seçimi
 let secili = 0;
 function sec(index) {
-  secili = index;
+  secili = index; chooser.value = String(index);
   document.querySelectorAll('[data-model]').forEach(b => b.setAttribute('aria-pressed', String(Number(b.dataset.model) === index)));
   galeriGoster(index);
   loadModel(index);
 }
-document.querySelectorAll('[data-model]').forEach(b => b.addEventListener('click', () => {
-  const index = Number(b.dataset.model);
-  if (index !== secili) sec(index);
-}));
+chooser.addEventListener('change', () => sec(Number(chooser.value)));
 
 // Test için salt okunur durum; uzak bir yere veri göndermez.
 window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch });

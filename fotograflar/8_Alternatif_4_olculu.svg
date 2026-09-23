@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1180" viewBox="0 0 900 1180"><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M6 0L0 3L6 6" fill="none" stroke="#454a40"/></marker><marker id="flow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="#526943"/></marker></defs><style>text{font-family:Arial,sans-serif;fill:#33392f;font-size:16px}.small{font-size:13px}.dim{stroke:#74796d;stroke-width:1;marker-start:url(#arrow);marker-end:url(#arrow)}</style><rect width="900" height="1180" fill="#f4f1e9"/>
-<text x="450" y="55" text-anchor="middle" class="">Alternatif</text>
+<text x="450" y="55" text-anchor="middle" class="">Alternatif_4</text>
 <text x="450" y="83" text-anchor="middle" class="small">İç ölçüler · santimetre · şematik plan</text>
 <text x="450" y="110" text-anchor="middle" class="small">Tavan 231 cm · boy dolapları 30–200 cm · lavabo üst kotu 85 cm</text>
 <rect x="130.0" y="180.0" width="596.25" height="728.75" rx="0" fill="#e4dfd3" stroke="#6e7465" stroke-width="1.5"/>
@@ -11,12 +11,13 @@
 <rect x="542.075" y="244.925" width="95.39999999999999" height="145.75" rx="25" fill="#fff" stroke="#6e7465" stroke-width="1.5"/>
 <text x="589.775" y="312.4" text-anchor="middle" class="small">WC</text>
 <text x="589.775" y="330.4" text-anchor="middle" class="small">36 × 55</text>
-<rect x="593.75" y="776.25" width="132.5" height="132.5" rx="2" fill="#ba966c" stroke="#6e7465" stroke-width="1.5"/>
-<text x="660.0" y="837.1" text-anchor="middle" class="small">Kapaklı</text>
-<text x="660.0" y="855.1" text-anchor="middle" class="small">50 × 50</text>
-<rect x="593.75" y="458.25" width="132.5" height="318.0" rx="2" fill="#d1b08a" stroke="#6e7465" stroke-width="1.5"/>
-<text x="660.0" y="611.85" text-anchor="middle" class="small">Lavabo</text>
-<text x="660.0" y="629.85" text-anchor="middle" class="small">120 × 50</text>
+<rect x="607.0" y="802.75" width="119.25" height="106.0" rx="2" fill="#ba966c" stroke="#6e7465" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="666.625" y="850.35" text-anchor="middle" class="small">Raflı dolap</text>
+<text x="666.625" y="868.35" text-anchor="middle" class="small">40 × 45</text>
+<path d="M666.625,818.65V768.3" stroke="#526943" stroke-width="3" marker-end="url(#flow)"/>
+<rect x="607.0" y="537.75" width="119.25" height="265.0" rx="2" fill="#d1b08a" stroke="#6e7465" stroke-width="1.5"/>
+<text x="666.625" y="664.85" text-anchor="middle" class="small">Lavabo</text>
+<text x="666.625" y="682.85" text-anchor="middle" class="small">100 × 45</text>
 <rect x="130.0" y="590.75" width="29.15" height="132.5" rx="0" fill="#a4b6b7" stroke="#6e7465" stroke-width="1.5"/>
 <path d="M132.65,715.3H156.5" stroke="#f9f6ed"/>
 <path d="M132.65,699.4H156.5" stroke="#f9f6ed"/>
@@ -26,6 +27,9 @@
 <path d="M132.65,635.8H156.5" stroke="#f9f6ed"/>
 <path d="M132.65,619.9H156.5" stroke="#f9f6ed"/>
 <path d="M132.65,604.0H156.5" stroke="#f9f6ed"/>
+<rect x="130.0" y="445.0" width="119.25" height="106.0" rx="2" fill="#ba966c" stroke="#6e7465" stroke-width="1.5"/>
+<text x="189.625" y="492.6" text-anchor="middle" class="small">Ek dolap</text>
+<text x="189.625" y="510.6" text-anchor="middle" class="small">40 × 45</text>
 <path d="M130.0,908.75H310.2" stroke="#f4f1e9" stroke-width="7"/>
 <path d="M130.0,908.75V728.55 M130.0,728.55 A180.2,180.2 0 0 1 310.2,908.75" stroke="#879079" stroke-dasharray="6 5" fill="none"/>
 <path d="M130.0,145.0L726.25,145.0" class="dim"/>
@@ -37,9 +41,9 @@
 <path d="M310.2,943.75L726.25,943.75" class="dim"/>
 <text x="518.2249999999999" y="966.75" text-anchor="middle" class="small">157 · kalan duvar</text>
 <path d="M726.25,349.6V211.8" stroke="#558f98" stroke-width="7"/>
-<text x="450" y="1001" text-anchor="middle" class="small">Sağ mobilya sonu: 170 cm · duş hizasına nominal fark: 5 cm</text>
+<text x="450" y="1001" text-anchor="middle" class="small">Sağ mobilya sonu: 140 cm · duş hizasına nominal fark: 35 cm</text>
 <text x="450" y="1028" text-anchor="middle" class="small">Havlupan: 100 yükseklik × 50 genişlik × 11 derinlik cm</text>
-<text x="450" y="1055" text-anchor="middle" class="small">Açık kapı sol duvara paralel gösterilmiştir; kapı kanadı 68 cm.</text>
-<text x="450" y="1082" text-anchor="middle" class="small">Açık raflarda net boşluk 25 cm, raf levhası 2 cm. Kesik çizgi: açık raflı dolap.</text>
+<text x="450" y="1055" text-anchor="middle" class="small">Sol duvar: 68 kapı + 2 boşluk + 50 havlupan + 15 boşluk + 40 dolap + 100 duş = 275</text>
+<text x="450" y="1082" text-anchor="middle" class="small">Yan raflar lavaboya bakar. Açık raflarda net boşluk 25 cm, raf levhası 2 cm. Kesik çizgi: açık raflı dolap.</text>
 <text x="450" y="1110" text-anchor="middle" class="small">Mavi çizgi: konumu değişmeyen havalandırma. Ürün/montaj toleransları ayrıca doğrulanır.</text>
 </svg>

@@ -1,0 +1,154 @@
+[
+  {
+    "id": 2,
+    "slug": "2_Planlanan_banyo",
+    "label": "Planlanan",
+    "layout": "planned",
+    "published": true,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 120,
+    "towers": [
+      {
+        "width_cm": 50,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 70
+  },
+  {
+    "id": 4,
+    "slug": "4_Planlanan_2",
+    "label": "Planlanan_2",
+    "layout": "planned",
+    "published": true,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 100,
+    "towers": [
+      {
+        "width_cm": 35,
+        "style": "closed"
+      },
+      {
+        "width_cm": 35,
+        "style": "open"
+      }
+    ],
+    "radiator_start_cm": 70
+  },
+  {
+    "id": 5,
+    "slug": "5_Planlanan_3",
+    "label": "Planlanan_3",
+    "layout": "planned",
+    "published": true,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 90,
+    "towers": [
+      {
+        "width_cm": 40,
+        "style": "closed"
+      },
+      {
+        "width_cm": 40,
+        "style": "open"
+      }
+    ],
+    "radiator_start_cm": 70
+  },
+  {
+    "id": 3,
+    "slug": "3_Alternatif_banyo",
+    "label": "Alternatif",
+    "layout": "alternative",
+    "published": true,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 120,
+    "towers": [
+      {
+        "width_cm": 50,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 70
+  },
+  {
+    "id": 6,
+    "slug": "6_Alternatif_2",
+    "label": "Alternatif_2",
+    "layout": "alternative",
+    "published": true,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 100,
+    "towers": [
+      {
+        "width_cm": 40,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 70,
+    "left_tower": {
+      "start_cm": 135,
+      "width_cm": 40,
+      "depth_cm": 45,
+      "style": "closed"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "7_Alternatif_3",
+    "label": "Alternatif_3",
+    "layout": "alternative",
+    "published": true,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 100,
+    "towers": [
+      {
+        "width_cm": 40,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    }
+  },
+  {
+    "id": 8,
+    "slug": "8_Alternatif_4",
+    "label": "Alternatif_4",
+    "layout": "alternative",
+    "published": true,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 100,
+    "towers": [
+      {
+        "width_cm": 40,
+        "style": "hybrid"
+      }
+    ],
+    "radiator_start_cm": 70,
+    "left_tower": {
+      "start_cm": 135,
+      "width_cm": 40,
+      "depth_cm": 45,
+      "style": "closed"
+    }
+  }
+]

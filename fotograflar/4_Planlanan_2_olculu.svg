@@ -1,22 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1180" viewBox="0 0 900 1180"><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M6 0L0 3L6 6" fill="none" stroke="#454a40"/></marker><marker id="flow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="#526943"/></marker></defs><style>text{font-family:Arial,sans-serif;fill:#33392f;font-size:16px}.small{font-size:13px}.dim{stroke:#74796d;stroke-width:1;marker-start:url(#arrow);marker-end:url(#arrow)}</style><rect width="900" height="1180" fill="#f4f1e9"/>
-<text x="450" y="55" text-anchor="middle" class="">Alternatif</text>
+<text x="450" y="55" text-anchor="middle" class="">Planlanan_2</text>
 <text x="450" y="83" text-anchor="middle" class="small">İç ölçüler · santimetre · şematik plan</text>
 <text x="450" y="110" text-anchor="middle" class="small">Tavan 231 cm · boy dolapları 30–200 cm · lavabo üst kotu 85 cm</text>
 <rect x="130.0" y="180.0" width="596.25" height="728.75" rx="0" fill="#e4dfd3" stroke="#6e7465" stroke-width="1.5"/>
-<rect x="130.0" y="180.0" width="318.0" height="265.0" rx="0" fill="#d3e3df" stroke="#6e7465" stroke-width="1.5"/>
-<text x="289.0" y="307.1" text-anchor="middle" class="small">DUŞ</text>
-<text x="289.0" y="325.1" text-anchor="middle" class="small">120 × 100</text>
-<rect x="453.3" y="180.0" width="272.95" height="53.0" rx="0" fill="#bdb5a4" stroke="#6e7465" stroke-width="1.5"/>
-<text x="589.775" y="201.1" text-anchor="middle" class="small">103 × 20</text>
-<rect x="542.075" y="244.925" width="95.39999999999999" height="145.75" rx="25" fill="#fff" stroke="#6e7465" stroke-width="1.5"/>
-<text x="589.775" y="312.4" text-anchor="middle" class="small">WC</text>
-<text x="589.775" y="330.4" text-anchor="middle" class="small">36 × 55</text>
-<rect x="593.75" y="776.25" width="132.5" height="132.5" rx="2" fill="#ba966c" stroke="#6e7465" stroke-width="1.5"/>
-<text x="660.0" y="837.1" text-anchor="middle" class="small">Kapaklı</text>
-<text x="660.0" y="855.1" text-anchor="middle" class="small">50 × 50</text>
-<rect x="593.75" y="458.25" width="132.5" height="318.0" rx="2" fill="#d1b08a" stroke="#6e7465" stroke-width="1.5"/>
-<text x="660.0" y="611.85" text-anchor="middle" class="small">Lavabo</text>
-<text x="660.0" y="629.85" text-anchor="middle" class="small">120 × 50</text>
+<rect x="408.25" y="180.0" width="318.0" height="265.0" rx="0" fill="#d3e3df" stroke="#6e7465" stroke-width="1.5"/>
+<text x="567.25" y="307.1" text-anchor="middle" class="small">DUŞ</text>
+<text x="567.25" y="325.1" text-anchor="middle" class="small">120 × 100</text>
+<rect x="130.0" y="180.0" width="272.95" height="53.0" rx="0" fill="#bdb5a4" stroke="#6e7465" stroke-width="1.5"/>
+<text x="266.475" y="201.1" text-anchor="middle" class="small">103 × 20</text>
+<rect x="218.77499999999998" y="244.925" width="95.39999999999999" height="145.75" rx="25" fill="#fff" stroke="#6e7465" stroke-width="1.5"/>
+<text x="266.475" y="312.4" text-anchor="middle" class="small">WC</text>
+<text x="266.475" y="330.4" text-anchor="middle" class="small">36 × 55</text>
+<rect x="607.0" y="816.0" width="119.25" height="92.75" rx="2" fill="#ba966c" stroke="#6e7465" stroke-width="1.5"/>
+<text x="666.625" y="856.975" text-anchor="middle" class="small">Kapaklı</text>
+<text x="666.625" y="874.975" text-anchor="middle" class="small">35 × 45</text>
+<rect x="607.0" y="723.25" width="119.25" height="92.75" rx="2" fill="#ba966c" stroke="#6e7465" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="666.625" y="764.225" text-anchor="middle" class="small">Açık raf</text>
+<text x="666.625" y="782.225" text-anchor="middle" class="small">35 × 45</text>
+<rect x="607.0" y="458.25" width="119.25" height="265.0" rx="2" fill="#d1b08a" stroke="#6e7465" stroke-width="1.5"/>
+<text x="666.625" y="585.35" text-anchor="middle" class="small">Lavabo</text>
+<text x="666.625" y="603.35" text-anchor="middle" class="small">100 × 45</text>
 <rect x="130.0" y="590.75" width="29.15" height="132.5" rx="0" fill="#a4b6b7" stroke="#6e7465" stroke-width="1.5"/>
 <path d="M132.65,715.3H156.5" stroke="#f9f6ed"/>
 <path d="M132.65,699.4H156.5" stroke="#f9f6ed"/>
