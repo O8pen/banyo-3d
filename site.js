@@ -50,12 +50,29 @@ new ResizeObserver(boyutla).observe(ust);
 
 const loader = new GLTFLoader();
 let root = null, yaw = 0, pitch = 0, request = 0, loaded = 0, roofVisible = true;
+let overviewActive = false, previousView = null;
 const keys = new Set(), joy = { x: 0, y: 0 }, vertical = new Map();
 
 function applyLook() { dirty = true; camera.rotation.set(pitch, yaw, 0, 'YXZ'); }
 function setRoof(visible) { roofVisible = visible; dirty = true; if (root) root.traverse(o => { if (o.userData.roof) o.visible = visible; }); }
-function home() { camera.position.set(.95, 1.50, -.38); yaw = 0; pitch = -.04; applyLook(); setRoof(true); }
-function overview() { camera.position.set(1.125, 4.8, -1.37); pitch = -Math.PI / 2 + .001; yaw = 0; applyLook(); setRoof(false); }
+function updateOverviewButton() {
+  const button=$('#overview'),label=overviewActive?'Önceki kamera açısına dön':'Kuş bakışına geç';
+  button.setAttribute('aria-label',label);button.setAttribute('title',label);button.setAttribute('aria-pressed',String(overviewActive));
+}
+function home() {
+  camera.position.set(.95, 1.50, -.38); yaw = 0; pitch = -.04; applyLook(); setRoof(true);
+  overviewActive=false;previousView=null;updateOverviewButton();
+}
+function overview() {
+  if(overviewActive&&previousView){
+    camera.position.copy(previousView.position);yaw=previousView.yaw;pitch=previousView.pitch;applyLook();setRoof(previousView.roofVisible);
+    overviewActive=false;previousView=null;
+  }else{
+    previousView={position:camera.position.clone(),yaw,pitch,roofVisible};overviewActive=true;
+    camera.position.set(1.125,4.8,-1.37);pitch=-Math.PI/2+.001;yaw=0;applyLook();setRoof(false);
+  }
+  updateOverviewButton();
+}
 
 function disposeModel(model) {
   const geometries = new Set(), materials = new Set(), textures = new Set();
@@ -262,7 +279,7 @@ function sec(index) {
 chooser.addEventListener('change', () => sec(Number(chooser.value)));
 
 // Test için salt okunur durum; uzak bir yere veri göndermez.
-window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch, roofVisible });
+window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch, roofVisible, overviewActive });
 window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
 boyutla(); home(); sec(2); requestAnimationFrame(animate);

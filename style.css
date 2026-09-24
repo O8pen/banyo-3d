@@ -12,6 +12,7 @@ button:active,button.active{background:#ad8654}
 #secim button[aria-pressed=true]{background:var(--vurgu);color:#25261d;border-color:var(--vurgu)}
 #araclar{position:absolute;top:max(10px,env(safe-area-inset-top));right:10px;display:flex;gap:6px}
 #araclar button{width:42px;padding:0;font-size:18px}
+#overview[aria-pressed=true]{background:#ad8654;border-color:#d9b379}
 #status{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:10px 18px;border-radius:10px;background:#22271fee;text-align:center;max-width:90%}
 #joystick{position:absolute;left:14px;bottom:12px;width:104px;height:104px;border-radius:50%;background:#272d2466;border:1px solid #f4eee18c;touch-action:none;user-select:none}
 #stick{position:absolute;left:32px;top:32px;width:40px;height:40px;border-radius:50%;background:#dfc59bcf;border:1px solid #fff7;pointer-events:none}
