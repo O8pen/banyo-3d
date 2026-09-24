@@ -15,7 +15,7 @@ for (const title of ['planned', 'alternative']) {
   chooser.append(group);
 }
 function fotograflar(config) {
-  if (config.render_ready === false) return ['olculu.svg', 'referans.jpg'];
+  if (config.render_ready === false) return ['olculu.svg', 'mobilya_olculeri.svg', 'referans.jpg'];
   return ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
 }
 const HIZ = 0.4; // metre / saniye
@@ -167,6 +167,53 @@ function animate(now) {
 
 // ------------------------------------------------------------ fotoğraflar
 const galeri = $('#galeri'), noktalar = $('#noktalar');
+const buyutucu = $('#resim-buyutucu'), buyukResim = $('#buyuk-resim');
+const resimIsaretleri = new Map();
+let resimOlcek = 1, resimX = 0, resimY = 0, oncekiMerkez = null, oncekiUzaklik = 0, tiklamaEngeli = 0;
+
+function resimDonustur() {
+  buyukResim.style.transform = `translate3d(${resimX}px,${resimY}px,0) scale(${resimOlcek})`;
+}
+function resimSifirla() {
+  resimOlcek = 1; resimX = resimY = 0; oncekiMerkez = null; oncekiUzaklik = 0; resimIsaretleri.clear(); resimDonustur();
+}
+async function resmiAc(img) {
+  resimSifirla(); buyukResim.src = img.currentSrc || img.src; buyukResim.alt = img.alt; buyutucu.hidden = false;
+  try { if (!document.fullscreenElement) await buyutucu.requestFullscreen?.(); } catch { /* Sabit katman zaten ekranı kaplar. */ }
+}
+async function resmiKapat() {
+  buyutucu.hidden = true; buyukResim.removeAttribute('src'); resimSifirla();
+  try { if (document.fullscreenElement === buyutucu) await document.exitFullscreen(); } catch { /* CSS görünümü kapanmıştır. */ }
+}
+function merkezVeUzaklik() {
+  const p = [...resimIsaretleri.values()];
+  if (p.length < 2) return null;
+  return { x:(p[0].x+p[1].x)/2, y:(p[0].y+p[1].y)/2, d:Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y) };
+}
+buyutucu.addEventListener('pointerdown', e => {
+  e.preventDefault(); resimIsaretleri.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  try { buyutucu.setPointerCapture(e.pointerId); } catch {}
+  const pinch=merkezVeUzaklik();
+  if(pinch){oncekiMerkez=pinch;oncekiUzaklik=pinch.d;}
+});
+buyutucu.addEventListener('pointermove', e => {
+  const old=resimIsaretleri.get(e.pointerId); if(!old)return; e.preventDefault();
+  resimIsaretleri.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  const pinch=merkezVeUzaklik();
+  if(pinch&&oncekiMerkez){
+    const yeni=Math.min(6,Math.max(1,resimOlcek*(pinch.d/Math.max(1,oncekiUzaklik))));
+    resimX+=pinch.x-oncekiMerkez.x;resimY+=pinch.y-oncekiMerkez.y;resimOlcek=yeni;oncekiMerkez=pinch;oncekiUzaklik=pinch.d;resimDonustur();tiklamaEngeli=performance.now()+250;
+  }else if(resimIsaretleri.size===1&&resimOlcek>1){
+    resimX+=e.clientX-old.x;resimY+=e.clientY-old.y;resimDonustur();tiklamaEngeli=performance.now()+250;
+  }
+});
+function resmiBirak(e){
+  resimIsaretleri.delete(e.pointerId);const pinch=merkezVeUzaklik();oncekiMerkez=pinch;oncekiUzaklik=pinch?.d||0;
+}
+for(const ev of ['pointerup','pointercancel','lostpointercapture'])buyutucu.addEventListener(ev,resmiBirak);
+buyutucu.addEventListener('click',()=>{if(performance.now()>=tiklamaEngeli)resmiKapat();});
+buyutucu.addEventListener('wheel',e=>{e.preventDefault();resimOlcek=Math.min(6,Math.max(1,resimOlcek*Math.exp(-e.deltaY*.002)));if(resimOlcek===1)resimX=resimY=0;resimDonustur();},{passive:false});
+document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!buyutucu.hidden)resmiKapat();});
 
 // Yüklenemeyen resmi iki kez daha dener; yine olmazsa dokununca yeniden dener.
 function resimYukle(img, src, durum, deneme = 0) {
@@ -186,6 +233,7 @@ function galeriGoster(index) {
     const kare = document.createElement('div'); kare.className = 'kare';
     const durum = document.createElement('span'); durum.className = 'durum'; durum.textContent = 'Yükleniyor…';
     const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? 'stil referansı' : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
+    img.addEventListener('click', () => resmiAc(img));
     kare.append(durum, img); galeri.append(kare);
     resimYukle(img, `fotograflar/${SLUGS[index]}_${ad}`, durum);
     noktalar.append(document.createElement('i'));
@@ -213,5 +261,6 @@ chooser.addEventListener('change', () => sec(Number(chooser.value)));
 
 // Test için salt okunur durum; uzak bir yere veri göndermez.
 window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch, roofVisible });
+window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
 boyutla(); home(); sec(2); requestAnimationFrame(animate);

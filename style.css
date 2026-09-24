@@ -25,6 +25,7 @@ button:active,button.active{background:#ad8654}
 .kare{flex:0 0 100%;height:100%;scroll-snap-align:center;display:flex;align-items:center;justify-content:center;padding:8px 8px 22px;position:relative}
 .kare img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px;opacity:0;transition:opacity .2s}
 .kare img.hazir{opacity:1}
+.kare img.hazir{cursor:zoom-in}
 .kare .durum{position:absolute;color:#a8ac9d}
 #noktalar{position:absolute;bottom:7px;left:0;right:0;display:flex;justify-content:center;gap:7px;pointer-events:none}
 #noktalar i{width:7px;height:7px;border-radius:50%;background:#5b5f53}
@@ -34,3 +35,9 @@ button:active,button.active{background:#ad8654}
 @media (min-aspect-ratio:3/2){.kare{flex-basis:50%}}
 
 #secim{right:110px}#scene{max-width:100%;min-height:42px;padding:8px 12px;border:1px solid var(--kenar);border-radius:10px;background:var(--panel);color:#f4eee1;font:inherit}#secim optgroup{background:#252a23}
+
+/* Galeri fotoğrafının tam ekran ve iki parmakla yakınlaştırılan görünümü */
+#resim-buyutucu{position:fixed;inset:0;z-index:1000;background:#080906f7;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;display:flex;align-items:center;justify-content:center}
+#resim-buyutucu[hidden]{display:none}
+#buyuk-resim{display:block;max-width:100vw;max-height:100dvh;width:auto;height:auto;object-fit:contain;transform-origin:center;will-change:transform;touch-action:none;cursor:zoom-out;-webkit-user-drag:none}
+#buyutucu-ipucu{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);padding:8px 13px;border-radius:18px;background:#20231dcc;color:#f4eee1;font-size:13px;white-space:nowrap;pointer-events:none}
