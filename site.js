@@ -14,7 +14,10 @@ for (const title of ['planned', 'alternative']) {
   for (const c of SCENES.filter(c => c.layout === title)) { const option = new Option(c.label, String(c.id)); group.append(option); }
   chooser.append(group);
 }
-const FOTOLAR = ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
+function fotograflar(config) {
+  const renderUzantisi = config.render_ready === false ? 'svg' : 'webp';
+  return [`perspektif.${renderUzantisi}`, `plan.${renderUzantisi}`, 'olculu.svg', 'referans.jpg'];
+}
 const HIZ = 0.4; // metre / saniye
 
 // ------------------------------------------------------------ 3 boyutlu sahne
@@ -178,10 +181,11 @@ function resimYukle(img, src, durum, deneme = 0) {
 
 function galeriGoster(index) {
   galeri.replaceChildren(); noktalar.replaceChildren();
-  for (const ad of FOTOLAR) {
+  const config = SCENES.find(c => c.id === index);
+  for (const ad of fotograflar(config)) {
     const kare = document.createElement('div'); kare.className = 'kare';
     const durum = document.createElement('span'); durum.className = 'durum'; durum.textContent = 'Yükleniyor…';
-    const img = document.createElement('img'); img.alt = `${SCENES.find(c => c.id === index).label} · ${ad.startsWith('referans') ? 'stil referansı' : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
+    const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? 'stil referansı' : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
     kare.append(durum, img); galeri.append(kare);
     resimYukle(img, `fotograflar/${SLUGS[index]}_${ad}`, durum);
     noktalar.append(document.createElement('i'));

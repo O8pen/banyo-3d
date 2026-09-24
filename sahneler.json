@@ -150,5 +150,195 @@
       "depth_cm": 45,
       "style": "closed"
     }
+  },
+  {
+    "id": 9,
+    "slug": "9_Alternatif_3_1",
+    "label": "Alternatif_3_1",
+    "layout": "alternative",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 100,
+    "mirror_cm": 90,
+    "towers": [
+      {
+        "width_cm": 40,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 40,
+      "strip_cm": 10,
+      "strip_over_vanity": true,
+      "lower_style": "none"
+    },
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    }
+  },
+  {
+    "id": 10,
+    "slug": "10_Alternatif_3_2",
+    "label": "Alternatif_3_2",
+    "layout": "alternative",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 90,
+    "mirror_cm": 90,
+    "towers": [
+      {
+        "width_cm": 50,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 40,
+      "strip_cm": 10,
+      "strip_over_vanity": false,
+      "lower_style": "wide_door"
+    },
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    }
+  },
+  {
+    "id": 11,
+    "slug": "11_Alternatif_3_3",
+    "label": "Alternatif_3_3",
+    "layout": "alternative",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 90,
+    "mirror_cm": 90,
+    "towers": [
+      {
+        "width_cm": 50,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 40,
+      "strip_cm": 10,
+      "strip_over_vanity": false,
+      "lower_style": "solid"
+    },
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    }
+  },
+  {
+    "id": 12,
+    "slug": "12_Alternatif_3_4",
+    "label": "Alternatif_3_4",
+    "layout": "alternative",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 90,
+    "mirror_cm": 90,
+    "towers": [
+      {
+        "width_cm": 50,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 40,
+      "strip_cm": 10,
+      "strip_over_vanity": false,
+      "lower_style": "open"
+    },
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    }
+  },
+  {
+    "id": 13,
+    "slug": "13_Alternatif_3_5",
+    "label": "Alternatif_3_5",
+    "layout": "alternative",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 90,
+    "mirror_cm": 90,
+    "towers": [
+      {
+        "width_cm": 50,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 40,
+      "strip_cm": 10,
+      "strip_over_vanity": false,
+      "lower_style": "drawers"
+    },
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    }
   }
 ]
