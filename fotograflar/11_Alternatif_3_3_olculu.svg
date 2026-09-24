@@ -15,6 +15,7 @@
 <text x="666.625" y="837.1" text-anchor="middle" class="small">Bölünmüş dolap</text>
 <text x="666.625" y="855.1" text-anchor="middle" class="small">50 × 45</text>
 <rect x="607.0" y="776.25" width="119.25" height="26.5" fill="none" stroke="#526943" stroke-width="3" stroke-dasharray="5 3"/>
+<path d="M666.625,797.4499999999999V768.3" stroke="#526943" stroke-width="3" marker-end="url(#flow)"/>
 <text x="666.625" y="794.5" text-anchor="middle" class="small">10 cm raf</text>
 <rect x="607.0" y="537.75" width="119.25" height="238.5" rx="2" fill="#d1b08a" stroke="#6e7465" stroke-width="1.5"/>
 <text x="666.625" y="651.6" text-anchor="middle" class="small">Lavabo</text>
@@ -45,6 +46,6 @@
 <text x="450" y="1001" text-anchor="middle" class="small">Sağ mobilya sonu: 140 cm · duş hizasına nominal fark: 35 cm</text>
 <text x="450" y="1028" text-anchor="middle" class="small">Havlupan: 100 yükseklik × 50 genişlik × 11 derinlik cm</text>
 <text x="450" y="1055" text-anchor="middle" class="small">Sol duvar: 68 kapı + 34 boşluk + 50 havlupan + 23 boşluk + 100 duş = 275</text>
-<text x="450" y="1082" text-anchor="middle" class="small">Bitki havlupan önüne taşar. 10 cm eklenti raflarında net boşluk 23 cm, levha 2 cm. Kesik çizgi: açık raflı bölüm.</text>
+<text x="450" y="1082" text-anchor="middle" class="small">Bitki havlupan önüne taşar. 10 cm eklenti rafları lavaboya bakar; net boşluk 23 cm, levha 2 cm. Kesik çizgi: açık raflı bölüm.</text>
 <text x="450" y="1110" text-anchor="middle" class="small">Mavi çizgi: konumu değişmeyen havalandırma. Ürün/montaj toleransları ayrıca doğrulanır.</text>
 </svg>

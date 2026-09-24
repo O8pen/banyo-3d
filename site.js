@@ -15,8 +15,8 @@ for (const title of ['planned', 'alternative']) {
   chooser.append(group);
 }
 function fotograflar(config) {
-  const renderUzantisi = config.render_ready === false ? 'svg' : 'webp';
-  return [`perspektif.${renderUzantisi}`, `plan.${renderUzantisi}`, 'olculu.svg', 'referans.jpg'];
+  if (config.render_ready === false) return ['olculu.svg', 'referans.jpg'];
+  return ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
 }
 const HIZ = 0.4; // metre / saniye
 
@@ -47,11 +47,11 @@ function boyutla() {
 new ResizeObserver(boyutla).observe(ust);
 
 const loader = new GLTFLoader();
-let root = null, yaw = 0, pitch = 0, request = 0, loaded = 0;
+let root = null, yaw = 0, pitch = 0, request = 0, loaded = 0, roofVisible = true;
 const keys = new Set(), joy = { x: 0, y: 0 }, vertical = new Map();
 
 function applyLook() { dirty = true; camera.rotation.set(pitch, yaw, 0, 'YXZ'); }
-function setRoof(visible) { dirty = true; if (root) root.traverse(o => { if (o.userData.roof) o.visible = visible; }); }
+function setRoof(visible) { roofVisible = visible; dirty = true; if (root) root.traverse(o => { if (o.userData.roof) o.visible = visible; }); }
 function home() { camera.position.set(.95, 1.50, -.38); yaw = 0; pitch = -.04; applyLook(); setRoof(true); }
 function overview() { camera.position.set(1.125, 4.8, -1.37); pitch = -Math.PI / 2 + .001; yaw = 0; applyLook(); setRoof(false); }
 
@@ -86,7 +86,7 @@ async function loadModel(index) {
         m.envMapIntensity = .65;
       }
     });
-    world.add(root); loaded = index; home(); status.hidden = true;
+    world.add(root); loaded = index; setRoof(roofVisible); status.hidden = true;
   } catch (error) {
     if (token !== request) return;
     status.textContent = 'Model yüklenemedi. Sayfayı yenileyin.';
@@ -212,6 +212,6 @@ function sec(index) {
 chooser.addEventListener('change', () => sec(Number(chooser.value)));
 
 // Test için salt okunur durum; uzak bir yere veri göndermez.
-window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch });
+window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch, roofVisible });
 
 boyutla(); home(); sec(2); requestAnimationFrame(animate);
