@@ -6,7 +6,9 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
-const SCENES = await fetch('sahneler.json').then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
+const CACHE_KEY = new URL(import.meta.url).searchParams.get('v') || '';
+const asset = path => CACHE_KEY ? `${path}?v=${encodeURIComponent(CACHE_KEY)}` : path;
+const SCENES = await fetch(asset('sahneler.json')).then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
 const SLUGS = Object.fromEntries(SCENES.map(c => [c.id, c.slug]));
 const chooser = $('#scene');
 for (const title of ['planned', 'alternative']) {
@@ -73,7 +75,7 @@ async function loadModel(index) {
   const token = ++request;
   status.hidden = false; status.textContent = 'Model yükleniyor…'; resetInputs();
   try {
-    const gltf = await loader.loadAsync(`models/${SLUGS[index]}.glb`, e => {
+    const gltf = await loader.loadAsync(asset(`models/${SLUGS[index]}.glb`), e => {
       if (token === request && e.total) status.textContent = `Model yükleniyor · %${Math.round(100 * e.loaded / e.total)}`;
     });
     if (token !== request) { disposeModel(gltf.scene); return; }
@@ -223,7 +225,7 @@ function resimYukle(img, src, durum, deneme = 0) {
     durum.textContent = 'Yüklenemedi, tekrar denemek için dokunun';
     durum.onclick = () => { durum.textContent = 'Yükleniyor…'; resimYukle(img, src, durum, 0); };
   };
-  img.src = deneme ? `${src}?tekrar=${Date.now()}` : src;
+  img.src = deneme ? `${src}${src.includes('?') ? '&' : '?'}tekrar=${Date.now()}` : src;
 }
 
 function galeriGoster(index) {
@@ -235,7 +237,7 @@ function galeriGoster(index) {
     const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? 'stil referansı' : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
     img.addEventListener('click', () => resmiAc(img));
     kare.append(durum, img); galeri.append(kare);
-    resimYukle(img, `fotograflar/${SLUGS[index]}_${ad}`, durum);
+    resimYukle(img, asset(`fotograflar/${SLUGS[index]}_${ad}`), durum);
     noktalar.append(document.createElement('i'));
   }
   galeri.scrollLeft = 0; noktaGuncelle();
