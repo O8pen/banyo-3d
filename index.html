@@ -10,7 +10,7 @@
 // GitHub Pages can cache the entry page for ten minutes.
 // Check a fresh version manifest before reusing an older page.
 (() => {
-  const current = '0.15.3';
+  const current = '0.15.4';
   const url = new URL(location.href);
   if (url.searchParams.get('_surum') === current) {
     url.searchParams.delete('_surum');
@@ -37,7 +37,7 @@
   document.addEventListener('visibilitychange', checkVersion);
 })();
 </script>
-<link rel="stylesheet" href="style.css?v=0.15.3">
+<link rel="stylesheet" href="style.css?v=0.15.4">
 <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body>
@@ -54,7 +54,7 @@
   <div id="status" role="status">Yükleniyor…</div>
   <div id="joystick" role="group" aria-label="İleri, geri ve yana hareket"><div id="stick"></div></div>
   <div id="vertical">
-    <label id="eski-secim" title="Eski sahneler"><span aria-hidden="true">Eski ▾</span><select id="scene-old" aria-label="Eski sahneler"></select></label>
+    <label id="eski-secim" title="Eski sahneler"><span aria-hidden="true">▾</span><select id="scene-old" aria-label="Eski sahneler"></select></label>
     <button id="up" aria-label="Yukarı">↑</button><button id="down" aria-label="Aşağı">↓</button>
   </div>
 </section>
@@ -66,6 +66,6 @@
   <img id="buyuk-resim" alt="">
   <div id="buyutucu-ipucu">İki parmakla büyüt · kapatmak için dokun</div>
 </div>
-<script type="module" src="site.js?v=0.15.3"></script>
+<script type="module" src="site.js?v=0.15.4"></script>
 </body>
 </html>

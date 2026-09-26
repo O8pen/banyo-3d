@@ -20,6 +20,7 @@ button:active,button.active{background:#ad8654}
 #vertical button{width:54px;height:46px;font-size:22px;padding:0}
 #eski-secim{position:relative;display:grid;place-items:center;width:54px;height:46px;border:1px solid var(--kenar);border-radius:10px;background:var(--panel);font-size:12px}
 #eski-secim select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font:16px system-ui,sans-serif}
+#eski-secim span{font-size:22px}
 #eski-secim:focus-within{outline:2px solid var(--vurgu);outline-offset:2px}
 #eski-secim:has(select[data-active=true]){border-color:var(--vurgu);background:#6c5539}
 
