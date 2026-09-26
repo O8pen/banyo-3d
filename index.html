@@ -6,7 +6,38 @@
 <meta name="theme-color" content="#22271f">
 <link rel="icon" href="data:,">
 <title>Banyo</title>
-<link rel="stylesheet" href="style.css?v=0.15.2">
+<script>
+// GitHub Pages can cache the entry page for ten minutes.
+// Check a fresh version manifest before reusing an older page.
+(() => {
+  const current = '0.15.3';
+  const url = new URL(location.href);
+  if (url.searchParams.get('_surum') === current) {
+    url.searchParams.delete('_surum');
+    history.replaceState(null, '', url);
+  }
+  let checking = false;
+  async function checkVersion() {
+    if (checking || document.hidden) return;
+    checking = true;
+    try {
+      const response = await fetch(`surum.json?kontrol=${Date.now()}`, {cache:'no-store'});
+      if (!response.ok) return;
+      const {version} = await response.json();
+      if (!/^\d+\.\d+\.\d+$/.test(version) || version === current) return;
+      const target = new URL(location.href);
+      if (target.searchParams.get('_surum') === version) return;
+      target.searchParams.set('_surum', version);
+      location.replace(target.href);
+    } catch (_) { /* Keep the loaded scene usable when offline. */ }
+    finally { checking = false; }
+  }
+  checkVersion();
+  window.addEventListener('pageshow', checkVersion);
+  document.addEventListener('visibilitychange', checkVersion);
+})();
+</script>
+<link rel="stylesheet" href="style.css?v=0.15.3">
 <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body>
@@ -35,6 +66,6 @@
   <img id="buyuk-resim" alt="">
   <div id="buyutucu-ipucu">İki parmakla büyüt · kapatmak için dokun</div>
 </div>
-<script type="module" src="site.js?v=0.15.2"></script>
+<script type="module" src="site.js?v=0.15.3"></script>
 </body>
 </html>
