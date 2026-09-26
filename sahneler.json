@@ -340,5 +340,59 @@
       "height_cm": 125,
       "crown_diameter_cm": 54
     }
+  },
+  {
+    "id": 14,
+    "slug": "14_Alternatif_3_1_1",
+    "label": "Alternatif_3_1_1",
+    "layout": "alternative",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 100,
+    "mirror_cm": 90,
+    "towers": [
+      {
+        "width_cm": 40,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 40,
+      "strip_cm": 10,
+      "strip_over_vanity": true,
+      "lower_style": "none"
+    },
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    },
+    "flush_center_cm": 100,
+    "wc_niche": {
+      "width_cm": 80,
+      "bottom_cm": 120,
+      "cell_cm": 28,
+      "cells": 3,
+      "shelf_cm": 2,
+      "depth_cm": 14
+    },
+    "shower_niche": {
+      "center_cm": 77.5,
+      "width_cm": 75,
+      "bottom_cm": 110,
+      "height_cm": 40,
+      "depth_cm": 9
+    }
   }
 ]

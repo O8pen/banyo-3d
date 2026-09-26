@@ -10,11 +10,15 @@ const CACHE_KEY = new URL(import.meta.url).searchParams.get('v') || '';
 const asset = path => CACHE_KEY ? `${path}?v=${encodeURIComponent(CACHE_KEY)}` : path;
 const SCENES = await fetch(asset('sahneler.json')).then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
 const SLUGS = Object.fromEntries(SCENES.map(c => [c.id, c.slug]));
-const chooser = $('#scene');
-for (const title of ['planned', 'alternative']) {
-  const group = document.createElement('optgroup'); group.label = title === 'planned' ? 'Planlanan seçenekler' : 'Alternatif seçenekler';
-  for (const c of SCENES.filter(c => c.layout === title)) { const option = new Option(c.label, String(c.id)); group.append(option); }
-  chooser.append(group);
+const choosers = [$('#scene-old'), $('#scene-new')];
+for (const [i, ids] of [[2,4,5,3,6,7,8], [9,14,10,11,12,13]].entries()) {
+  const chooser=choosers[i];
+  chooser.append(new Option('Sahne seçin…', ''));
+  chooser.options[0].disabled=true;
+  for (const id of ids) {
+    const c=SCENES.find(c=>c.id===id);
+    if(c) chooser.append(new Option(c.label,String(c.id)));
+  }
 }
 function fotograflar(config) {
   if (config.render_ready === false) return ['olculu.svg', 'mobilya_olculeri.svg', 'referans.jpg'];
@@ -271,15 +275,20 @@ galeri.addEventListener('scroll', noktaGuncelle, { passive: true });
 // ------------------------------------------------------------ banyo seçimi
 let secili = 0;
 function sec(index) {
-  secili = index; chooser.value = String(index);
+  secili = index;
+  for(const chooser of choosers) {
+    const active=[...chooser.options].some(o=>o.value===String(index));
+    chooser.value=active?String(index):'';
+    chooser.dataset.active=String(active);
+  }
   document.querySelectorAll('[data-model]').forEach(b => b.setAttribute('aria-pressed', String(Number(b.dataset.model) === index)));
   galeriGoster(index);
   loadModel(index);
 }
-chooser.addEventListener('change', () => sec(Number(chooser.value)));
+for(const chooser of choosers) chooser.addEventListener('change', () => { if(chooser.value) sec(Number(chooser.value)); });
 
 // Test için salt okunur durum; uzak bir yere veri göndermez.
 window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch, roofVisible, overviewActive });
 window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
-boyutla(); home(); sec(2); requestAnimationFrame(animate);
+boyutla(); home(); sec(9); requestAnimationFrame(animate);
