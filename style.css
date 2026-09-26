@@ -35,7 +35,7 @@ button:active,button.active{background:#ad8654}
 /* Yatay telefon ve geniş ekranda fotoğraf alanında iki resim yan yana */
 @media (min-aspect-ratio:3/2){.kare{flex-basis:50%}}
 
-#secim{right:110px;max-width:260px;flex-direction:column;gap:3px}#secim label{font-size:12px;text-shadow:0 1px 3px #000}#secim select{width:100%;min-height:40px;padding:7px 10px;border:1px solid var(--kenar);border-radius:10px;background:var(--panel);color:#f4eee1;font:inherit}#secim select[data-active=true]{border-color:var(--vurgu)}
+#secim{width:154px;max-width:calc(100vw - 120px);flex-direction:column;gap:2px}#secim label{font-size:10px;line-height:1.2;text-shadow:0 1px 3px #000}#secim select{width:100%;min-width:0;min-height:34px;padding:4px 6px;border:1px solid var(--kenar);border-radius:7px;background:var(--panel);color:#f4eee1;font:12px/1.2 system-ui,sans-serif}#secim select[data-active=true]{border-color:var(--vurgu)}
 
 /* Galeri fotoğrafının tam ekran ve iki parmakla yakınlaştırılan görünümü */
 #resim-buyutucu{position:fixed;inset:0;z-index:1000;background:#080906f7;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;display:flex;align-items:center;justify-content:center}
