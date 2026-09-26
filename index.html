@@ -6,15 +6,13 @@
 <meta name="theme-color" content="#22271f">
 <link rel="icon" href="data:,">
 <title>Banyo</title>
-<link rel="stylesheet" href="style.css?v=0.15.1">
+<link rel="stylesheet" href="style.css?v=0.15.2">
 <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body>
 <section id="ust">
   <canvas id="view" tabindex="0" aria-label="Üç boyutlu banyo, sürükleyerek etrafa bakın"></canvas>
   <div id="secim" role="group" aria-label="Banyo seç">
-    <label for="scene-old">Eski sahneler</label>
-    <select id="scene-old" aria-label="Eski sahneler"></select>
     <label for="scene-new">Yeni sahneler</label>
     <select id="scene-new" aria-label="Yeni sahneler"></select>
   </div>
@@ -24,7 +22,10 @@
   </div>
   <div id="status" role="status">Yükleniyor…</div>
   <div id="joystick" role="group" aria-label="İleri, geri ve yana hareket"><div id="stick"></div></div>
-  <div id="vertical"><button id="up" aria-label="Yukarı">↑</button><button id="down" aria-label="Aşağı">↓</button></div>
+  <div id="vertical">
+    <label id="eski-secim" title="Eski sahneler"><span aria-hidden="true">Eski ▾</span><select id="scene-old" aria-label="Eski sahneler"></select></label>
+    <button id="up" aria-label="Yukarı">↑</button><button id="down" aria-label="Aşağı">↓</button>
+  </div>
 </section>
 <section id="alt">
   <div id="galeri" aria-label="Fotoğraflar"></div>
@@ -34,6 +35,6 @@
   <img id="buyuk-resim" alt="">
   <div id="buyutucu-ipucu">İki parmakla büyüt · kapatmak için dokun</div>
 </div>
-<script type="module" src="site.js?v=0.15.1"></script>
+<script type="module" src="site.js?v=0.15.2"></script>
 </body>
 </html>
