@@ -394,5 +394,55 @@
       "height_cm": 40,
       "depth_cm": 9
     }
+  },
+  {
+    "id": 15,
+    "slug": "15_Alternatif_5",
+    "label": "Alternatif_5",
+    "layout": "full_width_shower",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "door_hinge": "right",
+    "depth_cm": 45,
+    "vanity_cm": 100,
+    "mirror_cm": 90,
+    "furniture_start_cm": 15,
+    "towers": [
+      {
+        "width_cm": 45,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 45,
+      "strip_cm": 10,
+      "strip_over_vanity": true,
+      "lower_style": "none"
+    },
+    "radiator_wall": "front",
+    "radiator_start_cm": 99,
+    "flush_center_cm": 100,
+    "wc_wall_gap_cm": 20,
+    "wc_wall_center_cm": 103.5,
+    "wc_niche": {
+      "width_cm": 80,
+      "bottom_cm": 120,
+      "cell_cm": 28,
+      "cells": 3,
+      "shelf_cm": 2,
+      "depth_cm": 14
+    },
+    "shower_projection": {
+      "width_cm": 120,
+      "depth_cm": 20
+    },
+    "shower_niche": {
+      "center_cm": 77.5,
+      "width_cm": 75,
+      "bottom_cm": 110,
+      "height_cm": 40,
+      "depth_cm": 9
+    }
   }
 ]
