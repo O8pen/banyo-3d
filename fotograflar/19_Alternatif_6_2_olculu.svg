@@ -20,12 +20,11 @@
 <text x="606.0" y="607.5" font-size="16">45 × 45</text>
 <rect x="150.0" y="520.0" width="27.5" height="125.0" fill="#a4b6b7" stroke="#777d71"/>
 <text x="156.0" y="544.0" font-size="16"></text>
-<circle cx="257.5" cy="557.5" r="67.5" fill="#709654" fill-opacity=".7"/>
 <path d="M712.5 372.5L712.5 242.5" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
 <path d="M487.5 357.25L487.5 212.5" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
 <path d="M492.75 557.25L492.75 357.25" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray="5 4"/>
-<path d="M492.75 357.25L607.4652872702092 521.0804088577984" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
-<path d="M492.75 557.25A200.0 200.0 0 0 0 692.75 357.25" fill="none" stroke="#537d89" stroke-dasharray="5 4"/>
+<path d="M492.75 557.25L607.4652872702092 393.4195911422017" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
+<path d="M492.75 357.25A200.0 200.0 0 0 1 692.75 557.25" fill="none" stroke="#537d89" stroke-dasharray="5 4"/>
 <path d="M487.5 562.5L712.5 562.5" stroke="#537d89" stroke-width="3"/>
 <text x="387.5" y="457.25" font-size="16">80 cm kapı →</text>
 <path d="M150.0 900.0L320.0 900.0" fill="none" stroke="#f4f1e9" stroke-width="3" stroke-dasharray=""/>
@@ -34,7 +33,7 @@
 <text x="440" y="940" font-size="18">157 kalan duvar</text>
 <text x="60" y="985" font-size="18">WC rezervuar duvarı: 90 genişlik × 20 derinlik × 120 yükseklik. Niş gözü yok.</text>
 <text x="60" y="1018" font-size="18">Duş yan duvarındaki niş: 45 × 35; alt kot 108, derinlik 9 cm. Korundu.</text>
-<text x="60" y="1051" font-size="18">Duş kapısı 80 cm tek kanat, 140 cm yan camda; menteşe arkada, içe açılır. Ön 90 cm cam sabit.</text>
+<text x="60" y="1051" font-size="18">Duş kapısı 80 cm tek kanat, 140 cm yan camda; menteşe ön cam köşesinde, içe açılır. Ön 90 cm cam sabit.</text>
 <text x="60" y="1100" font-size="25">WC DUVARI · ÖNDEN GÖRÜNÜŞ</text>
 <rect x="150" y="1350" width="180" height="240" fill="#d0c5b2" stroke="#777d71"/>
 <rect x="215.5" y="1373.0" width="49.0" height="30" fill="#a4b6b7" stroke="#777d71"/>
