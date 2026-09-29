@@ -11,7 +11,7 @@ const asset = path => CACHE_KEY ? `${path}?v=${encodeURIComponent(CACHE_KEY)}` :
 const SCENES = await fetch(asset('sahneler.json')).then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
 const SLUGS = Object.fromEntries(SCENES.map(c => [c.id, c.slug]));
 const choosers = [$('#scene-old'), $('#scene-new')];
-for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [9,10,11,12,13,16]].entries()) {
+for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16]].entries()) {
   const chooser=choosers[i];
   chooser.append(new Option('Sahne seçin…', ''));
   chooser.options[0].disabled=true;

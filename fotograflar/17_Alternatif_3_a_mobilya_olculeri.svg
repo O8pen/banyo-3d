@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1180" viewBox="0 0 900 1180"><rect width="900" height="1180" fill="#f4f1e9"/>
+<text x="450" y="50" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#30352e">Alternatif_3_a · MOBİLYA ÖLÇÜLERİ</text>
+<text x="450" y="85" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#30352e">Alternatif_3 mobilyası · tüm ölçüler santimetre</text>
+<text x="130" y="200" font-family="Arial,sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#30352e">ÖNDEN ÖLÇÜ ŞEMASI</text>
+<rect x="130" y="250" width="120" height="510" fill="#c59b6c" stroke="#60675a" stroke-width="3"/>
+<line x1="130" y1="514" x2="250" y2="514" stroke="#68705f" stroke-width="3"/>
+<rect x="250" y="595" width="300" height="165" fill="#c59b6c" stroke="#60675a" stroke-width="3"/>
+<line x1="250" y1="677.5" x2="550" y2="677.5" stroke="#68705f" stroke-width="3"/>
+<rect x="250" y="256" width="300" height="276" fill="#c4d6d4" stroke="#60675a" stroke-width="3"/>
+<text x="400.0" y="394" font-family="Arial,sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#30352e">Ayna 100 × 92</text>
+<text x="190.0" y="805" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#30352e">40 cm</text>
+<text x="400.0" y="805" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#30352e">100 cm</text>
+<text x="710" y="200" font-family="Arial,sans-serif" font-size="19" font-weight="700" text-anchor="middle" fill="#30352e">YAN DERİNLİK</text>
+<rect x="635" y="250" width="150" height="510" fill="#b28a61" stroke="#60675a" stroke-width="3"/>
+<text x="710" y="805" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#30352e">50 cm</text>
+<text x="80" y="915" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#30352e">Boy dolabı: 40 genişlik × 50 derinlik × 170 yükseklik · iki kapak</text>
+<text x="80" y="955" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#30352e">Lavabo dolabı: 100 genişlik × 50 derinlik × 55 yükseklik · iki çekmece</text>
+<text x="80" y="1000" font-family="Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#30352e">Yerden başlangıç 30 cm · tezgâh üstü 85 cm · boy dolabı üstü 200 cm</text>
+<text x="80" y="1040" font-family="Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#30352e">Ölçüler nominal gövde ölçüleridir; tezgâh ve kapak taşmaları ayrıca değerlendirilir.</text>
+<text x="80" y="1075" font-family="Arial,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#30352e">Kesim payları, levha kalınlığı ve lavabo delikleri usta tarafından ürüne göre belirlenir.</text>
+<text x="450" y="1135" font-family="Arial,sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#30352e">v0.18.0</text>
+</svg>

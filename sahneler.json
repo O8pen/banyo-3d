@@ -505,5 +505,38 @@
       "height_cm": 125,
       "crown_diameter_cm": 54
     }
+  },
+  {
+    "id": 17,
+    "slug": "17_Alternatif_3_a",
+    "label": "Alternatif_3_a",
+    "layout": "alternative",
+    "published": true,
+    "render_ready": false,
+    "furniture_guide": true,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 100,
+    "towers": [
+      {
+        "width_cm": 40,
+        "style": "closed"
+      }
+    ],
+    "shower_width_cm": 110,
+    "radiator_start_cm": 102,
+    "plant_gap_cm": [
+      152,
+      175
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    }
   }
 ]
