@@ -44,8 +44,8 @@ const pmrem = new THREE.PMREMGenerator(renderer), room = new RoomEnvironment(), 
 world.environment = env.texture; room.dispose(); pmrem.dispose();
 world.add(new THREE.HemisphereLight(0xfff1d5, 0x55594a, 2));
 const sun = new THREE.DirectionalLight(0xffeed5, 2); sun.position.set(0, 4, 2); world.add(sun);
-// Entrance view: look diagonally right so the rear vanity and near WC fit together.
-const START_VIEW = { scene:18, position:[.12,1.50,-.08], yaw:-.80, pitch:-.35, fov:85 };
+// Entrance view with the original 65-degree lens.
+const START_VIEW = { scene:18, position:[.12,1.50,-.08], yaw:-.80, pitch:-.35, fov:65 };
 const camera = new THREE.PerspectiveCamera(START_VIEW.fov, 1, .015, 80); camera.rotation.order = 'YXZ';
 
 function boyutla() {
