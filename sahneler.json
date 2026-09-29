@@ -551,17 +551,17 @@
     "render_ready": false,
     "door_cm": 68,
     "depth_cm": 45,
-    "vanity_cm": 90,
+    "vanity_cm": 95,
     "mirror_cm": 80,
     "towers": [
       {
-        "width_cm": 45,
+        "width_cm": 40,
         "style": "split"
       }
     ],
     "split_tower": {
-      "main_cm": 45,
-      "strip_cm": 10,
+      "main_cm": 40,
+      "strip_cm": 0,
       "strip_over_vanity": true,
       "lower_style": "none"
     },
@@ -576,7 +576,7 @@
       "width_cm": 45,
       "depth_cm": 20,
       "height_cm": 50,
-      "bottom_cm": 175
+      "bottom_cm": 158
     },
     "shower_cm": [
       90,
@@ -603,7 +603,9 @@
       "width_cm": 80,
       "opening": "inward",
       "leaf_count": 1,
-      "display_angle_deg": 35
+      "display_angle_deg": 35,
+      "panel": "side",
+      "hinge": "rear"
     }
   },
   {
@@ -616,17 +618,17 @@
     "render_ready": false,
     "door_cm": 68,
     "depth_cm": 45,
-    "vanity_cm": 90,
+    "vanity_cm": 95,
     "mirror_cm": 80,
     "towers": [
       {
-        "width_cm": 45,
+        "width_cm": 40,
         "style": "split"
       }
     ],
     "split_tower": {
-      "main_cm": 45,
-      "strip_cm": 10,
+      "main_cm": 40,
+      "strip_cm": 0,
       "strip_over_vanity": true,
       "lower_style": "none"
     },
@@ -641,7 +643,7 @@
       "width_cm": 45,
       "depth_cm": 20,
       "height_cm": 50,
-      "bottom_cm": 175
+      "bottom_cm": 158
     },
     "shower_cm": [
       90,
@@ -674,7 +676,9 @@
       "width_cm": 80,
       "opening": "inward",
       "leaf_count": 1,
-      "display_angle_deg": 35
+      "display_angle_deg": 35,
+      "panel": "side",
+      "hinge": "rear"
     }
   }
 ]
