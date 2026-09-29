@@ -1,49 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1700" viewBox="0 0 1000 1700"><rect width="1000" height="1700" fill="#f4f1e9"/><style>text{font-family:Arial,sans-serif;fill:#343c31}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2600" viewBox="0 0 1000 2600"><rect width="1000" height="2600" fill="#f4f1e9"/><style>text{font-family:Arial,sans-serif;fill:#343c31}</style>
 <text x="60" y="55" font-size="30">Alternatif_6_1 · ÖLÇÜLÜ PLAN</text>
 <text x="60" y="95" font-size="18">Santimetre · oda 225 × 275 · tavan 231</text>
-<text x="60" y="130" font-size="18">Karşı duvar: 40 boy dolabı + 95 lavabo + 90 duş = 225 cm</text>
+<text x="60" y="130" font-size="18">Karşı duvar: 40 boy dolabı + 94 lavabo + 90 duş = 224 cm + 1 cm cam boşluğu</text>
 <rect x="150.0" y="212.5" width="562.5" height="687.5" fill="#e4dfd3" stroke="#777d71"/>
 <text x="156.0" y="236.5" font-size="16"></text>
 <rect x="487.5" y="212.5" width="225.0" height="350.0" fill="#d3e3df" stroke="#777d71"/>
 <text x="493.5" y="236.5" font-size="16">DUŞ 90 × 140</text>
-<rect x="150.0" y="212.5" width="100.0" height="112.5" fill="#b88f66" stroke="#777d71"/>
+<rect x="150.0" y="212.5" width="100.0" height="125.0" fill="#b88f66" stroke="#777d71"/>
 <text x="156.0" y="236.5" font-size="16">BOY</text>
-<text x="156.0" y="257.5" font-size="16">40 × 45</text>
-<rect x="250.0" y="212.5" width="237.5" height="112.5" fill="#d1b08a" stroke="#777d71"/>
-<text x="256.0" y="236.5" font-size="16">LAVABO 95 × 45</text>
+<text x="156.0" y="257.5" font-size="16">40 × 50</text>
+<rect x="250.0" y="212.5" width="235.0" height="125.0" fill="#d1b08a" stroke="#777d71"/>
+<text x="256.0" y="236.5" font-size="16">LAVABO 94 × 50</text>
 <rect x="662.5" y="675.0" width="50.0" height="225.0" fill="#bdb5a4" stroke="#777d71"/>
 <text x="668.5" y="699.0" font-size="16"></text>
 <rect x="513.75" y="742.5" width="137.5" height="90.0" fill="#fff" stroke="#777d71"/>
 <text x="519.75" y="766.5" font-size="16">WC</text>
-<text x="715" y="610" font-size="16">45 cm boşluk</text>
+<text x="715" y="610" font-size="16">130 cm bitki</text>
 <rect x="150.0" y="520.0" width="27.5" height="125.0" fill="#a4b6b7" stroke="#777d71"/>
 <text x="156.0" y="544.0" font-size="16"></text>
-<path d="M712.5 372.5L712.5 242.5" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
-<path d="M487.5 357.25L487.5 212.5" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
-<path d="M492.75 557.25L492.75 357.25" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray="5 4"/>
-<path d="M492.75 557.25L607.4652872702092 393.4195911422017" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
-<path d="M492.75 357.25A200.0 200.0 0 0 1 692.75 557.25" fill="none" stroke="#537d89" stroke-dasharray="5 4"/>
+<circle cx="637.5" cy="618.75" r="52.5" fill="#709654" fill-opacity=".7"/>
+<path d="M712.5 362.5L712.5 262.5" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
+<path d="M487.5 382.25L487.5 212.5" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
+<path d="M492.75 557.25L492.75 382.25" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray="5 4"/>
+<path d="M492.75 557.25L593.125876361433 413.8983922494265" fill="none" stroke="#537d89" stroke-width="3" stroke-dasharray=""/>
+<path d="M492.75 382.25A175.0 175.0 0 0 1 667.75 557.25" fill="none" stroke="#537d89" stroke-dasharray="5 4"/>
 <path d="M487.5 562.5L712.5 562.5" stroke="#537d89" stroke-width="3"/>
-<text x="387.5" y="457.25" font-size="16">80 cm kapı →</text>
+<text x="387.5" y="469.75" font-size="16">70 cm kapı →</text>
 <path d="M150.0 900.0L320.0 900.0" fill="none" stroke="#f4f1e9" stroke-width="3" stroke-dasharray=""/>
 <path d="M150.0 900.0L150.0 730.0" fill="none" stroke="#879079" stroke-width="3" stroke-dasharray=""/>
 <text x="150" y="940" font-size="18">68 kapı</text>
 <text x="440" y="940" font-size="18">157 kalan duvar</text>
-<text x="60" y="985" font-size="18">WC rezervuar duvarı: 90 genişlik × 20 derinlik × 120 yükseklik. Niş gözü yok.</text>
-<text x="60" y="1018" font-size="18">Duş yan duvarındaki şampuan nişi: 110 × 35; alt kot 108, derinlik 9 cm.</text>
-<text x="60" y="1051" font-size="18">Duş kapısı 80 cm tek kanat, 140 cm yan camda; menteşe ön cam köşesinde, içe açılır. Ön 90 cm cam sabit.</text>
+<text x="60" y="985" font-size="18">WC rezervuar duvarı: 90 genişlik × 20 derinlik × 110 yükseklik. Niş gözü yok.</text>
+<text x="60" y="1018" font-size="18">Duş yan duvarındaki şampuan nişi: 100 × 30; alt kot 103, derinlik 9 cm.</text>
+<text x="60" y="1051" font-size="18">Duş kapısı 70 cm tek kanat, 140 cm yan camda; menteşe ön cam köşesinde, içe açılır. Ön 90 cm cam sabit.</text>
 <text x="60" y="1100" font-size="25">WC DUVARI · ÖNDEN GÖRÜNÜŞ</text>
-<rect x="150" y="1350" width="180" height="240" fill="#d0c5b2" stroke="#777d71"/>
+<rect x="150" y="1370" width="180" height="220" fill="#d0c5b2" stroke="#777d71"/>
 <rect x="215.5" y="1373.0" width="49.0" height="30" fill="#a4b6b7" stroke="#777d71"/>
 <rect x="150" y="1174" width="90" height="100" fill="#b88f66" stroke="#777d71"/>
 <rect x="240" y="1174" width="90" height="100" fill="#b88f66" stroke="#777d71"/>
 <text x="390" y="1160" font-size="18">Üst dolaplar: 2 adet 45 × 20 × 50</text>
 <text x="390" y="1200" font-size="18">Alt kot 158 · üst kot 208 cm · duş kabini üstüyle aynı</text>
-<text x="390" y="1280" font-size="18">Duvar ile dolap arasında 38 cm boşluk</text>
-<text x="390" y="1350" font-size="18">Düz duvar üst kotu 120 cm</text>
+<text x="390" y="1280" font-size="18">Duvar ile dolap arasında 48 cm boşluk</text>
+<text x="390" y="1350" font-size="18">Düz duvar üst kotu 110 cm</text>
 <text x="390" y="1410" font-size="18">Kumanda merkezi 101 cm (ürüne göre doğrulanır)</text>
 <text x="390" y="1490" font-size="18">Boy dolapları: alt kot 30 · üst kot 200</text>
 <text x="390" y="1530" font-size="18">Lavabo tezgâhı: üst kot 85 cm</text>
 <text x="60" y="1640" font-size="17">Ölçüler nominaldir. Cam/profil, menteşe ve montaj payları ürünle kesinleştirilecek.</text>
-<text x="60" y="1670" font-size="17">80 cm kanat genişliğidir; net geçiş açıklığı donanıma bağlıdır.</text>
+<text x="60" y="1670" font-size="17">70 cm kanat genişliğidir; net geçiş açıklığı donanıma bağlıdır.</text>
+<text x="60" y="1720" font-size="25">DUŞ ÖLÇÜLERİ · cm · arka ve sağ duvar görünüşleri</text>
+<rect x="100" y="1758" width="180" height="462" fill="#e4dfd3" stroke="#777d71"/>
+<rect x="165" y="1796" width="50" height="8" fill="#a4b6b7" stroke="#537d89"/>
+<text x="203" y="1792" font-size="16">1</text>
+<circle cx="190" cy="1960" r="8" fill="#a4b6b7" stroke="#537d89"/>
+<text x="203" y="1952" font-size="16">2</text>
+<circle cx="145.0" cy="1890" r="8" fill="#a4b6b7" stroke="#537d89"/>
+<text x="158.0" y="1882" font-size="16">3</text>
+<circle cx="235.0" cy="2020" r="8" fill="#a4b6b7" stroke="#537d89"/>
+<text x="248.0" y="2012" font-size="16">4</text>
+<circle cx="190" cy="2060" r="8" fill="#a4b6b7" stroke="#537d89"/>
+<text x="203" y="2052" font-size="16">5</text>
+<text x="90" y="2250" font-size="18">Arka duvar · 90 cm</text>
+<rect x="560" y="1758" width="280" height="462" fill="#e4dfd3" stroke="#537d89"/>
+<rect x="600" y="1954" width="200" height="60" fill="#ad9d83" stroke="#537d89"/>
+<rect x="720" y="1834" width="80" height="80" fill="#a4b6b7" stroke="#537d89"/>
+<text x="620" y="1984" font-size="16">100 × 30 · alt 103</text>
+<text x="715" y="1878" font-size="16">40 × 40</text>
+<text x="650" y="1938" font-size="16">20 cm düşey boşluk</text>
+<text x="560" y="2250" font-size="18">Sağ duvar · 20 + 100 + 20 = 140 cm</text>
+<text x="60" y="2290" font-size="19">1 Tepe başlığı: yerden 210 · sağ/havalandırma duvarından 45 cm</text>
+<text x="60" y="2322" font-size="19">2 Kumanda: yerden 130 · sağ/havalandırma duvarından 45 cm</text>
+<text x="60" y="2354" font-size="19">3 El duşu: yerden 165 · sağ/havalandırma duvarından 67.5 cm</text>
+<text x="60" y="2386" font-size="19">4 Hortum çıkışı: yerden 100 · sağ/havalandırma duvarından 22.5 cm</text>
+<text x="60" y="2418" font-size="19">5 Alt batarya: yerden 80 · sağ/havalandırma duvarından 45 cm</text>
+<text x="60" y="2470" font-size="18">Yuvarlak ayna: Ø80 cm, merkezi 152 cm (tasarım kabulü).</text>
+<text x="60" y="2502" font-size="17">Başlık 25 × 25 cm; duvardan uzanma 39 cm; ürün gövdeleri temsili ölçüdedir.</text>
+<text x="60" y="2534" font-size="17">Kotlar parça merkezine / tepe başlığı merkez düzlemine aittir. Havalandırma ölçüsü açıklıktır.</text>
+<text x="60" y="2566" font-size="17">Duş tesisatının iç bağlantıları ve ürünün montaj delikleri satın alınan takım ile doğrulanacak.</text>
 </svg>

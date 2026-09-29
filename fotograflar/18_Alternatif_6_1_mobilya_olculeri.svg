@@ -10,11 +10,11 @@
 <line x1="130" y1="750.0" x2="290.0" y2="750.0" stroke="#65482f" stroke-width="4"/>
 <text x="210" y="410.0" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#30352e">ÜST KAPAK</text>
 <text x="210" y="870.0" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#30352e">ALT KAPAK</text>
-<rect x="290.0" y="750.0" width="380.0" height="220.0" fill="#cda777" stroke="#60675a" stroke-width="3"/>
-<line x1="290.0" y1="860.0" x2="670.0" y2="860.0" stroke="#65482f" stroke-width="4"/>
-<rect x="287.0" y="736.0" width="386.0" height="14" fill="#eee9df" stroke="#60675a" stroke-width="3"/>
-<text x="480.0" y="1006" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#30352e">LAVABO 95×45×55</text>
-<text x="210.0" y="1006" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#30352e">BOY DOLABI 40×45×170</text>
+<rect x="290.0" y="750.0" width="376.0" height="220.0" fill="#cda777" stroke="#60675a" stroke-width="3"/>
+<line x1="290.0" y1="860.0" x2="666.0" y2="860.0" stroke="#65482f" stroke-width="4"/>
+<rect x="287.0" y="736.0" width="382.0" height="14" fill="#eee9df" stroke="#60675a" stroke-width="3"/>
+<text x="478.0" y="1006" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#30352e">LAVABO 94×50×55</text>
+<text x="210.0" y="1006" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#30352e">BOY DOLABI 40×50×170</text>
 <text x="80" y="1035" font-family="Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#30352e">Boy dolabı yanında raf şeridi yoktur. Mobilya alt kotu 30 cm, tezgâh üst kotu 85 cm.</text>
 <text x="80" y="1100" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#30352e">KESİM LİSTESİ</text>
 <rect x="80" y="1125" width="1640" height="48" fill="#4f594a" stroke="#4f594a" stroke-width="1"/>
@@ -26,11 +26,11 @@
 <text x="90" y="1200" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">A</text>
 <text x="180" y="1200" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Boy dolabı yan paneli</text>
 <text x="860" y="1200" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">2</text>
-<text x="1020" y="1200" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">45 × 170</text>
+<text x="1020" y="1200" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">50 × 170</text>
 <text x="90" y="1238" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">B</text>
 <text x="180" y="1238" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Boy dolabı üst/alt tablası</text>
 <text x="860" y="1238" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">2</text>
-<text x="1020" y="1238" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">36 × 43</text>
+<text x="1020" y="1238" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">36 × 48</text>
 <rect x="80" y="1249" width="1640" height="38" fill="#ebe6da" stroke="#d2cbbc" stroke-width="1"/>
 <text x="90" y="1276" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">C</text>
 <text x="180" y="1276" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Boy dolabı arkalığı</text>
@@ -39,7 +39,7 @@
 <text x="90" y="1314" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">D</text>
 <text x="180" y="1314" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Tezgâh kotu ara tablası</text>
 <text x="860" y="1314" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">1</text>
-<text x="1020" y="1314" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">36 × 43</text>
+<text x="1020" y="1314" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">36 × 48</text>
 <rect x="80" y="1325" width="1640" height="38" fill="#ebe6da" stroke="#d2cbbc" stroke-width="1"/>
 <text x="90" y="1352" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">E</text>
 <text x="180" y="1352" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Alt kapak</text>
@@ -53,25 +53,25 @@
 <text x="90" y="1428" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">K</text>
 <text x="180" y="1428" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Lavabo dolabı yan paneli</text>
 <text x="860" y="1428" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">2</text>
-<text x="1020" y="1428" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">45 × 52</text>
+<text x="1020" y="1428" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">50 × 52</text>
 <text x="90" y="1466" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">L</text>
 <text x="180" y="1466" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Lavabo dolabı alt/ara tablası</text>
 <text x="860" y="1466" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">2</text>
-<text x="1020" y="1466" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">91 × 43</text>
+<text x="1020" y="1466" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">90 × 48</text>
 <rect x="80" y="1477" width="1640" height="38" fill="#ebe6da" stroke="#d2cbbc" stroke-width="1"/>
 <text x="90" y="1504" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">M</text>
 <text x="180" y="1504" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Lavabo dolabı arkalığı</text>
 <text x="860" y="1504" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">1</text>
-<text x="1020" y="1504" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">91 × 48</text>
+<text x="1020" y="1504" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">90 × 48</text>
 <text x="90" y="1542" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">N</text>
 <text x="180" y="1542" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Lavabo çekmece önü</text>
 <text x="860" y="1542" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">2</text>
-<text x="1020" y="1542" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">94.6 × 25.6</text>
+<text x="1020" y="1542" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">93.6 × 25.6</text>
 <rect x="80" y="1553" width="1640" height="38" fill="#ebe6da" stroke="#d2cbbc" stroke-width="1"/>
 <text x="90" y="1580" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">P</text>
 <text x="180" y="1580" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">Lavabo tezgâhı</text>
 <text x="860" y="1580" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">1</text>
-<text x="1020" y="1580" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">95 × 45</text>
+<text x="1020" y="1580" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">94 × 50</text>
 <text x="90" y="1618" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">U</text>
 <text x="180" y="1618" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">İki WC dolabı: yan paneller</text>
 <text x="860" y="1618" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#30352e">4</text>
@@ -97,10 +97,10 @@
 <text x="80" y="1826" font-family="Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#62675d">Kapak ölçülerinde yaklaşık 2 mm çalışma payı bırakılmıştır. Kenar bandı ve birleşim yöntemi ustanın uygulamasına göre düzenlenir.</text>
 <rect x="80" y="1856" width="1640" height="110" fill="#e2ebdc" stroke="#708067" stroke-width="2"/>
 <text x="110" y="1897" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#40533a">Yön kontrolü:</text>
-<text x="285" y="1897" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#40533a">Boy dolabı 40 cm, lavabo dolabı 95 cm; aralarında raf yok, iki gövde bitişik.</text>
+<text x="285" y="1897" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#40533a">Boy dolabı 40 cm, lavabo dolabı 94 cm; aralarında raf yok, iki gövde bitişik.</text>
 <text x="110" y="1934" font-family="Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#40533a">Boy dolabının alt ve üst kapağı odaya açılır; ayna lavaboya ortalanır.</text>
 <text x="80" y="2170" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#30352e">WC üst dolapları: 2 adet 45 × 20 × 50 cm; alt kot 158 cm, üst kot 208 cm (duş kabini üstüyle aynı).</text>
-<text x="80" y="2210" font-family="Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#30352e">Düz rezervuar duvarı 90 × 20 × 120 cm; dolaplara kadar 38 cm boşluk.</text>
+<text x="80" y="2210" font-family="Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#30352e">Düz rezervuar duvarı 90 × 20 × 110 cm; dolaplara kadar 48 cm boşluk.</text>
 <text x="80" y="2250" font-family="Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#30352e">Karşı duvar: solda boy dolabı, ortada lavabo, sağda duş. Boy dolabı alt kotu 30 cm.</text>
-<text x="900" y="2310" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#676d62">Alternatif_6_1 · v0.22.0</text>
+<text x="900" y="2310" font-family="Arial,sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#676d62">Alternatif_6_1 · v0.23.0</text>
 </svg>

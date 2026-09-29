@@ -550,9 +550,9 @@
     "published": true,
     "render_ready": false,
     "door_cm": 68,
-    "depth_cm": 45,
-    "vanity_cm": 95,
-    "mirror_cm": 95,
+    "depth_cm": 50,
+    "vanity_cm": 94,
+    "mirror_cm": 80,
     "towers": [
       {
         "width_cm": 40,
@@ -584,20 +584,64 @@
     ],
     "shower_side_niche_center_cm": 205,
     "shower_side_niche_cm": [
-      110,
-      35,
+      100,
+      30,
       9
     ],
     "rear_tower_left": true,
-    "wc_wall_height_cm": 120,
+    "wc_wall_height_cm": 110,
     "technical_sheets": false,
     "shower_door": {
-      "width_cm": 80,
+      "width_cm": 70,
       "opening": "inward",
       "leaf_count": 1,
       "display_angle_deg": 35,
       "panel": "side",
       "hinge": "front"
+    },
+    "mirror_shape": "round",
+    "mirror_center_cm": 152,
+    "shower_side_niche_bottom_cm": 103,
+    "vent_spec": {
+      "width_cm": 40,
+      "height_cm": 40,
+      "bottom_cm": 153,
+      "rear_gap_cm": 20
+    },
+    "rear_furniture_gap_cm": 1,
+    "shower_set": {
+      "rain": {
+        "height_cm": 210,
+        "right_distance_cm": 45
+      },
+      "control": {
+        "height_cm": 130,
+        "right_distance_cm": 45
+      },
+      "hand": {
+        "height_cm": 165,
+        "right_distance_cm": 67.5
+      },
+      "outlet": {
+        "height_cm": 100,
+        "right_distance_cm": 22.5
+      },
+      "mixer": {
+        "height_cm": 80,
+        "right_distance_cm": 45
+      },
+      "head_size_cm": 25,
+      "head_reach_cm": 39
+    },
+    "plant": {
+      "center_cm": [
+        195,
+        112.5
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 130,
+      "crown_diameter_cm": 42,
+      "fit_dimensions": true
     }
   },
   {
