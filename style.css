@@ -23,16 +23,6 @@ button:active,button.active{background:#ad8654}
 #eski-secim span{font-size:22px}
 #eski-secim:focus-within{outline:2px solid var(--vurgu);outline-offset:2px}
 #eski-secim:has(select[data-active=true]){border-color:var(--vurgu);background:#6c5539}
-#tesisat{position:absolute;left:10px;top:66px;max-width:min(280px,calc(100% - 20px));font-size:11px}
-#tesisat[hidden],#tesisat-secili[hidden],#technical-pdf[hidden]{display:none}
-.tesisat-dugmeler{display:flex;gap:4px;align-items:center}
-.tesisat-dugmeler button,.tesisat-dugmeler a{min-height:34px;padding:5px 8px;font-size:12px;border-radius:7px}
-.tesisat-dugmeler a{color:#f4eee1;background:var(--panel);text-decoration:none;display:flex;align-items:center;border:1px solid var(--kenar)}
-#water-layer[aria-pressed=true]{background:#15689c}#electric-layer[aria-pressed=true]{background:#765d11}
-#tesisat-bilgi{margin-top:3px;background:var(--panel);border-radius:6px;padding:3px 6px;max-height:130px;overflow:auto}
-#tesisat-bilgi p{margin:5px 0}#tesisat-secili{display:block;background:#22271fee;padding:5px;margin-top:3px;max-height:70px;overflow:auto}
-.cold{color:#51b7ff}.hot{color:#ff7272}.mixed{color:#d896ff}.waste{color:#d9a574}.power{color:#f4d15f}.light{color:#74dbb9}
-
 /* Alt yarı: fotoğraflar, yana kaydırılır */
 #alt{position:relative;min-height:0;border-top:1px solid #3a3f35;background:#171815}
 #galeri{height:100%;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;touch-action:pan-x;scrollbar-width:none}
