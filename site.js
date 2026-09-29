@@ -44,7 +44,9 @@ const pmrem = new THREE.PMREMGenerator(renderer), room = new RoomEnvironment(), 
 world.environment = env.texture; room.dispose(); pmrem.dispose();
 world.add(new THREE.HemisphereLight(0xfff1d5, 0x55594a, 2));
 const sun = new THREE.DirectionalLight(0xffeed5, 2); sun.position.set(0, 4, 2); world.add(sun);
-const camera = new THREE.PerspectiveCamera(65, 1, .015, 80); camera.rotation.order = 'YXZ';
+// Entrance view: look diagonally right so the rear vanity and near WC fit together.
+const START_VIEW = { scene:18, position:[.12,1.50,-.08], yaw:-.80, pitch:-.35, fov:85 };
+const camera = new THREE.PerspectiveCamera(START_VIEW.fov, 1, .015, 80); camera.rotation.order = 'YXZ';
 
 function boyutla() {
   const w = ust.clientWidth, h = ust.clientHeight;
@@ -65,7 +67,7 @@ function updateOverviewButton() {
   button.setAttribute('aria-label',label);button.setAttribute('title',label);button.setAttribute('aria-pressed',String(overviewActive));
 }
 function home() {
-  camera.position.set(.95, 1.50, -.38); yaw = 0; pitch = -.04; applyLook(); setRoof(true);
+  camera.position.fromArray(START_VIEW.position); yaw = START_VIEW.yaw; pitch = START_VIEW.pitch; applyLook(); setRoof(true);
   overviewActive=false;previousView=null;updateOverviewButton();
 }
 function overview() {
@@ -293,8 +295,8 @@ for(const chooser of choosers) chooser.addEventListener('change', () => { if(cho
 window.banyoState = () => {
   const serviceMeshes={water:0,electric:0},visibleServices={water:0,electric:0};
   root?.traverse(o=>{if(o.isMesh&&o.userData.service_layer){serviceMeshes[o.userData.service_layer]++;if(o.visible)visibleServices[o.userData.service_layer]++;}});
-  return {loaded,position:camera.position.toArray(),yaw,pitch,roofVisible,overviewActive,services:{water:false,electric:false},serviceMeshes,visibleServices};
+  return {loaded,position:camera.position.toArray(),yaw,pitch,fov:camera.fov,aspect:camera.aspect,roofVisible,overviewActive,services:{water:false,electric:false},serviceMeshes,visibleServices};
 };
 window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
-boyutla(); home(); sec(9); requestAnimationFrame(animate);
+boyutla(); home(); sec(START_VIEW.scene); requestAnimationFrame(animate);
