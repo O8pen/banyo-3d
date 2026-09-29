@@ -11,7 +11,7 @@ const asset = path => CACHE_KEY ? `${path}?v=${encodeURIComponent(CACHE_KEY)}` :
 const SCENES = await fetch(asset('sahneler.json')).then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
 const SLUGS = Object.fromEntries(SCENES.map(c => [c.id, c.slug]));
 const choosers = [$('#scene-old'), $('#scene-new')];
-for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16]].entries()) {
+for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19]].entries()) {
   const chooser=choosers[i];
   chooser.append(new Option('Sahne seçin…', ''));
   chooser.options[0].disabled=true;
@@ -21,7 +21,7 @@ for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16]].entries())
   }
 }
 function fotograflar(config) {
-  if (config.technical) return ['olculu.svg','su_tesisati.svg','elektrik_tesisati.svg','gomme_dus.svg','mobilya_olculeri.svg','referans.jpg'];
+  if (config.technical && config.technical_sheets !== false) return ['olculu.svg','su_tesisati.svg','elektrik_tesisati.svg','gomme_dus.svg','mobilya_olculeri.svg','referans.jpg'];
   if (config.render_ready === false) return ['olculu.svg', 'mobilya_olculeri.svg', 'referans.jpg'];
   return ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
 }
@@ -60,7 +60,8 @@ const serviceVisibility={water:false,electric:false};
 function updateServices() {
   const config=SCENES.find(c=>c.id===loaded);
   $('#tesisat').hidden=!config?.technical;
-  if(config?.technical) $('#technical-pdf').href=asset(`teknik/${config.slug}_tesisat.pdf`);
+  $('#technical-pdf').hidden=!config?.technical || config.technical_sheets===false;
+  if(config?.technical && config.technical_sheets!==false) $('#technical-pdf').href=asset(`teknik/${config.slug}_tesisat.pdf`);
   for(const key of ['water','electric']) {
     const button=$(`#${key}-layer`),label=`${key==='water'?'Su':'Elektrik'} tesisatını ${serviceVisibility[key]?'gizle':'göster'}`;
     button.setAttribute('aria-pressed',String(serviceVisibility[key]));button.setAttribute('aria-label',label);button.title=label;

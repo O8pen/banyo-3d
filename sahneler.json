@@ -540,5 +540,141 @@
       "height_cm": 125,
       "crown_diameter_cm": 54
     }
+  },
+  {
+    "id": 18,
+    "slug": "18_Alternatif_6_1",
+    "technical": true,
+    "label": "Alternatif_6_1",
+    "layout": "rear_vanity",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 90,
+    "mirror_cm": 80,
+    "towers": [
+      {
+        "width_cm": 45,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 45,
+      "strip_cm": 10,
+      "strip_over_vanity": true,
+      "lower_style": "none"
+    },
+    "radiator_start_cm": 102,
+    "flush_center_cm": 101,
+    "wc_wall_cm": [
+      90,
+      20
+    ],
+    "wc_upper_cabinets": {
+      "count": 2,
+      "width_cm": 45,
+      "depth_cm": 20,
+      "height_cm": 50,
+      "bottom_cm": 175
+    },
+    "shower_cm": [
+      90,
+      140
+    ],
+    "shower_side_niche_cm": [
+      45,
+      35,
+      9
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    },
+    "rear_tower_left": true,
+    "wc_wall_height_cm": 120,
+    "technical_sheets": false,
+    "shower_door": {
+      "width_cm": 80,
+      "opening": "inward",
+      "leaf_count": 1,
+      "display_angle_deg": 35
+    }
+  },
+  {
+    "id": 19,
+    "slug": "19_Alternatif_6_2",
+    "technical": true,
+    "label": "Alternatif_6_2",
+    "layout": "rear_vanity",
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 45,
+    "vanity_cm": 90,
+    "mirror_cm": 80,
+    "towers": [
+      {
+        "width_cm": 45,
+        "style": "split"
+      }
+    ],
+    "split_tower": {
+      "main_cm": 45,
+      "strip_cm": 10,
+      "strip_over_vanity": true,
+      "lower_style": "none"
+    },
+    "radiator_start_cm": 102,
+    "flush_center_cm": 101,
+    "wc_wall_cm": [
+      90,
+      20
+    ],
+    "wc_upper_cabinets": {
+      "count": 2,
+      "width_cm": 45,
+      "depth_cm": 20,
+      "height_cm": 50,
+      "bottom_cm": 175
+    },
+    "shower_cm": [
+      90,
+      140
+    ],
+    "shower_side_niche_cm": [
+      45,
+      35,
+      9
+    ],
+    "plant": {
+      "center_cm": [
+        43,
+        137
+      ],
+      "pot_diameter_cm": 28,
+      "height_cm": 125,
+      "crown_diameter_cm": 54
+    },
+    "rear_tower_left": true,
+    "wc_wall_height_cm": 120,
+    "right_tower": {
+      "start_cm": 90,
+      "width_cm": 45,
+      "depth_cm": 45,
+      "style": "closed"
+    },
+    "technical_sheets": false,
+    "shower_door": {
+      "width_cm": 80,
+      "opening": "inward",
+      "leaf_count": 1,
+      "display_angle_deg": 35
+    }
   }
 ]
