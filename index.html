@@ -10,7 +10,7 @@
 // GitHub Pages can cache the entry page for ten minutes.
 // Check a fresh version manifest before reusing an older page.
 (() => {
-  const current = '0.18.0';
+  const current = '0.19.0';
   const url = new URL(location.href);
   if (url.searchParams.get('_surum') === current) {
     url.searchParams.delete('_surum');
@@ -37,7 +37,7 @@
   document.addEventListener('visibilitychange', checkVersion);
 })();
 </script>
-<link rel="stylesheet" href="style.css?v=0.18.0">
+<link rel="stylesheet" href="style.css?v=0.19.0">
 <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body>
@@ -52,6 +52,19 @@
     <button id="overview" aria-label="Kuş bakışına geç" aria-pressed="false" title="Kuş bakışına geç">▣</button>
   </div>
   <div id="status" role="status">Yükleniyor…</div>
+  <div id="tesisat" hidden aria-label="Tesisat katmanları">
+    <div class="tesisat-dugmeler">
+      <button id="water-layer" aria-pressed="false">Su</button>
+      <button id="electric-layer" aria-pressed="false">Elektrik</button>
+      <a id="technical-pdf" target="_blank" rel="noopener">Pafta PDF</a>
+    </div>
+    <details id="tesisat-bilgi"><summary>Öneri tesisat · lejant</summary><div>
+      <p>Mevcut bağlantılar ölçülmedi. Hatlar duvar arkasını göstermek için önde çizilir; montaj onayı değildir.</p>
+      <p><span class="cold">● Soğuk</span> · <span class="hot">● Sıcak</span> · <span class="mixed">● Karışık su</span> · <span class="waste">● Gider</span> · <span class="power">● Elektrik</span> · <span class="light">● Aydınlatma</span></p>
+      <p>Hat veya bağlantı noktasına dokunarak ayrıntısını okuyabilirsin.</p>
+    </div></details>
+    <output id="tesisat-secili" hidden></output>
+  </div>
   <div id="joystick" role="group" aria-label="İleri, geri ve yana hareket"><div id="stick"></div></div>
   <div id="vertical">
     <label id="eski-secim" title="Eski sahneler"><span aria-hidden="true">▾</span><select id="scene-old" aria-label="Eski sahneler"></select></label>
@@ -66,6 +79,6 @@
   <img id="buyuk-resim" alt="">
   <div id="buyutucu-ipucu">İki parmakla büyüt · kapatmak için dokun</div>
 </div>
-<script type="module" src="site.js?v=0.18.0"></script>
+<script type="module" src="site.js?v=0.19.0"></script>
 </body>
 </html>

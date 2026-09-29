@@ -1,0 +1,28 @@
+Kod,Açıklama,X_cm,Y_cm,Z_cm,Durum
+S0,Soğuk su giriş varsayımı,232.0,22.0,25.0,unverified_source
+H0,Sıcak su giriş varsayımı,232.0,30.0,30.0,unverified_source
+W1,Rezervuar su bağlantısı,173.5,267.0,85.0,proposal
+S1,Lavabo soğuk su,220.0,97.5,60.0,proposal
+H1,Lavabo sıcak su,220.0,82.5,60.0,proposal
+S2,Gömme gövde soğuk giriş,29.0,280.0,110.0,proposal
+H2,Gömme gövde sıcak giriş,19.0,280.0,110.0,proposal
+M0,Gömme batarya merkezi,24.0,280.0,110.0,proposal
+M1,Tepe duşu duvar çıkışı,24.0,275.0,209.0,proposal
+M2,El duşu duvar çıkışı,37.0,275.0,101.0,proposal
+G0,Ana gider bağlantısı varsayımı,232.0,262.0,-30.0,unverified_source
+G1,Lavabo gider çıkışı,220.0,90.0,50.0,proposal
+G2,WC gider çıkışı,173.5,267.0,23.0,proposal
+G3,Duş süzgeci alt bağlantısı,55.0,265.0,-6.0,proposal
+E0,Elektrik besleme varsayımı,90.0,-7.0,238.0,unverified_source
+E1,Kapı dışı anahtar önerisi,80.0,-2.0,110.0,proposal
+E2,Priz konum önerisi,223.5,70.0,115.0,proposal
+E3,Ayna bağlantı noktası,223.0,90.0,198.0,proposal
+E4,Tavan ışığı 1,50.0,70.0,229.0,proposal
+E5,Tavan ışığı 2,160.0,70.0,229.0,proposal
+E6,Tavan ışığı 3,50.0,212.0,229.0,proposal
+E7,Tavan ışığı 4,170.0,212.0,229.0,proposal
+E8,Duş nişi LED,83.0,277.7,142.2,proposal
+E9,WC nişi LED 1,173.5,257.6,144.2,proposal
+E10,WC nişi LED 2,173.5,257.6,181.2,proposal
+R1,Havlupan ısıtma bağlantısı — sistem bilinmiyor,9.4,103.6,48.0,unresolved
+R2,Havlupan ısıtma bağlantısı — sistem bilinmiyor,9.4,150.4,48.0,unresolved

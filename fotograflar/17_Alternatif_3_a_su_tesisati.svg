@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="2100" viewBox="0 0 1400 2100"><style>text{font-family:Arial,sans-serif;fill:#27362f}line,path{stroke-linecap:round;stroke-linejoin:round}</style><rect width="1400" height="2100" fill="#faf8f2"/>
+<text x="60" y="65" font-size="32">Alternatif_3_a · SU / GİDER · v0.19.0</text>
+<text x="60" y="105" font-size="21">ÖNERİ GÜZERGÂH — MEVCUT TESİSAT ÖLÇÜLMEDİ — UYGULAMA ONAYI YOK</text>
+<text x="60" y="139" font-size="18">Koordinatlar: giriş sol iç köşe O; X sağa, Y arka duvara, Z bitmiş döşemeden yukarı.</text>
+<rect x="115" y="242.5" width="562.5" height="687.5" fill="#e6e4db" stroke="#7a8579"/>
+<text x="120" y="266.5" font-size="16"></text>
+<rect x="115" y="242.5" width="275.0" height="250.0" fill="#e6e4db" stroke="#7a8579"/>
+<text x="120" y="266.5" font-size="16">Duş 110×100</text>
+<rect x="552.5" y="580.0" width="125.0" height="250.0" fill="#e6e4db" stroke="#7a8579"/>
+<text x="557.5" y="604.0" font-size="16">Lavabo</text>
+<rect x="552.5" y="830.0" width="125.0" height="100.0" fill="#e6e4db" stroke="#7a8579"/>
+<text x="557.5" y="854.0" font-size="16">Dolap</text>
+<rect x="420.0" y="242.5" width="257.5" height="50.0" fill="#e6e4db" stroke="#7a8579"/>
+<text x="425.0" y="266.5" font-size="16">WC</text>
+<text x="115" y="960" font-size="19">O (0,0)</text>
+<text x="365" y="960" font-size="19">X → 225 cm</text>
+<text x="45" y="230.0" font-size="17">Y ↑ 275 cm</text>
+<polyline points="695.00,875.00 690.00,875.00 690.00,686.25 690.00,686.25 665.00,686.25" fill="none" stroke="#168bdb" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="695.00,875.00 690.00,875.00 690.00,230.00 187.50,230.00 187.50,230.00" fill="none" stroke="#168bdb" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="695.00,875.00 690.00,875.00 690.00,230.00 548.75,230.00 548.75,230.00 548.75,262.50" fill="none" stroke="#168bdb" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="695.00,855.00 702.50,855.00 702.50,723.75 702.50,723.75 665.00,723.75" fill="none" stroke="#db4545" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="695.00,855.00 702.50,855.00 702.50,217.50 162.50,217.50 162.50,217.50 162.50,230.00" fill="none" stroke="#db4545" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="175.00,230.00 175.00,230.00 175.00,242.50" fill="none" stroke="#ae55d1" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="175.00,230.00 207.50,230.00 207.50,230.00 207.50,242.50" fill="none" stroke="#ae55d1" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="665.00,705.00 665.00,705.00 695.00,705.00 695.00,275.00" fill="none" stroke="#9a6336" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="548.75,262.50 548.75,262.50 695.00,262.50 695.00,275.00" fill="none" stroke="#9a6336" stroke-width="3" stroke-dasharray="8 4"/>
+<polyline points="252.50,267.50 252.50,267.50 695.00,267.50 695.00,275.00" fill="none" stroke="#9a6336" stroke-width="3" stroke-dasharray="8 4"/>
+<path d="M187.5 230.0L85 230.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="187.5" cy="230.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="235.0" font-size="16">S2</text>
+<path d="M162.5 230.0L85 254.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="162.5" cy="230.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="259.0" font-size="16">H2</text>
+<path d="M175.0 230.0L85 278.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="175.0" cy="230.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="283.0" font-size="16">M0</text>
+<path d="M175.0 242.5L85 302.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="175.0" cy="242.5" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="307.0" font-size="16">M1</text>
+<path d="M207.5 242.5L85 326.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="207.5" cy="242.5" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="331.0" font-size="16">M2</text>
+<path d="M252.5 267.5L85 350.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="252.5" cy="267.5" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="355.0" font-size="16">G3</text>
+<path d="M138.5 554.0L85 554.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="138.5" cy="554.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="559.0" font-size="16">R2</text>
+<path d="M138.5 671.0L85 671.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="138.5" cy="671.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="40" y="676.0" font-size="16">R1</text>
+<path d="M548.75 262.5L740 262.5" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="548.75" cy="262.5" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="267.5" font-size="16">W1</text>
+<path d="M548.75 262.5L740 286.5" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="548.75" cy="262.5" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="291.5" font-size="16">G2</text>
+<path d="M695.0 275.0L740 310.5" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="695.0" cy="275.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="315.5" font-size="16">G0</text>
+<path d="M665.0 686.25L740 686.25" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="665.0" cy="686.25" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="691.25" font-size="16">S1</text>
+<path d="M665.0 705.0L740 710.25" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="665.0" cy="705.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="715.25" font-size="16">G1</text>
+<path d="M665.0 723.75L740 734.25" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="665.0" cy="723.75" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="739.25" font-size="16">H1</text>
+<path d="M695.0 855.0L740 855.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="695.0" cy="855.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="860.0" font-size="16">H0</text>
+<path d="M695.0 875.0L740 879.0" stroke="#778777" stroke-width=".7" fill="none"/>
+<circle cx="695.0" cy="875.0" r="4" fill="#fff" stroke="#27362f"/>
+<text x="748" y="884.0" font-size="16">S0</text>
+<text x="820" y="210" font-size="24">PLAN LEJANDI</text>
+<path d="M820 249h55" stroke="#168bdb" stroke-width="5"/>
+<text x="895" y="255" font-size="19">Soğuk su</text>
+<path d="M820 291h55" stroke="#db4545" stroke-width="5"/>
+<text x="895" y="297" font-size="19">Sıcak su</text>
+<path d="M820 333h55" stroke="#ae55d1" stroke-width="5"/>
+<text x="895" y="339" font-size="19">Karışık su</text>
+<path d="M820 375h55" stroke="#9a6336" stroke-width="5"/>
+<text x="895" y="381" font-size="19">Gider</text>
+<path d="M820 417h55" stroke="#cd6b26" stroke-width="5"/>
+<text x="895" y="423" font-size="19">Isıtma (bağlantı belirsiz)</text>
+<text x="820" y="510" font-size="18">S0/H0: giriş konumu varsayımı</text>
+<text x="820" y="541" font-size="18">G0: ana gider konumu varsayımı</text>
+<text x="820" y="572" font-size="18">Kesik hatlar önerilen güzergâhlar.</text>
+<text x="820" y="603" font-size="18">Hat kalınlığı boru çapı değildir.</text>
+<text x="820" y="634" font-size="18">Gider yönü: G1/G2/G3 → G0</text>
+<text x="820" y="665" font-size="18">Örnek yatay eğim: %2</text>
+<text x="820" y="696" font-size="18">Gider kotları döşeme altında;</text>
+<text x="820" y="727" font-size="18">boşluk/şap/taşıyıcı bilinmiyor.</text>
+<text x="820" y="758" font-size="18">R1/R2 havlupan bağlantıları:</text>
+<text x="820" y="789" font-size="18">ısıtma türü henüz belirlenmedi.</text>
+<text x="60" y="1020" font-size="26">BAĞLANTI NOKTALARI · cm · tüm kotlar öneridir</text>
+<text x="60" y="1060" font-size="20">Kod      Açıklama                                                     X           Y           Z</text>
+<text x="60" y="1100" font-size="20">S0</text>
+<text x="150" y="1100" font-size="18">Soğuk su giriş varsayımı</text>
+<text x="930" y="1100" font-size="20">232.0</text>
+<text x="1070" y="1100" font-size="20">22.0</text>
+<text x="1210" y="1100" font-size="20">25.0</text>
+<text x="60" y="1138" font-size="20">H0</text>
+<text x="150" y="1138" font-size="18">Sıcak su giriş varsayımı</text>
+<text x="930" y="1138" font-size="20">232.0</text>
+<text x="1070" y="1138" font-size="20">30.0</text>
+<text x="1210" y="1138" font-size="20">30.0</text>
+<text x="60" y="1176" font-size="20">W1</text>
+<text x="150" y="1176" font-size="18">Rezervuar su bağlantısı</text>
+<text x="930" y="1176" font-size="20">173.5</text>
+<text x="1070" y="1176" font-size="20">267.0</text>
+<text x="1210" y="1176" font-size="20">85.0</text>
+<text x="60" y="1214" font-size="20">S1</text>
+<text x="150" y="1214" font-size="18">Lavabo soğuk su</text>
+<text x="930" y="1214" font-size="20">220.0</text>
+<text x="1070" y="1214" font-size="20">97.5</text>
+<text x="1210" y="1214" font-size="20">60.0</text>
+<text x="60" y="1252" font-size="20">H1</text>
+<text x="150" y="1252" font-size="18">Lavabo sıcak su</text>
+<text x="930" y="1252" font-size="20">220.0</text>
+<text x="1070" y="1252" font-size="20">82.5</text>
+<text x="1210" y="1252" font-size="20">60.0</text>
+<text x="60" y="1290" font-size="20">S2</text>
+<text x="150" y="1290" font-size="18">Gömme gövde soğuk giriş</text>
+<text x="930" y="1290" font-size="20">29.0</text>
+<text x="1070" y="1290" font-size="20">280.0</text>
+<text x="1210" y="1290" font-size="20">110.0</text>
+<text x="60" y="1328" font-size="20">H2</text>
+<text x="150" y="1328" font-size="18">Gömme gövde sıcak giriş</text>
+<text x="930" y="1328" font-size="20">19.0</text>
+<text x="1070" y="1328" font-size="20">280.0</text>
+<text x="1210" y="1328" font-size="20">110.0</text>
+<text x="60" y="1366" font-size="20">M0</text>
+<text x="150" y="1366" font-size="18">Gömme batarya merkezi</text>
+<text x="930" y="1366" font-size="20">24.0</text>
+<text x="1070" y="1366" font-size="20">280.0</text>
+<text x="1210" y="1366" font-size="20">110.0</text>
+<text x="60" y="1404" font-size="20">M1</text>
+<text x="150" y="1404" font-size="18">Tepe duşu duvar çıkışı</text>
+<text x="930" y="1404" font-size="20">24.0</text>
+<text x="1070" y="1404" font-size="20">275.0</text>
+<text x="1210" y="1404" font-size="20">209.0</text>
+<text x="60" y="1442" font-size="20">M2</text>
+<text x="150" y="1442" font-size="18">El duşu duvar çıkışı</text>
+<text x="930" y="1442" font-size="20">37.0</text>
+<text x="1070" y="1442" font-size="20">275.0</text>
+<text x="1210" y="1442" font-size="20">101.0</text>
+<text x="60" y="1480" font-size="20">G0</text>
+<text x="150" y="1480" font-size="18">Ana gider bağlantısı varsayımı</text>
+<text x="930" y="1480" font-size="20">232.0</text>
+<text x="1070" y="1480" font-size="20">262.0</text>
+<text x="1210" y="1480" font-size="20">-30.0</text>
+<text x="60" y="1518" font-size="20">G1</text>
+<text x="150" y="1518" font-size="18">Lavabo gider çıkışı</text>
+<text x="930" y="1518" font-size="20">220.0</text>
+<text x="1070" y="1518" font-size="20">90.0</text>
+<text x="1210" y="1518" font-size="20">50.0</text>
+<text x="60" y="1556" font-size="20">G2</text>
+<text x="150" y="1556" font-size="18">WC gider çıkışı</text>
+<text x="930" y="1556" font-size="20">173.5</text>
+<text x="1070" y="1556" font-size="20">267.0</text>
+<text x="1210" y="1556" font-size="20">23.0</text>
+<text x="60" y="1594" font-size="20">G3</text>
+<text x="150" y="1594" font-size="18">Duş süzgeci alt bağlantısı</text>
+<text x="930" y="1594" font-size="20">55.0</text>
+<text x="1070" y="1594" font-size="20">265.0</text>
+<text x="1210" y="1594" font-size="20">-6.0</text>
+<text x="60" y="1632" font-size="20">R1</text>
+<text x="150" y="1632" font-size="18">Havlupan ısıtma bağlantısı — sistem bilinmiyor</text>
+<text x="930" y="1632" font-size="20">9.4</text>
+<text x="1070" y="1632" font-size="20">103.6</text>
+<text x="1210" y="1632" font-size="20">48.0</text>
+<text x="60" y="1670" font-size="20">R2</text>
+<text x="150" y="1670" font-size="18">Havlupan ısıtma bağlantısı — sistem bilinmiyor</text>
+<text x="930" y="1670" font-size="20">9.4</text>
+<text x="1070" y="1670" font-size="20">150.4</text>
+<text x="1210" y="1670" font-size="20">48.0</text>
+<text x="60" y="1860" font-size="23">Ölçülmeden uygulamaya geçilmeyecek girdiler:</text>
+<text x="60" y="1900" font-size="20">Girişler / ana gider ve kotu · duvar yapısı · döşeme kalınlığı · ürün montaj çizimleri</text>
+<text x="60" y="1940" font-size="19">Boru çapı, izolasyon, havalık, kablo kesiti, devre ve koruma cihazları bu paftada belirlenmez.</text>
+<text x="60" y="1980" font-size="19">Kaynak: aynı koordinatlar 3D katmanda, JSON ve CSV nokta listesinde kullanılır.</text>
+<text x="60" y="2030" font-size="18">PDF sayfaya sığdırılabilir; baskıdan cetvelle ölçü alınmaz. Yazılı koordinat ve ölçüler esastır.</text>
+</svg>

@@ -21,6 +21,7 @@ for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16]].entries())
   }
 }
 function fotograflar(config) {
+  if (config.technical) return ['olculu.svg','su_tesisati.svg','elektrik_tesisati.svg','gomme_dus.svg','mobilya_olculeri.svg','referans.jpg'];
   if (config.render_ready === false) return ['olculu.svg', 'mobilya_olculeri.svg', 'referans.jpg'];
   return ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
 }
@@ -55,6 +56,19 @@ new ResizeObserver(boyutla).observe(ust);
 const loader = new GLTFLoader();
 let root = null, yaw = 0, pitch = 0, request = 0, loaded = 0, roofVisible = true;
 let overviewActive = false, previousView = null;
+const serviceVisibility={water:false,electric:false};
+function updateServices() {
+  const config=SCENES.find(c=>c.id===loaded);
+  $('#tesisat').hidden=!config?.technical;
+  if(config?.technical) $('#technical-pdf').href=asset(`teknik/${config.slug}_tesisat.pdf`);
+  for(const key of ['water','electric']) {
+    const button=$(`#${key}-layer`),label=`${key==='water'?'Su':'Elektrik'} tesisatını ${serviceVisibility[key]?'gizle':'göster'}`;
+    button.setAttribute('aria-pressed',String(serviceVisibility[key]));button.setAttribute('aria-label',label);button.title=label;
+  }
+  root?.traverse(o=>{if(o.userData.service_layer)o.visible=!!config?.technical&&serviceVisibility[o.userData.service_layer];});
+  $('#tesisat-secili').hidden=true;dirty=true;
+}
+for(const key of ['water','electric']) $(`#${key}-layer`).onclick=()=>{serviceVisibility[key]=!serviceVisibility[key];updateServices();};
 const keys = new Set(), joy = { x: 0, y: 0 }, vertical = new Map();
 
 function applyLook() { dirty = true; camera.rotation.set(pitch, yaw, 0, 'YXZ'); }
@@ -105,11 +119,12 @@ async function loadModel(index) {
     root.traverse(o => {
       if (!o.isMesh) return;
       for (const m of (Array.isArray(o.material) ? o.material : [o.material])) {
+        if(o.userData.service_layer){m.depthTest=false;m.depthWrite=false;m.transparent=true;m.opacity=.92;m.needsUpdate=true;o.renderOrder=20;}
         if (m.transmission > 0) { m.transmission = 0; m.transparent = true; m.opacity = .18; m.depthWrite = false; m.side = THREE.DoubleSide; m.needsUpdate = true; }
         m.envMapIntensity = .65;
       }
     });
-    world.add(root); loaded = index; setRoof(roofVisible); status.hidden = true;
+    world.add(root); loaded = index; setRoof(roofVisible); updateServices(); status.hidden = true;
   } catch (error) {
     if (token !== request) return;
     status.textContent = 'Model yüklenemedi. Sayfayı yenileyin.';
@@ -124,6 +139,19 @@ canvas.addEventListener('pointerdown', e => {
   if (look) return;
   look = { id: e.pointerId, x: e.clientX, y: e.clientY };
   canvas.setPointerCapture(e.pointerId);
+});
+let serviceTap=null;
+const serviceRay=new THREE.Raycaster();
+canvas.addEventListener('pointerdown',e=>{serviceTap={x:e.clientX,y:e.clientY,id:e.pointerId};});
+canvas.addEventListener('pointerup',e=>{
+  const t=serviceTap;serviceTap=null;
+  if(!t||t.id!==e.pointerId||Math.hypot(e.clientX-t.x,e.clientY-t.y)>6||!root)return;
+  const r=canvas.getBoundingClientRect();serviceRay.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,1-(e.clientY-r.top)/r.height*2),camera);
+  const targets=[];root.traverse(o=>{if(o.isMesh&&o.visible&&o.userData.service_layer)targets.push(o);});
+  const hit=serviceRay.intersectObjects(targets,false)[0];if(!hit)return;
+  const d=hit.object.userData,p=d.service_xyz;
+  $('#tesisat-secili').textContent=`${d.service_id}: ${d.service_label}${p?' · X/Y/Z: '+p.map(v=>(v*100).toFixed(1)).join(' / ')+' cm':''} · öneri`;
+  $('#tesisat-secili').hidden=false;
 });
 canvas.addEventListener('pointermove', e => {
   if (look?.id !== e.pointerId) return;
@@ -288,7 +316,11 @@ function sec(index) {
 for(const chooser of choosers) chooser.addEventListener('change', () => { if(chooser.value) sec(Number(chooser.value)); });
 
 // Test için salt okunur durum; uzak bir yere veri göndermez.
-window.banyoState = () => ({ loaded, position: camera.position.toArray(), yaw, pitch, roofVisible, overviewActive });
+window.banyoState = () => {
+  const serviceMeshes={water:0,electric:0},visibleServices={water:0,electric:0};
+  root?.traverse(o=>{if(o.isMesh&&o.userData.service_layer){serviceMeshes[o.userData.service_layer]++;if(o.visible)visibleServices[o.userData.service_layer]++;}});
+  return {loaded,position:camera.position.toArray(),yaw,pitch,roofVisible,overviewActive,services:{...serviceVisibility},serviceMeshes,visibleServices};
+};
 window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
 boyutla(); home(); sec(9); requestAnimationFrame(animate);

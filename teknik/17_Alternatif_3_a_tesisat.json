@@ -1,0 +1,993 @@
+{
+  "scene": "17_Alternatif_3_a",
+  "version": "1",
+  "status": "ÖNERİ / YERİNDE DOĞRULANACAK",
+  "datum": "O=(0,0,0): giriş sol iç köşe, bitmiş döşeme. X sağa, Y arka duvara, Z yukarı. Birim metre.",
+  "points": [
+    {
+      "id": "S0",
+      "label": "Soğuk su giriş varsayımı",
+      "xyz": [
+        2.32,
+        0.22,
+        0.25
+      ],
+      "system": "water",
+      "status": "unverified_source"
+    },
+    {
+      "id": "H0",
+      "label": "Sıcak su giriş varsayımı",
+      "xyz": [
+        2.32,
+        0.3,
+        0.3
+      ],
+      "system": "water",
+      "status": "unverified_source"
+    },
+    {
+      "id": "W1",
+      "label": "Rezervuar su bağlantısı",
+      "xyz": [
+        1.735,
+        2.67,
+        0.85
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "S1",
+      "label": "Lavabo soğuk su",
+      "xyz": [
+        2.2,
+        0.975,
+        0.6
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "H1",
+      "label": "Lavabo sıcak su",
+      "xyz": [
+        2.2,
+        0.825,
+        0.6
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "S2",
+      "label": "Gömme gövde soğuk giriş",
+      "xyz": [
+        0.29,
+        2.8,
+        1.1
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "H2",
+      "label": "Gömme gövde sıcak giriş",
+      "xyz": [
+        0.19,
+        2.8,
+        1.1
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "M0",
+      "label": "Gömme batarya merkezi",
+      "xyz": [
+        0.24,
+        2.8,
+        1.1
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "M1",
+      "label": "Tepe duşu duvar çıkışı",
+      "xyz": [
+        0.24,
+        2.75,
+        2.09
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "M2",
+      "label": "El duşu duvar çıkışı",
+      "xyz": [
+        0.37,
+        2.75,
+        1.01
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "G0",
+      "label": "Ana gider bağlantısı varsayımı",
+      "xyz": [
+        2.32,
+        2.62,
+        -0.3
+      ],
+      "system": "water",
+      "status": "unverified_source"
+    },
+    {
+      "id": "G1",
+      "label": "Lavabo gider çıkışı",
+      "xyz": [
+        2.2,
+        0.9,
+        0.5
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "G2",
+      "label": "WC gider çıkışı",
+      "xyz": [
+        1.735,
+        2.67,
+        0.23
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "G3",
+      "label": "Duş süzgeci alt bağlantısı",
+      "xyz": [
+        0.55,
+        2.65,
+        -0.06
+      ],
+      "system": "water",
+      "status": "proposal"
+    },
+    {
+      "id": "E0",
+      "label": "Elektrik besleme varsayımı",
+      "xyz": [
+        0.9,
+        -0.07,
+        2.38
+      ],
+      "system": "electric",
+      "status": "unverified_source"
+    },
+    {
+      "id": "E1",
+      "label": "Kapı dışı anahtar önerisi",
+      "xyz": [
+        0.8,
+        -0.02,
+        1.1
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E2",
+      "label": "Priz konum önerisi",
+      "xyz": [
+        2.235,
+        0.7,
+        1.15
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E3",
+      "label": "Ayna bağlantı noktası",
+      "xyz": [
+        2.23,
+        0.9,
+        1.98
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E4",
+      "label": "Tavan ışığı 1",
+      "xyz": [
+        0.5,
+        0.7,
+        2.29
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E5",
+      "label": "Tavan ışığı 2",
+      "xyz": [
+        1.6,
+        0.7,
+        2.29
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E6",
+      "label": "Tavan ışığı 3",
+      "xyz": [
+        0.5,
+        2.12,
+        2.29
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E7",
+      "label": "Tavan ışığı 4",
+      "xyz": [
+        1.7,
+        2.12,
+        2.29
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E8",
+      "label": "Duş nişi LED",
+      "xyz": [
+        0.83,
+        2.777,
+        1.422
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E9",
+      "label": "WC nişi LED 1",
+      "xyz": [
+        1.735,
+        2.576,
+        1.442
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "E10",
+      "label": "WC nişi LED 2",
+      "xyz": [
+        1.735,
+        2.576,
+        1.812
+      ],
+      "system": "electric",
+      "status": "proposal"
+    },
+    {
+      "id": "R1",
+      "label": "Havlupan ısıtma bağlantısı — sistem bilinmiyor",
+      "xyz": [
+        0.094,
+        1.036,
+        0.48
+      ],
+      "system": "water",
+      "status": "unresolved"
+    },
+    {
+      "id": "R2",
+      "label": "Havlupan ısıtma bağlantısı — sistem bilinmiyor",
+      "xyz": [
+        0.094,
+        1.504,
+        0.48
+      ],
+      "system": "water",
+      "status": "unresolved"
+    }
+  ],
+  "routes": [
+    {
+      "id": "S-1",
+      "label": "Soğuk su → S1",
+      "kind": "cold",
+      "system": "water",
+      "points": [
+        [
+          2.32,
+          0.22,
+          0.25
+        ],
+        [
+          2.3,
+          0.22,
+          0.25
+        ],
+        [
+          2.3,
+          0.975,
+          0.25
+        ],
+        [
+          2.3,
+          0.975,
+          0.6
+        ],
+        [
+          2.2,
+          0.975,
+          0.6
+        ]
+      ],
+      "start": "S0",
+      "end": "S1",
+      "note": "Öneri; uygulama için doğrulanacak"
+    },
+    {
+      "id": "S-2",
+      "label": "Soğuk su → S2",
+      "kind": "cold",
+      "system": "water",
+      "points": [
+        [
+          2.32,
+          0.22,
+          0.25
+        ],
+        [
+          2.3,
+          0.22,
+          0.25
+        ],
+        [
+          2.3,
+          2.8,
+          0.25
+        ],
+        [
+          0.29,
+          2.8,
+          0.25
+        ],
+        [
+          0.29,
+          2.8,
+          1.1
+        ]
+      ],
+      "start": "S0",
+      "end": "S2",
+      "note": "Öneri; uygulama için doğrulanacak"
+    },
+    {
+      "id": "S-3",
+      "label": "Soğuk su → W1",
+      "kind": "cold",
+      "system": "water",
+      "points": [
+        [
+          2.32,
+          0.22,
+          0.25
+        ],
+        [
+          2.3,
+          0.22,
+          0.25
+        ],
+        [
+          2.3,
+          2.8,
+          0.25
+        ],
+        [
+          1.735,
+          2.8,
+          0.25
+        ],
+        [
+          1.735,
+          2.8,
+          0.85
+        ],
+        [
+          1.735,
+          2.67,
+          0.85
+        ]
+      ],
+      "start": "S0",
+      "end": "W1",
+      "note": "Öneri; uygulama için doğrulanacak"
+    },
+    {
+      "id": "H-1",
+      "label": "Sıcak su → H1",
+      "kind": "hot",
+      "system": "water",
+      "points": [
+        [
+          2.32,
+          0.3,
+          0.3
+        ],
+        [
+          2.35,
+          0.3,
+          0.3
+        ],
+        [
+          2.35,
+          0.825,
+          0.3
+        ],
+        [
+          2.35,
+          0.825,
+          0.6
+        ],
+        [
+          2.2,
+          0.825,
+          0.6
+        ]
+      ],
+      "start": "H0",
+      "end": "H1",
+      "note": "Öneri; uygulama için doğrulanacak"
+    },
+    {
+      "id": "H-2",
+      "label": "Sıcak su → H2",
+      "kind": "hot",
+      "system": "water",
+      "points": [
+        [
+          2.32,
+          0.3,
+          0.3
+        ],
+        [
+          2.35,
+          0.3,
+          0.3
+        ],
+        [
+          2.35,
+          2.85,
+          0.3
+        ],
+        [
+          0.19,
+          2.85,
+          0.3
+        ],
+        [
+          0.19,
+          2.85,
+          1.1
+        ],
+        [
+          0.19,
+          2.8,
+          1.1
+        ]
+      ],
+      "start": "H0",
+      "end": "H2",
+      "note": "Öneri; uygulama için doğrulanacak"
+    },
+    {
+      "id": "M-1",
+      "label": "Gövde → tepe duşu",
+      "kind": "mixed",
+      "system": "water",
+      "points": [
+        [
+          0.24,
+          2.8,
+          1.1
+        ],
+        [
+          0.24,
+          2.8,
+          2.09
+        ],
+        [
+          0.24,
+          2.75,
+          2.09
+        ]
+      ],
+      "start": "M0",
+      "end": "M1",
+      "note": "Öneri; uygulama için doğrulanacak"
+    },
+    {
+      "id": "M-2",
+      "label": "Gövde → el duşu",
+      "kind": "mixed",
+      "system": "water",
+      "points": [
+        [
+          0.24,
+          2.8,
+          1.1
+        ],
+        [
+          0.37,
+          2.8,
+          1.1
+        ],
+        [
+          0.37,
+          2.8,
+          1.01
+        ],
+        [
+          0.37,
+          2.75,
+          1.01
+        ]
+      ],
+      "start": "M0",
+      "end": "M2",
+      "note": "Öneri; uygulama için doğrulanacak"
+    },
+    {
+      "id": "G1-hat",
+      "label": "Lavabo gider çıkışı → ana gider",
+      "kind": "waste",
+      "system": "water",
+      "points": [
+        [
+          2.2,
+          0.9,
+          0.5
+        ],
+        [
+          2.2,
+          0.9,
+          -0.2632
+        ],
+        [
+          2.32,
+          0.9,
+          -0.2656
+        ],
+        [
+          2.32,
+          2.62,
+          -0.3
+        ]
+      ],
+      "start": "G1",
+      "end": "G0",
+      "note": "%2 eğim yalnız örnek hesap; çap, invert, sifon, havalık ve döşeme kalınlığı doğrulanmadı"
+    },
+    {
+      "id": "G2-hat",
+      "label": "WC gider çıkışı → ana gider",
+      "kind": "waste",
+      "system": "water",
+      "points": [
+        [
+          1.735,
+          2.67,
+          0.23
+        ],
+        [
+          1.735,
+          2.67,
+          -0.2873
+        ],
+        [
+          2.32,
+          2.67,
+          -0.299
+        ],
+        [
+          2.32,
+          2.62,
+          -0.3
+        ]
+      ],
+      "start": "G2",
+      "end": "G0",
+      "note": "%2 eğim yalnız örnek hesap; çap, invert, sifon, havalık ve döşeme kalınlığı doğrulanmadı"
+    },
+    {
+      "id": "G3-hat",
+      "label": "Duş süzgeci alt bağlantısı → ana gider",
+      "kind": "waste",
+      "system": "water",
+      "points": [
+        [
+          0.55,
+          2.65,
+          -0.06
+        ],
+        [
+          0.55,
+          2.65,
+          -0.264
+        ],
+        [
+          2.32,
+          2.65,
+          -0.2994
+        ],
+        [
+          2.32,
+          2.62,
+          -0.3
+        ]
+      ],
+      "start": "G3",
+      "end": "G0",
+      "note": "%2 eğim yalnız örnek hesap; çap, invert, sifon, havalık ve döşeme kalınlığı doğrulanmadı"
+    },
+    {
+      "id": "E-1",
+      "label": "Besleme → dış anahtar",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          0.8,
+          -0.07,
+          2.38
+        ],
+        [
+          0.8,
+          -0.02,
+          1.1
+        ]
+      ],
+      "start": "E0",
+      "end": "E1",
+      "note": "Anahtar banyo dışında; devre bağlantısı elektrikçi tarafından belirlenecek"
+    },
+    {
+      "id": "E-2",
+      "label": "Priz besleme güzergâhı",
+      "kind": "power",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          2.235,
+          -0.07,
+          2.38
+        ],
+        [
+          2.235,
+          0.7,
+          2.38
+        ],
+        [
+          2.235,
+          0.7,
+          1.15
+        ]
+      ],
+      "start": "E0",
+      "end": "E2",
+      "note": "Priz yeri taslaktır; ıslak hacim bölgesi, yerel kurallar ve ürün koruması kontrol edilmeden uygulanmaz"
+    },
+    {
+      "id": "E-3",
+      "label": "Ayna aydınlatma güzergâhı",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          2.23,
+          -0.07,
+          2.38
+        ],
+        [
+          2.23,
+          0.9,
+          2.38
+        ],
+        [
+          2.23,
+          0.9,
+          1.98
+        ]
+      ],
+      "start": "E0",
+      "end": "E3",
+      "note": "Erişilebilir sürücü yeri ve anahtarlama netleşecek"
+    },
+    {
+      "id": "E-4",
+      "label": "Tavan ışığı 1 güzergâhı",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          0.5,
+          -0.07,
+          2.38
+        ],
+        [
+          0.5,
+          0.7,
+          2.38
+        ],
+        [
+          0.5,
+          0.7,
+          2.29
+        ]
+      ],
+      "start": "E0",
+      "end": "E4",
+      "note": "Tavan boşluğu 7 cm varsayımı; armatür IP ve ıslak bölge uygunluğu doğrulanacak"
+    },
+    {
+      "id": "E-5",
+      "label": "Tavan ışığı 2 güzergâhı",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          1.6,
+          -0.07,
+          2.38
+        ],
+        [
+          1.6,
+          0.7,
+          2.38
+        ],
+        [
+          1.6,
+          0.7,
+          2.29
+        ]
+      ],
+      "start": "E0",
+      "end": "E5",
+      "note": "Tavan boşluğu 7 cm varsayımı; armatür IP ve ıslak bölge uygunluğu doğrulanacak"
+    },
+    {
+      "id": "E-6",
+      "label": "Tavan ışığı 3 güzergâhı",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          0.5,
+          -0.07,
+          2.38
+        ],
+        [
+          0.5,
+          2.12,
+          2.38
+        ],
+        [
+          0.5,
+          2.12,
+          2.29
+        ]
+      ],
+      "start": "E0",
+      "end": "E6",
+      "note": "Tavan boşluğu 7 cm varsayımı; armatür IP ve ıslak bölge uygunluğu doğrulanacak"
+    },
+    {
+      "id": "E-7",
+      "label": "Tavan ışığı 4 güzergâhı",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          1.7,
+          -0.07,
+          2.38
+        ],
+        [
+          1.7,
+          2.12,
+          2.38
+        ],
+        [
+          1.7,
+          2.12,
+          2.29
+        ]
+      ],
+      "start": "E0",
+      "end": "E7",
+      "note": "Tavan boşluğu 7 cm varsayımı; armatür IP ve ıslak bölge uygunluğu doğrulanacak"
+    },
+    {
+      "id": "E8-hat",
+      "label": "Duş nişi LED kablo yolu",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          0.52,
+          -0.07,
+          2.38
+        ],
+        [
+          0.52,
+          2.85,
+          2.38
+        ],
+        [
+          0.52,
+          2.85,
+          1.422
+        ],
+        [
+          0.83,
+          2.777,
+          1.422
+        ]
+      ],
+      "start": "E0",
+      "end": "E8",
+      "note": "Düşük gerilim/sürücü ayrımı ürünle belirlenecek; bu çizgi bağlantı şeması değildir"
+    },
+    {
+      "id": "E9-hat",
+      "label": "WC nişi LED 1 kablo yolu",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          1.3,
+          -0.07,
+          2.38
+        ],
+        [
+          1.3,
+          2.71,
+          2.38
+        ],
+        [
+          1.3,
+          2.71,
+          1.442
+        ],
+        [
+          1.735,
+          2.576,
+          1.442
+        ]
+      ],
+      "start": "E0",
+      "end": "E9",
+      "note": "Düşük gerilim/sürücü ayrımı ürünle belirlenecek; bu çizgi bağlantı şeması değildir"
+    },
+    {
+      "id": "E10-hat",
+      "label": "WC nişi LED 2 kablo yolu",
+      "kind": "light",
+      "system": "electric",
+      "points": [
+        [
+          0.9,
+          -0.07,
+          2.38
+        ],
+        [
+          1.3,
+          -0.07,
+          2.38
+        ],
+        [
+          1.3,
+          2.71,
+          2.38
+        ],
+        [
+          1.3,
+          2.71,
+          1.812
+        ],
+        [
+          1.735,
+          2.576,
+          1.812
+        ]
+      ],
+      "start": "E0",
+      "end": "E10",
+      "note": "Düşük gerilim/sürücü ayrımı ürünle belirlenecek; bu çizgi bağlantı şeması değildir"
+    }
+  ],
+  "colors": {
+    "cold": "#168bdb",
+    "hot": "#db4545",
+    "mixed": "#ae55d1",
+    "waste": "#9a6336",
+    "power": "#edba25",
+    "light": "#21806a",
+    "heating": "#cd6b26"
+  },
+  "labels": {
+    "cold": "Soğuk su",
+    "hot": "Sıcak su",
+    "mixed": "Karışık su",
+    "waste": "Gider",
+    "power": "Priz / besleme",
+    "light": "Aydınlatma",
+    "heating": "Isıtma (bağlantı belirsiz)"
+  },
+  "assumptions": [
+    "S0/H0/E0/G0 mevcut tesisat ölçümü değildir; yer tutucudur.",
+    "Hat kalınlıkları semboliktir; boru çapı veya kablo kesiti değildir.",
+    "Z<0 gider güzergâhları döşeme boşluğu çalışmasıdır; döşeme kırımı/delimi talimatı değildir.",
+    "Gömme batarya ürün modeli bilinmiyor; gövde ve portlar temsili.",
+    "Havlupan ısıtma türü bilinmediği için sadece iki bağlantı noktası gösterildi.",
+    "Elektrik koruma bölgeleri ve uygun priz yeri ülke/tesisat kurallarına göre elektrikçi tarafından doğrulanacak."
+  ]
+}
