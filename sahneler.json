@@ -544,6 +544,7 @@
   {
     "id": 18,
     "slug": "18_Alternatif_6_1",
+    "ai_reference": "gorseller/AI_Alternatif_6_1/fotogercekci_v1.png",
     "technical": true,
     "label": "Alternatif_6_1",
     "layout": "rear_vanity",

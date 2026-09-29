@@ -284,7 +284,7 @@ function galeriGoster(index) {
   for (const ad of fotograflar(config)) {
     const kare = document.createElement('div'); kare.className = 'kare';
     const durum = document.createElement('span'); durum.className = 'durum'; durum.textContent = 'Yükleniyor…';
-    const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? 'stil referansı' : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
+    const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? (config.ai_reference ? 'sahneden üretilmiş yapay zekâ görseli' : 'stil referansı') : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
     img.addEventListener('click', () => resmiAc(img));
     kare.append(durum, img); galeri.append(kare);
     resimYukle(img, asset(`fotograflar/${SLUGS[index]}_${ad}`), durum);
