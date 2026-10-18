@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.28.2';
+import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.29.0';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
@@ -22,7 +22,7 @@ for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19,20]].e
   }
 }
 function fotograflar(config) {
-  if(config.gallery_photos) return ['olculu.svg','mobilya_olculeri.svg',...config.gallery_photos.map((_,i)=>`referans_${i+1}.jpg`)];
+  if(config.gallery_photos) return [...(config.ai_reference?['yapay_zeka.jpg']:[]),'olculu.svg','mobilya_olculeri.svg',...config.gallery_photos.map((_,i)=>`referans_${i+1}.jpg`)];
   if (config.technical && config.technical_sheets !== false) return ['olculu.svg','su_tesisati.svg','elektrik_tesisati.svg','gomme_dus.svg','mobilya_olculeri.svg','referans.jpg'];
   if (config.render_ready === false) return ['olculu.svg', 'mobilya_olculeri.svg', 'referans.jpg'];
   return ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
@@ -302,7 +302,7 @@ function galeriGoster(index) {
   for (const ad of fotograflar(config)) {
     const kare = document.createElement('div'); kare.className = 'kare';
     const durum = document.createElement('span'); durum.className = 'durum'; durum.textContent = 'Yükleniyor…';
-    const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? (config.gallery_photos ? 'gerçek banyo / ürün fotoğrafı' : config.ai_reference ? 'sahneden üretilmiş yapay zekâ görseli' : 'stil referansı') : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
+    const img = document.createElement('img'); img.alt = `${config.label} · ${ad==='yapay_zeka.jpg' ? config.ai_description : ad.startsWith('referans') ? (config.gallery_photos ? 'gerçek banyo / ürün fotoğrafı' : config.ai_reference ? 'sahneden üretilmiş yapay zekâ görseli' : 'stil referansı') : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
     img.addEventListener('click', () => resmiAc(img));
     kare.append(durum, img); galeri.append(kare);
     resimYukle(img, asset(`fotograflar/${SLUGS[index]}_${ad}`), durum);
