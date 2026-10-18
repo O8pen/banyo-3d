@@ -1102,6 +1102,38 @@
       }
     },
     "ai_reference": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png",
-    "ai_description": "Gerçek banyo fotoğrafı üzerine yapay zekâ ile eklenmiş dolap, lavabo ve duşakabin · Örnek 4 koyu meşe"
+    "ai_description": "Gerçek banyo fotoğrafı üzerine yapay zekâ ile eklenmiş dolap, lavabo ve duşakabin · Örnek 4 koyu meşe",
+    "ai_variants": [
+      {
+        "wood_id": "1",
+        "label": "1 · Sıcak meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_1_v1.png"
+      },
+      {
+        "wood_id": "2",
+        "label": "2 · VG 2220",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_2_v1.png"
+      },
+      {
+        "wood_id": "3",
+        "label": "3 · Altın meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_3_v1.png"
+      },
+      {
+        "wood_id": "4",
+        "label": "4 · Koyu meşe",
+        "path": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png"
+      },
+      {
+        "wood_id": "5",
+        "label": "5 · Rustik meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_5_v1.png"
+      },
+      {
+        "wood_id": "6",
+        "label": "6 · Doğal meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_6_v1.png"
+      }
+    ]
   }
 ]
