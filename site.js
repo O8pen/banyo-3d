@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.28.1';
+import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.28.2';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
@@ -343,7 +343,7 @@ window.banyoState = () => {
 };
 window.banyoAppearanceState = () => {
   const materials=new Set();root?.traverse(o=>{if(o.isMesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))materials.add(m);});
-  return {surfaces:[...materials].filter(m=>m.userData.photoSource).map(m=>({name:m.name,unlit:!!m.isMeshBasicMaterial,toneMapped:m.toneMapped,colour:m.color.toArray(),pixels:[m.map.image.width,m.map.image.height],source:m.userData.photoSource})),lights:world.children.filter(o=>o.isLight).length,shadows:renderer.shadowMap.enabled,calls:renderer.info.render.calls,toneMapping:renderer.toneMapping,pixelRatio:renderer.getPixelRatio()};
+  return {surfaces:[...materials].filter(m=>m.userData.photoSource).map(m=>({name:m.name,unlit:!!m.isMeshBasicMaterial,toneMapped:m.toneMapped,colour:m.color.toArray(),pixels:[m.map.image.width,m.map.image.height],source:m.userData.photoSource,ledSpill:m.userData.ledSpill})),lights:world.children.filter(o=>o.isLight).length,shadows:renderer.shadowMap.enabled,calls:renderer.info.render.calls,toneMapping:renderer.toneMapping,pixelRatio:renderer.getPixelRatio()};
 };
 window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
