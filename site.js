@@ -3,6 +3,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.28.0';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
@@ -36,14 +37,15 @@ try {
   status.textContent = 'Bu tarayıcıda 3 boyutlu görüntü açılamadı.';
   throw error;
 }
-renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = .85;
 const world = new THREE.Scene();
 world.background = new THREE.Color('#b3b6ac');
 const pmrem = new THREE.PMREMGenerator(renderer), room = new RoomEnvironment(), env = pmrem.fromScene(room, .04);
 world.environment = env.texture; room.dispose(); pmrem.dispose();
-world.add(new THREE.HemisphereLight(0xfff1d5, 0x55594a, 2));
+const ambient = new THREE.HemisphereLight(0xfff1d5, 0x55594a, 2);world.add(ambient);
+let realistic=null;
 const sun = new THREE.DirectionalLight(0xffeed5, 2); sun.position.set(0, 4, 2); world.add(sun);
 // Entrance view with the original 65-degree lens.
 const START_VIEW = { scene:20, position:[.12,1.50,-.08], yaw:-.80, pitch:-.35, fov:65 };
@@ -74,15 +76,26 @@ async function applyWood(config){
   const option=config.wood_options.find(o=>o.id===woodChoice);if(!option||loaded!==config.id||!root)return;
   const token=++woodRequest,model=root;$('#wood-status').textContent='Ahşap yükleniyor…';
   try{
-    const texture=await new THREE.TextureLoader().loadAsync(asset(option.path));
-    if(token!==woodRequest||model!==root){texture.dispose();return;}
-    texture.colorSpace=THREE.SRGBColorSpace;texture.flipY=false;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
-    texture.repeat.set(.5/(texture.image.width/texture.image.height),1);
-    texture.anisotropy=renderer.capabilities.getMaxAnisotropy();
+    const loader=new THREE.TextureLoader();
+    const stem=option.path.replace(/\.jpg$/,'');
+    const textures=await Promise.all([option.path,`${stem}_normal.png`,`${stem}_roughness.png`].map(p=>loader.loadAsync(asset(p))));
+    if(token!==woodRequest||model!==root){textures.forEach(t=>t.dispose());return;}
+    for (const [i,texture] of textures.entries()) {
+      texture.colorSpace=i===0?THREE.SRGBColorSpace:THREE.NoColorSpace;
+      texture.flipY=false;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
+      texture.repeat.set(.5/(texture.image.width/texture.image.height),1);
+      texture.anisotropy=renderer.capabilities.getMaxAnisotropy();
+    }
     const materials=new Set(),previous=new Set();
     model.traverse(o=>{if(o.userData.wood_selectable)for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m)materials.add(m);});
-    for(const m of materials){if(m.map)previous.add(m.map);m.map=texture;m.color.set(0xffffff);m.needsUpdate=true;}
-    previous.forEach(t=>{if(t!==texture)t.dispose();});
+    for(const m of materials){
+      for(const [i,key] of ['map','normalMap','roughnessMap'].entries()){
+        if(m[key])previous.add(m[key]);m[key]=textures[i];
+      }
+      m.normalScale.set(.35,.35);m.color.set(0xffffff);m.roughness=1;m.needsUpdate=true;
+    }
+    previous.forEach(t=>{if(!textures.includes(t))t.dispose();});
+    realistic?.refresh();
     $('#wood-preview').src=asset(option.path);$('#wood-status').textContent='';dirty=true;
   }catch{if(token===woodRequest)$('#wood-status').textContent='Ahşap yüklenemedi; yeniden seçin.';}
 }
@@ -131,17 +144,20 @@ async function loadModel(index) {
       if (token === request && e.total) status.textContent = `Model yükleniyor · %${Math.round(100 * e.loaded / e.total)}`;
     });
     if (token !== request) { disposeModel(gltf.scene); return; }
+    realistic?.dispose();realistic=null;
     if (root) { world.remove(root); disposeModel(root); }
     root = gltf.scene;
     root.traverse(o => {
       if (o.userData.service_layer) o.visible = false;
       if (!o.isMesh) return;
       for (const m of (Array.isArray(o.material) ? o.material : [o.material])) {
-        if (m.transmission > 0) { m.transmission = 0; m.transparent = true; m.opacity = .18; m.depthWrite = false; m.side = THREE.DoubleSide; m.needsUpdate = true; }
+        if (m.transmission > 0 && index!==20) { m.transmission = 0; m.transparent = true; m.opacity = .18; m.depthWrite = false; m.side = THREE.DoubleSide; m.needsUpdate = true; }
         m.envMapIntensity = .65;
       }
     });
-    world.add(root); loaded = index; setRoof(roofVisible); updateWoodPicker(SCENES.find(c=>c.id===index));status.hidden = true;
+    world.add(root);
+    if(index===20){prepareMaterials(root,renderer);realistic=constructionLighting(world,root,renderer,camera,sun,ambient);}
+    loaded = index; setRoof(roofVisible); updateWoodPicker(SCENES.find(c=>c.id===index));status.hidden = true;
   } catch (error) {
     if (token !== request) return;
     status.textContent = 'Model yüklenemedi. Sayfayı yenileyin.';
@@ -324,7 +340,7 @@ for(const chooser of choosers) chooser.addEventListener('change', () => { if(cho
 window.banyoState = () => {
   const serviceMeshes={water:0,electric:0},visibleServices={water:0,electric:0};
   root?.traverse(o=>{if(o.isMesh&&o.userData.service_layer){serviceMeshes[o.userData.service_layer]++;if(o.visible)visibleServices[o.userData.service_layer]++;}});
-  return {loaded,position:camera.position.toArray(),yaw,pitch,fov:camera.fov,aspect:camera.aspect,roofVisible,overviewActive,services:{water:false,electric:false},serviceMeshes,visibleServices};
+  return {loaded,realistic:realistic?{mirror:realistic.mirror,lights:realistic.lightCount}:null,position:camera.position.toArray(),yaw,pitch,fov:camera.fov,aspect:camera.aspect,roofVisible,overviewActive,services:{water:false,electric:false},serviceMeshes,visibleServices};
 };
 window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
