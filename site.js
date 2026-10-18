@@ -11,7 +11,7 @@ const asset = path => CACHE_KEY ? `${path}?v=${encodeURIComponent(CACHE_KEY)}` :
 const SCENES = await fetch(asset('sahneler.json')).then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
 const SLUGS = Object.fromEntries(SCENES.map(c => [c.id, c.slug]));
 const choosers = [$('#scene-old'), $('#scene-new')];
-for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19]].entries()) {
+for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19,20]].entries()) {
   const chooser=choosers[i];
   chooser.append(new Option('Sahne seçin…', ''));
   chooser.options[0].disabled=true;
@@ -21,6 +21,7 @@ for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19]].entr
   }
 }
 function fotograflar(config) {
+  if(config.gallery_photos) return ['olculu.svg','mobilya_olculeri.svg',...config.gallery_photos.map((_,i)=>`referans_${i+1}.jpg`)];
   if (config.technical && config.technical_sheets !== false) return ['olculu.svg','su_tesisati.svg','elektrik_tesisati.svg','gomme_dus.svg','mobilya_olculeri.svg','referans.jpg'];
   if (config.render_ready === false) return ['olculu.svg', 'mobilya_olculeri.svg', 'referans.jpg'];
   return ['perspektif.webp', 'plan.webp', 'olculu.svg', 'referans.jpg'];
@@ -45,7 +46,7 @@ world.environment = env.texture; room.dispose(); pmrem.dispose();
 world.add(new THREE.HemisphereLight(0xfff1d5, 0x55594a, 2));
 const sun = new THREE.DirectionalLight(0xffeed5, 2); sun.position.set(0, 4, 2); world.add(sun);
 // Entrance view with the original 65-degree lens.
-const START_VIEW = { scene:18, position:[.12,1.50,-.08], yaw:-.80, pitch:-.35, fov:65 };
+const START_VIEW = { scene:20, position:[.12,1.50,-.08], yaw:-.80, pitch:-.35, fov:65 };
 const camera = new THREE.PerspectiveCamera(START_VIEW.fov, 1, .015, 80); camera.rotation.order = 'YXZ';
 
 function boyutla() {
@@ -59,6 +60,32 @@ const loader = new GLTFLoader();
 let root = null, yaw = 0, pitch = 0, request = 0, loaded = 0, roofVisible = true;
 let overviewActive = false, previousView = null;
 const keys = new Set(), joy = { x: 0, y: 0 }, vertical = new Map();
+let woodChoice='1',woodRequest=0;
+try{woodChoice=localStorage.getItem('banyo-6-3-ahsap')||'1';}catch{}
+function updateWoodPicker(config){
+  ++woodRequest;const options=config?.wood_options||[];
+  $('#wood-picker').hidden=!options.length;$('#wood-status').textContent='';
+  $('#wood-choice').replaceChildren(...options.map(o=>new Option(o.label,o.id)));
+  if(!options.some(o=>o.id===woodChoice))woodChoice=options[0]?.id||'1';
+  $('#wood-choice').value=woodChoice;
+  if(options.length){$('#wood-preview').src=asset(options.find(o=>o.id===woodChoice).path);applyWood(config);}
+}
+async function applyWood(config){
+  const option=config.wood_options.find(o=>o.id===woodChoice);if(!option||loaded!==config.id||!root)return;
+  const token=++woodRequest,model=root;$('#wood-status').textContent='Ahşap yükleniyor…';
+  try{
+    const texture=await new THREE.TextureLoader().loadAsync(asset(option.path));
+    if(token!==woodRequest||model!==root){texture.dispose();return;}
+    texture.colorSpace=THREE.SRGBColorSpace;texture.flipY=false;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
+    texture.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+    const materials=new Set(),previous=new Set();
+    model.traverse(o=>{if(o.userData.wood_selectable)for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m)materials.add(m);});
+    for(const m of materials){if(m.map)previous.add(m.map);m.map=texture;m.color.set(0xffffff);m.needsUpdate=true;}
+    previous.forEach(t=>{if(t!==texture)t.dispose();});
+    $('#wood-preview').src=asset(option.path);$('#wood-status').textContent='';dirty=true;
+  }catch{if(token===woodRequest)$('#wood-status').textContent='Ahşap yüklenemedi; yeniden seçin.';}
+}
+$('#wood-choice').onchange=()=>{woodChoice=$('#wood-choice').value;try{localStorage.setItem('banyo-6-3-ahsap',woodChoice);}catch{}const c=SCENES.find(c=>c.id===loaded);if(c?.wood_options)applyWood(c);};
 
 function applyLook() { dirty = true; camera.rotation.set(pitch, yaw, 0, 'YXZ'); }
 function setRoof(visible) { roofVisible = visible; dirty = true; if (root) root.traverse(o => { if (o.userData.roof) o.visible = visible; }); }
@@ -113,7 +140,7 @@ async function loadModel(index) {
         m.envMapIntensity = .65;
       }
     });
-    world.add(root); loaded = index; setRoof(roofVisible); status.hidden = true;
+    world.add(root); loaded = index; setRoof(roofVisible); updateWoodPicker(SCENES.find(c=>c.id===index));status.hidden = true;
   } catch (error) {
     if (token !== request) return;
     status.textContent = 'Model yüklenemedi. Sayfayı yenileyin.';
@@ -259,7 +286,7 @@ function galeriGoster(index) {
   for (const ad of fotograflar(config)) {
     const kare = document.createElement('div'); kare.className = 'kare';
     const durum = document.createElement('span'); durum.className = 'durum'; durum.textContent = 'Yükleniyor…';
-    const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? (config.ai_reference ? 'sahneden üretilmiş yapay zekâ görseli' : 'stil referansı') : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
+    const img = document.createElement('img'); img.alt = `${config.label} · ${ad.startsWith('referans') ? (config.gallery_photos ? 'gerçek banyo / ürün fotoğrafı' : config.ai_reference ? 'sahneden üretilmiş yapay zekâ görseli' : 'stil referansı') : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
     img.addEventListener('click', () => resmiAc(img));
     kare.append(durum, img); galeri.append(kare);
     resimYukle(img, asset(`fotograflar/${SLUGS[index]}_${ad}`), durum);
@@ -279,6 +306,7 @@ galeri.addEventListener('scroll', noktaGuncelle, { passive: true });
 // ------------------------------------------------------------ banyo seçimi
 let secili = 0;
 function sec(index) {
+  ++woodRequest;$('#wood-picker').hidden=true;
   secili = index;
   for(const chooser of choosers) {
     const active=[...chooser.options].some(o=>o.value===String(index));

@@ -10,7 +10,7 @@
 // GitHub Pages can cache the entry page for ten minutes.
 // Check a fresh version manifest before reusing an older page.
 (() => {
-  const current = '0.26.2';
+  const current = '0.27.1';
   const url = new URL(location.href);
   if (url.searchParams.get('_surum') === current) {
     url.searchParams.delete('_surum');
@@ -37,7 +37,7 @@
   document.addEventListener('visibilitychange', checkVersion);
 })();
 </script>
-<link rel="stylesheet" href="style.css?v=0.26.2">
+<link rel="stylesheet" href="style.css?v=0.27.1">
 <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body>
@@ -52,6 +52,11 @@
     <button id="overview" aria-label="Kuş bakışına geç" aria-pressed="false" title="Kuş bakışına geç">▣</button>
   </div>
   <div id="status" role="status">Yükleniyor…</div>
+  <div id="wood-picker" hidden>
+    <label for="wood-choice">Dolap ahşabı</label>
+    <div><img id="wood-preview" alt="Seçili ahşap örneği"><select id="wood-choice" aria-label="Dolap ahşabı seç"></select></div>
+    <span id="wood-status" role="status"></span>
+  </div>
 
   <div id="joystick" role="group" aria-label="İleri, geri ve yana hareket"><div id="stick"></div></div>
   <div id="vertical">
@@ -67,6 +72,6 @@
   <img id="buyuk-resim" alt="">
   <div id="buyutucu-ipucu">İki parmakla büyüt · kapatmak için dokun</div>
 </div>
-<script type="module" src="site.js?v=0.26.2"></script>
+<script type="module" src="site.js?v=0.27.1"></script>
 </body>
 </html>

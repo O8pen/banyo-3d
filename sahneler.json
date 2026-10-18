@@ -709,5 +709,155 @@
       "panel": "side",
       "hinge": "front"
     }
+  },
+  {
+    "id": 20,
+    "slug": "20_Alternatif_6_3",
+    "technical": false,
+    "label": "Alternatif_6_3",
+    "layout": "built_6_3",
+    "gallery_photos": [
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48 (1).jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.35.46.jpeg"
+    ],
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 90,
+    "mirror_cm": 80,
+    "towers": [
+      {
+        "width_cm": 35,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 102,
+    "flush_center_cm": 91,
+    "wc_wall_cm": [
+      92,
+      14
+    ],
+    "wc_upper_cabinets": {
+      "count": 2,
+      "width_cm": 46,
+      "depth_cm": 14,
+      "height_cm": 50,
+      "bottom_cm": 158
+    },
+    "shower_cm": [
+      90,
+      140
+    ],
+    "shower_side_niche_center_cm": 205,
+    "shower_side_niche_cm": [
+      100,
+      30,
+      9
+    ],
+    "rear_tower_left": true,
+    "wc_wall_height_cm": 120,
+    "technical_sheets": false,
+    "shower_door": {
+      "width_cm": 70,
+      "opening": "inward",
+      "leaf_count": 1,
+      "display_angle_deg": 35,
+      "panel": "side",
+      "hinge": "front"
+    },
+    "mirror_shape": "round",
+    "mirror_center_cm": 152,
+    "shower_side_niche_bottom_cm": 103,
+    "vent_spec": {
+      "width_cm": 40,
+      "height_cm": 40,
+      "bottom_cm": 153,
+      "rear_gap_cm": 20
+    },
+    "rear_furniture_gap_cm": 5,
+    "shower_set": {
+      "rain": {
+        "height_cm": 210,
+        "right_distance_cm": 45
+      },
+      "control": {
+        "height_cm": 130,
+        "right_distance_cm": 45
+      },
+      "hand": {
+        "height_cm": 165,
+        "right_distance_cm": 67.5
+      },
+      "outlet": {
+        "height_cm": 100,
+        "right_distance_cm": 22.5
+      },
+      "mixer": {
+        "height_cm": 80,
+        "right_distance_cm": 45
+      },
+      "head_size_cm": 25,
+      "head_reach_cm": 39
+    },
+    "room_width_cm": 220,
+    "vanity_bottom_cm": 15,
+    "vanity_body_height_cm": 55,
+    "basin_height_cm": 15,
+    "furniture_guide": true,
+    "reference_photo": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+    "wood_options": [
+      {
+        "id": "1",
+        "label": "Fotoğraf 1 · sıcak meşe",
+        "path": "malzemeler/alternatif_6_3/mese_1.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.06.18.jpeg",
+        "photo_sample": true
+      },
+      {
+        "id": "2",
+        "label": "Örnek 2 · VG 2220",
+        "path": "malzemeler/alternatif_6_3/mese_2.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.07.28.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "3",
+        "label": "Örnek 3 · altın meşe",
+        "path": "malzemeler/alternatif_6_3/mese_3.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "4",
+        "label": "Örnek 4 · koyu meşe",
+        "path": "malzemeler/alternatif_6_3/mese_4.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13 (1).jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "5",
+        "label": "Örnek 5 · rustik meşe",
+        "path": "malzemeler/alternatif_6_3/mese_5.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.14.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "6",
+        "label": "Fotoğraf 6 · doğal meşe",
+        "path": "malzemeler/alternatif_6_3/mese_6.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.10.30.jpeg",
+        "photo_sample": true
+      }
+    ],
+    "right_tower": {
+      "start_cm": 96,
+      "width_cm": 35,
+      "depth_cm": 14,
+      "bottom_cm": 15,
+      "height_cm": 193,
+      "open_shelves": 5
+    }
   }
 ]
