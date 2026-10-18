@@ -77,7 +77,8 @@ async function applyWood(config){
     const texture=await new THREE.TextureLoader().loadAsync(asset(option.path));
     if(token!==woodRequest||model!==root){texture.dispose();return;}
     texture.colorSpace=THREE.SRGBColorSpace;texture.flipY=false;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
-    texture.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+    texture.repeat.set(.5/(texture.image.width/texture.image.height),1);
+    texture.anisotropy=renderer.capabilities.getMaxAnisotropy();
     const materials=new Set(),previous=new Set();
     model.traverse(o=>{if(o.userData.wood_selectable)for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m)materials.add(m);});
     for(const m of materials){if(m.map)previous.add(m.map);m.map=texture;m.color.set(0xffffff);m.needsUpdate=true;}
