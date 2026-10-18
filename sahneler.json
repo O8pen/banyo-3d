@@ -858,6 +858,25 @@
       "bottom_cm": 15,
       "height_cm": 193,
       "open_shelves": 5
+    },
+    "reference_appearance": {
+      "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+      "ceiling_srgb": [
+        131,
+        123,
+        115
+      ],
+      "light_srgb": [
+        126.05,
+        118.34,
+        106.89
+      ],
+      "dark_srgb": [
+        78.33,
+        72.09,
+        67.65
+      ]
     }
   }
 ]

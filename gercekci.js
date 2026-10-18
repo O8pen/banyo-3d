@@ -1,101 +1,99 @@
-// Actual room lights and planar mirror for the construction reference scene.
+// Actual photograph colours, with a single inexpensive mobile render pass.
 import * as THREE from 'three';
-import { Reflector } from 'three/addons/objects/Reflector.js';
-import { RectAreaLightUniformsLib } from 'three/addons/lights/RectAreaLightUniformsLib.js';
-RectAreaLightUniformsLib.init();
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 
-export function prepareMaterials(model, renderer) {
-  const max = renderer.capabilities.getMaxAnisotropy();
-  model.traverse(o => {
-    if (!o.isMesh) return;
-    o.castShadow = !o.userData.roof && !o.userData.front;
-    o.receiveShadow = true;
-    for (const m of (Array.isArray(o.material) ? o.material : [o.material])) {
-      for (const key of ['map','normalMap','roughnessMap','metalnessMap']) {
-        const tex=m[key];if (!tex) continue;
-        tex.anisotropy=max;
-        tex.minFilter=THREE.LinearMipmapLinearFilter;
-        tex.magFilter=THREE.LinearFilter;
-        tex.generateMipmaps=true;
-        tex.needsUpdate=true;
-      }
-      m.envMapIntensity=.35;
-      if (m.transmission > 0) {
-        o.castShadow=false;
-        m.roughness=.035;m.ior=1.5;m.thickness=.008;
-      }
-      if (m.emissiveMap || m.emissive?.getHex()) o.castShadow=false;
-    }
+function batchStaticMeshes(model) {
+  model.updateMatrixWorld(true);
+  const inverse=new THREE.Matrix4().copy(model.matrixWorld).invert();
+  const groups=new Map();
+  model.traverse(o=>{
+    if(!o.isMesh || !o.visible || Array.isArray(o.material) || o.material.transparent || o.userData.service_layer)return;
+    const geometry=o.geometry;
+    const attributes=Object.keys(geometry.attributes).sort().map(k=>`${k}:${geometry.attributes[k].itemSize}:${geometry.attributes[k].normalized}`).join(',');
+    const flags={roof:!!o.userData.roof,front:!!o.userData.front,wood_selectable:!!o.userData.wood_selectable,reference_surface:o.userData.reference_surface||''};
+    const key=`${o.material.uuid}|${JSON.stringify(flags)}|${!!geometry.index}|${attributes}`;
+    if(!groups.has(key))groups.set(key,{flags,meshes:[]});
+    groups.get(key).meshes.push(o);
   });
+  let before=0,after=0;
+  for(const {flags,meshes} of groups.values()) {
+    before+=meshes.length;
+    if(meshes.length<2){after++;continue;}
+    const parts=meshes.map(o=>o.geometry.clone().applyMatrix4(new THREE.Matrix4().multiplyMatrices(inverse,o.matrixWorld)));
+    const geometry=mergeGeometries(parts,false);parts.forEach(g=>g.dispose());
+    if(!geometry){after+=meshes.length;continue;}
+    const mesh=new THREE.Mesh(geometry,meshes[0].material);mesh.name=meshes[0].name+' | birleşik';mesh.userData={...flags};
+    model.add(mesh);
+    const previous=new Set();meshes.forEach(o=>{o.removeFromParent();previous.add(o.geometry);});previous.forEach(g=>g.dispose());after++;
+  }
+  return {before,after};
 }
 
-export function constructionLighting(world, model, renderer, camera, daylight, ambient) {
-  const previous={sun:daylight.intensity,ambient:ambient.intensity,exposure:renderer.toneMappingExposure};
-  daylight.intensity=.15;ambient.intensity=.32;
-  renderer.toneMappingExposure=.95;
-  renderer.shadowMap.enabled=true;
-  renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-  const group=new THREE.Group();group.name='3000K gerçek banyo aydınlatması';world.add(group);
-  const mobile=matchMedia('(pointer:coarse)').matches;
-  // Six warm ceiling lights, two shadow maps rather than six expensive mobile maps.
-  for (const x of [.55,1.65]) for (const z of [-.48,-1.375,-2.27]) {
-    const light=new THREE.SpotLight(0xffd6a3,13,4.5,Math.PI*.37,.65,2);
-    light.position.set(x,2.20,z);light.target.position.set(x,.10,z);
-    light.castShadow=z===-1.375;
-    light.shadow.mapSize.set(mobile?1024:2048,mobile?1024:2048);
-    light.shadow.camera.near=.04;light.shadow.camera.far=4.5;
-    light.shadow.bias=-.00015;light.shadow.normalBias=.005;
-    group.add(light,light.target);
-  }
-  function strip(w,h,x,y,z,tx,ty,tz,intensity=4){
-    const light=new THREE.RectAreaLight(0xffd49b,intensity,w,h);
-    light.position.set(x,y,z);light.lookAt(tx,ty,tz);group.add(light);
-  }
-  // Perimeter light grazes the tile, instead of an external simulated sun.
-  strip(2.55,.035,.065,2.245,-1.375,.60,1.25,-1.375,7);
-  strip(2.55,.035,2.135,2.245,-1.375,1.60,1.25,-1.375,7);
-  strip(2.0,.035,1.10,2.245,-.065,1.10,1.25,-.65,7);
-  strip(2.0,.035,1.10,2.245,-2.685,1.10,1.25,-2.10,7);
-  strip(.76,.025,.80,1.52,-2.715,.80,1.52,-2.0,3);
-  strip(.018,.95,2.185,1.30,-2.05,1.8,1.1,-2.05,2);
-  const original=[];
-  model.traverse(o=>{if(o.isMesh && o.name.startsWith('6_3_yuvarlak_ayna') && !o.name.includes('LED')){original.push(o);o.visible=false;}});
-  // glTF names retain spaces in some versions of the exporter.
-  if(!original.length)model.traverse(o=>{if(o.isMesh && o.name==='6_3 yuvarlak ayna'){original.push(o);o.visible=false;}});
-  const mirror=new Reflector(new THREE.CircleGeometry(.40,128),{
-    textureWidth:mobile?1024:2048,textureHeight:mobile?1024:2048,
-    clipBias:.001,color:0xfafafa,multisample:mobile?0:4
+export function prepareMaterials(model, renderer, config) {
+  const replacements=new Map(),oldMaterials=new Set(),oldTextures=new Set(),retainedTextures=new Set();
+  const anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+  const palette=config.reference_appearance;
+  model.traverse(o=>{
+    if(!o.isMesh)return;
+    o.castShadow=false;o.receiveShadow=false;
+    const old=Array.isArray(o.material)?o.material:[o.material];
+    const next=old.map(m=>{
+      for(const value of Object.values(m))if(value?.isTexture)oldTextures.add(value);
+      for(const key of ['map','normalMap','roughnessMap']){
+        const texture=m[key];if(!texture)continue;
+        texture.anisotropy=anisotropy;
+      }
+      const tile=o.userData.reference_surface==='photo_tile'||/^(Fayans \||Lavabo \|)/.test(m.name);
+      if(tile){
+        const key=m.map?.uuid||m.uuid;
+        if(!replacements.has(key)){
+          const material=new THREE.MeshBasicMaterial({map:m.map,color:0xffffff,side:m.side,toneMapped:false});
+          material.name=m.name;material.userData={photoSource:palette.source,colourManaged:true};
+          if(material.map){material.map.colorSpace=THREE.SRGBColorSpace;material.map.wrapS=material.map.wrapT=THREE.MirroredRepeatWrapping;material.map.needsUpdate=true;}
+          replacements.set(key,material);
+        }
+        oldMaterials.add(m);return replacements.get(key);
+      }
+      if(m.transmission>0){
+        if(!replacements.has(m.uuid)){
+          const glass=new THREE.MeshBasicMaterial({color:0xe9efed,transparent:true,opacity:.10,depthWrite:false,side:THREE.DoubleSide,toneMapped:false});
+          glass.name=m.name;replacements.set(m.uuid,glass);
+        }
+        oldMaterials.add(m);return replacements.get(m.uuid);
+      }
+      const ceiling=/Alçıpan/.test(m.name);
+      const light=m.emissive && m.emissive.getHex()!==0;
+      if(ceiling||light){
+        if(!replacements.has(m.uuid)){
+          const material=new THREE.MeshBasicMaterial({color:ceiling?new THREE.Color(...palette.ceiling_srgb.map(c=>c/255)).convertSRGBToLinear():0xe8e6ce,toneMapped:false});
+          material.name=m.name;replacements.set(m.uuid,material);
+        }
+        oldMaterials.add(m);return replacements.get(m.uuid);
+      }
+      m.envMapIntensity=.45;
+      return m;
+    });
+    o.material=Array.isArray(o.material)?next:next[0];
+    for(const m of next)for(const value of Object.values(m))if(value?.isTexture)retainedTextures.add(value);
   });
-  mirror.name='Banyonun gerçek ayna yansıması';mirror.position.set(.80,1.52,-2.718);group.add(mirror);
-  // Reflection stays disabled if a future geometry change cannot find the original mirror.
-  mirror.visible=original.length>0;
-  const originalEnvironment=world.environment;
-  let environment=null;
-  function refresh(){
-    const target=new THREE.WebGLCubeRenderTarget(mobile?256:512,{type:THREE.HalfFloatType});
-    const probe=new THREE.CubeCamera(.04,10,target);probe.position.set(1.05,1.35,-1.45);
-    const visibility=mirror.visible,shadows=renderer.shadowMap.enabled;
-    try{
-      mirror.visible=false;world.environment=originalEnvironment;
-      renderer.shadowMap.enabled=false;world.updateMatrixWorld(true);
-      probe.update(renderer,world);
-      const pmrem=new THREE.PMREMGenerator(renderer);
-      const next=pmrem.fromCubemap(target.texture);pmrem.dispose();
-      environment?.dispose();environment=next;world.environment=next.texture;
-    }finally{
-      target.dispose();mirror.visible=visibility;renderer.shadowMap.enabled=shadows;
-      if(environment)world.environment=environment.texture;
-    }
-  }
+  oldMaterials.forEach(m=>m.dispose());
+  oldTextures.forEach(t=>{if(!retainedTextures.has(t))t.dispose();});
+  return batchStaticMeshes(model);
+}
+
+export function constructionLighting(world, model, renderer, camera, daylight, ambient, config, batch) {
+  const previous={sun:daylight.intensity,sunColor:daylight.color.clone(),ambient:ambient.intensity,sky:ambient.color.clone(),ground:ambient.groundColor.clone(),exposure:renderer.toneMappingExposure,toneMapping:renderer.toneMapping};
+  // Neutral fill affects furniture only. Photograph tiles bypass lighting and tone mapping.
+  daylight.color.set(0xffffff);daylight.intensity=.65;
+  ambient.color.set(0xffffff);ambient.groundColor.set(0xffffff);ambient.intensity=2.1;
+  renderer.toneMapping=THREE.NoToneMapping;renderer.toneMappingExposure=1;
+  renderer.shadowMap.enabled=false;
   return {
-    mirror:mirror.visible,lightCount:6,refresh,
+    mirror:false,lightCount:2,passes:1,batch,source:config.reference_appearance.source,
     dispose(){
-      original.forEach(o=>o.visible=true);
-      world.environment=originalEnvironment;environment?.dispose();
-      world.remove(group);mirror.dispose();mirror.geometry.dispose();
-      group.traverse(o=>{if(o.isLight)o.dispose();});
-      daylight.intensity=previous.sun;ambient.intensity=previous.ambient;
-      renderer.toneMappingExposure=previous.exposure;renderer.shadowMap.enabled=false;
+      daylight.intensity=previous.sun;daylight.color.copy(previous.sunColor);
+      ambient.intensity=previous.ambient;ambient.color.copy(previous.sky);ambient.groundColor.copy(previous.ground);
+      renderer.toneMapping=previous.toneMapping;renderer.toneMappingExposure=previous.exposure;
     }
   };
 }

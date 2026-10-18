@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.28.0';
+import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.28.1';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
@@ -37,7 +37,7 @@ try {
   status.textContent = 'Bu tarayıcıda 3 boyutlu görüntü açılamadı.';
   throw error;
 }
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setPixelRatio(Math.min(devicePixelRatio, matchMedia('(pointer:coarse)').matches?1.5:2));
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = .85;
 const world = new THREE.Scene();
@@ -95,7 +95,6 @@ async function applyWood(config){
       m.normalScale.set(.35,.35);m.color.set(0xffffff);m.roughness=1;m.needsUpdate=true;
     }
     previous.forEach(t=>{if(!textures.includes(t))t.dispose();});
-    realistic?.refresh();
     $('#wood-preview').src=asset(option.path);$('#wood-status').textContent='';dirty=true;
   }catch{if(token===woodRequest)$('#wood-status').textContent='Ahşap yüklenemedi; yeniden seçin.';}
 }
@@ -156,7 +155,7 @@ async function loadModel(index) {
       }
     });
     world.add(root);
-    if(index===20){prepareMaterials(root,renderer);realistic=constructionLighting(world,root,renderer,camera,sun,ambient);}
+    if(index===20){const config=SCENES.find(c=>c.id===index);const batch=prepareMaterials(root,renderer,config);realistic=constructionLighting(world,root,renderer,camera,sun,ambient,config,batch);}
     loaded = index; setRoof(roofVisible); updateWoodPicker(SCENES.find(c=>c.id===index));status.hidden = true;
   } catch (error) {
     if (token !== request) return;
@@ -340,7 +339,11 @@ for(const chooser of choosers) chooser.addEventListener('change', () => { if(cho
 window.banyoState = () => {
   const serviceMeshes={water:0,electric:0},visibleServices={water:0,electric:0};
   root?.traverse(o=>{if(o.isMesh&&o.userData.service_layer){serviceMeshes[o.userData.service_layer]++;if(o.visible)visibleServices[o.userData.service_layer]++;}});
-  return {loaded,realistic:realistic?{mirror:realistic.mirror,lights:realistic.lightCount}:null,position:camera.position.toArray(),yaw,pitch,fov:camera.fov,aspect:camera.aspect,roofVisible,overviewActive,services:{water:false,electric:false},serviceMeshes,visibleServices};
+  return {loaded,renderInfo:{calls:renderer.info.render.calls,triangles:renderer.info.render.triangles},realistic:realistic?{mirror:realistic.mirror,lights:realistic.lightCount,passes:realistic.passes,batch:realistic.batch,source:realistic.source}:null,position:camera.position.toArray(),yaw,pitch,fov:camera.fov,aspect:camera.aspect,roofVisible,overviewActive,services:{water:false,electric:false},serviceMeshes,visibleServices};
+};
+window.banyoAppearanceState = () => {
+  const materials=new Set();root?.traverse(o=>{if(o.isMesh)for(const m of (Array.isArray(o.material)?o.material:[o.material]))materials.add(m);});
+  return {surfaces:[...materials].filter(m=>m.userData.photoSource).map(m=>({name:m.name,unlit:!!m.isMeshBasicMaterial,toneMapped:m.toneMapped,colour:m.color.toArray(),pixels:[m.map.image.width,m.map.image.height],source:m.userData.photoSource})),lights:world.children.filter(o=>o.isLight).length,shadows:renderer.shadowMap.enabled,calls:renderer.info.render.calls,toneMapping:renderer.toneMapping,pixelRatio:renderer.getPixelRatio()};
 };
 window.banyoGalleryState = () => ({ open:!buyutucu.hidden, scale:resimOlcek, x:resimX, y:resimY });
 
