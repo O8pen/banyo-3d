@@ -1133,6 +1133,21 @@
         "wood_id": "6",
         "label": "6 · Doğal meşe",
         "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_6_v1.png"
+      },
+      {
+        "wood_id": "7",
+        "label": "7 · Mat grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_7_v1.png"
+      },
+      {
+        "wood_id": "8",
+        "label": "8 · İnce damarlı kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_8_v1.png"
+      },
+      {
+        "wood_id": "9",
+        "label": "9 · Sıcak kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_9_v1.png"
       }
     ]
   }
