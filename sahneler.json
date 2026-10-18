@@ -1148,6 +1148,21 @@
         "wood_id": "9",
         "label": "9 · Sıcak kahverengi",
         "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_9_v1.png"
+      },
+      {
+        "wood_id": "10",
+        "label": "10 · Doğal kahverengi kaplama",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_10_v1.png"
+      },
+      {
+        "wood_id": "11",
+        "label": "11 · Açık kahverengi ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_11_v1.png"
+      },
+      {
+        "wood_id": "12",
+        "label": "12 · Mat koyu grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_12_v1.png"
       }
     ]
   }
