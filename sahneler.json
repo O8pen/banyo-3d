@@ -1163,6 +1163,11 @@
         "wood_id": "12",
         "label": "12 · Mat koyu grej",
         "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_12_v1.png"
+      },
+      {
+        "wood_id": "13",
+        "label": "13 · Sıcak tonlu ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_13_v1.png"
       }
     ]
   }
