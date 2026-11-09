@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.34.0';
+import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.35.0';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
@@ -23,7 +23,7 @@ for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19,20,21,
 }
 function fotograflar(config) {
   if(config.gallery_photos) {
-    const first=(config.featured_images||[]).slice().sort((a,b)=>(b.scene_id===config.id)-(a.scene_id===config.id));
+    const first=(config.featured_images||[]).slice().sort((a,b)=>Number(!!b.pin_to_front)-Number(!!a.pin_to_front)||(b.scene_id===config.id)-(a.scene_id===config.id));
     const featured=first.map(v=>`${v.id}.jpg`);
     const ai=config.ai_variants?.length?config.ai_variants.map(v=>`yapay_zeka_${v.wood_id}.jpg`):(config.ai_reference?['yapay_zeka.jpg']:[]);
     return [...featured,...ai,'olculu.svg','mobilya_olculeri.svg',...config.gallery_photos.map((_,i)=>`referans_${i+1}.jpg`)];

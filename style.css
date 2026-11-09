@@ -57,3 +57,7 @@ button:active,button.active{background:#ad8654}
 .resim-etiketi,#buyutucu-baslik{position:absolute;top:12px;left:12px;padding:5px 9px;border-radius:6px;background:#151713d9;color:#f5f3ec;font:12px/1.3 system-ui,sans-serif;pointer-events:none}
 #buyutucu-baslik{position:fixed;z-index:1;top:max(12px,env(safe-area-inset-top));left:max(12px,env(safe-area-inset-left))}
 #buyutucu-baslik:empty{display:none}
+
+/* Keep the longer comparison gallery indicator inside narrow phone screens. */
+#noktalar{gap:clamp(2px,.8vw,7px);padding:0 10px}
+#noktalar i{width:6px;height:6px}

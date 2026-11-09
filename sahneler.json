@@ -1172,6 +1172,54 @@
     ],
     "featured_images": [
       {
+        "id": "magaza_yuvarlak_50_black",
+        "label": "Yuvarlak (3 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_50_chrome",
+        "label": "Yuvarlak (3 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_black",
+        "label": "Yuvarlak (3 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_chrome",
+        "label": "Yuvarlak (3 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_black",
+        "label": "Kılıç (2,5 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_chrome",
+        "label": "Kılıç (2,5 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_black",
+        "label": "Kılıç (2,5 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_chrome",
+        "label": "Kılıç (2,5 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
         "id": "kulp_1",
         "label": "6.3.1 · 50 cm siyah kulp",
         "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
@@ -1658,6 +1706,54 @@
       }
     ],
     "featured_images": [
+      {
+        "id": "magaza_yuvarlak_50_black",
+        "label": "Yuvarlak (3 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_50_chrome",
+        "label": "Yuvarlak (3 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_black",
+        "label": "Yuvarlak (3 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_chrome",
+        "label": "Yuvarlak (3 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_black",
+        "label": "Kılıç (2,5 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_chrome",
+        "label": "Kılıç (2,5 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_black",
+        "label": "Kılıç (2,5 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_chrome",
+        "label": "Kılıç (2,5 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_chrome_v1.png",
+        "pin_to_front": true
+      },
       {
         "id": "kulp_1",
         "label": "6.3.1 · 50 cm siyah kulp",
@@ -2158,6 +2254,54 @@
     ],
     "featured_images": [
       {
+        "id": "magaza_yuvarlak_50_black",
+        "label": "Yuvarlak (3 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_50_chrome",
+        "label": "Yuvarlak (3 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_black",
+        "label": "Yuvarlak (3 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_chrome",
+        "label": "Yuvarlak (3 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_black",
+        "label": "Kılıç (2,5 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_chrome",
+        "label": "Kılıç (2,5 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_black",
+        "label": "Kılıç (2,5 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_chrome",
+        "label": "Kılıç (2,5 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
         "id": "kulp_1",
         "label": "6.3.1 · 50 cm siyah kulp",
         "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
@@ -2657,6 +2801,54 @@
     ],
     "featured_images": [
       {
+        "id": "magaza_yuvarlak_50_black",
+        "label": "Yuvarlak (3 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_50_chrome",
+        "label": "Yuvarlak (3 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_black",
+        "label": "Yuvarlak (3 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_chrome",
+        "label": "Yuvarlak (3 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_black",
+        "label": "Kılıç (2,5 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_chrome",
+        "label": "Kılıç (2,5 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_black",
+        "label": "Kılıç (2,5 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_chrome",
+        "label": "Kılıç (2,5 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
         "id": "kulp_1",
         "label": "6.3.1 · 50 cm siyah kulp",
         "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
@@ -3155,6 +3347,54 @@
       }
     ],
     "featured_images": [
+      {
+        "id": "magaza_yuvarlak_50_black",
+        "label": "Yuvarlak (3 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_50_chrome",
+        "label": "Yuvarlak (3 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_black",
+        "label": "Yuvarlak (3 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_yuvarlak_25_chrome",
+        "label": "Yuvarlak (3 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_yuvarlak_25_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_black",
+        "label": "Kılıç (2,5 cm) · 50 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_50_chrome",
+        "label": "Kılıç (2,5 cm) · 50 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_50_chrome_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_black",
+        "label": "Kılıç (2,5 cm) · 25 cm · Siyah",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_black_v1.png",
+        "pin_to_front": true
+      },
+      {
+        "id": "magaza_kilic_25_chrome",
+        "label": "Kılıç (2,5 cm) · 25 cm · Krom",
+        "path": "gorseller/AI_Alternatif_6_3/magaza_kulplari/magaza_kilic_25_chrome_v1.png",
+        "pin_to_front": true
+      },
       {
         "id": "kulp_1",
         "label": "6.3.1 · 50 cm siyah kulp",
