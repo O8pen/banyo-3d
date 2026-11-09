@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.33.0';
+import { prepareMaterials, constructionLighting } from './gercekci.js?v=0.34.0';
 
 const $ = s => document.querySelector(s);
 const ust = $('#ust'), canvas = $('#view'), status = $('#status');
@@ -12,7 +12,7 @@ const asset = path => CACHE_KEY ? `${path}?v=${encodeURIComponent(CACHE_KEY)}` :
 const SCENES = await fetch(asset('sahneler.json')).then(r => { if (!r.ok) throw new Error('Sahne listesi yüklenemedi'); return r.json(); });
 const SLUGS = Object.fromEntries(SCENES.map(c => [c.id, c.slug]));
 const choosers = [$('#scene-old'), $('#scene-new')];
-for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19,20]].entries()) {
+for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19,20,21,22,23,24]].entries()) {
   const chooser=choosers[i];
   chooser.append(new Option('Sahne seçin…', ''));
   chooser.options[0].disabled=true;
@@ -23,8 +23,10 @@ for (const [i, ids] of [[2,4,5,3,6,7,8,14,15], [17,9,10,11,12,13,16,18,19,20]].e
 }
 function fotograflar(config) {
   if(config.gallery_photos) {
+    const first=(config.featured_images||[]).slice().sort((a,b)=>(b.scene_id===config.id)-(a.scene_id===config.id));
+    const featured=first.map(v=>`${v.id}.jpg`);
     const ai=config.ai_variants?.length?config.ai_variants.map(v=>`yapay_zeka_${v.wood_id}.jpg`):(config.ai_reference?['yapay_zeka.jpg']:[]);
-    return [...ai,'olculu.svg','mobilya_olculeri.svg',...config.gallery_photos.map((_,i)=>`referans_${i+1}.jpg`)];
+    return [...featured,...ai,'olculu.svg','mobilya_olculeri.svg',...config.gallery_photos.map((_,i)=>`referans_${i+1}.jpg`)];
   }
   if (config.technical && config.technical_sheets !== false) return ['olculu.svg','su_tesisati.svg','elektrik_tesisati.svg','gomme_dus.svg','mobilya_olculeri.svg','referans.jpg'];
   if (config.render_ready === false) return ['olculu.svg', 'mobilya_olculeri.svg', 'referans.jpg'];
@@ -149,16 +151,17 @@ async function loadModel(index) {
     realistic?.dispose();realistic=null;
     if (root) { world.remove(root); disposeModel(root); }
     root = gltf.scene;
+    const config=SCENES.find(c=>c.id===index),built=config.layout==='built_6_3';
     root.traverse(o => {
       if (o.userData.service_layer) o.visible = false;
       if (!o.isMesh) return;
       for (const m of (Array.isArray(o.material) ? o.material : [o.material])) {
-        if (m.transmission > 0 && index!==20) { m.transmission = 0; m.transparent = true; m.opacity = .18; m.depthWrite = false; m.side = THREE.DoubleSide; m.needsUpdate = true; }
+        if (m.transmission > 0 && !built) { m.transmission = 0; m.transparent = true; m.opacity = .18; m.depthWrite = false; m.side = THREE.DoubleSide; m.needsUpdate = true; }
         m.envMapIntensity = .65;
       }
     });
     world.add(root);
-    if(index===20){const config=SCENES.find(c=>c.id===index);const batch=prepareMaterials(root,renderer,config);realistic=constructionLighting(world,root,renderer,camera,sun,ambient,config,batch);}
+    if(built){const batch=prepareMaterials(root,renderer,config);realistic=constructionLighting(world,root,renderer,camera,sun,ambient,config,batch);}
     loaded = index; setRoof(roofVisible); updateWoodPicker(SCENES.find(c=>c.id===index));status.hidden = true;
   } catch (error) {
     if (token !== request) return;
@@ -304,7 +307,8 @@ function galeriGoster(index) {
   galeri.replaceChildren(); noktalar.replaceChildren();
   const config = SCENES.find(c => c.id === index);
   for (const ad of fotograflar(config)) {
-    const variant=config.ai_variants?.find(v=>ad===`yapay_zeka_${v.wood_id}.jpg`);
+    const featured=config.featured_images?.find(v=>ad===`${v.id}.jpg`);
+    const variant=featured||config.ai_variants?.find(v=>ad===`yapay_zeka_${v.wood_id}.jpg`);
     const kare = document.createElement('div'); kare.className = 'kare';
     const durum = document.createElement('span'); durum.className = 'durum'; durum.textContent = 'Yükleniyor…';
     const img = document.createElement('img'); img.alt = `${config.label} · ${variant?variant.label+' · yapay zekâ görseli':ad==='yapay_zeka.jpg' ? config.ai_description : ad.startsWith('referans') ? (config.gallery_photos ? 'gerçek banyo / ürün fotoğrafı' : config.ai_reference ? 'sahneden üretilmiş yapay zekâ görseli' : 'stil referansı') : ad.split('.')[0]}`; img.decoding = 'async'; img.draggable = false;
@@ -315,7 +319,9 @@ function galeriGoster(index) {
       const caption=document.createElement('span');caption.className='resim-etiketi';caption.textContent=variant.label;kare.append(caption);
     }
     galeri.append(kare);
-    resimYukle(img, asset(`fotograflar/${SLUGS[index]}_${ad}`), durum);
+    const sharedPhoto=config.gallery_source_slug && (ad.startsWith('yapay_zeka_')||ad.startsWith('referans_'));
+    const photo=featured?`fotograflar/kulp_secenekleri/${ad}`:`fotograflar/${sharedPhoto?config.gallery_source_slug:SLUGS[index]}_${ad}`;
+    resimYukle(img, asset(photo), durum);
     noktalar.append(document.createElement('i'));
   }
   galeri.scrollLeft = 0; noktaGuncelle();

@@ -1169,6 +1169,2028 @@
         "label": "13 · Sıcak tonlu ahşap",
         "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_13_v1.png"
       }
+    ],
+    "featured_images": [
+      {
+        "id": "kulp_1",
+        "label": "6.3.1 · 50 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
+        "scene_id": 21
+      },
+      {
+        "id": "kulp_2",
+        "label": "6.3.2 · 50 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_2_v1.png",
+        "scene_id": 22
+      },
+      {
+        "id": "kulp_3",
+        "label": "6.3.3 · 25 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_3_v1.png",
+        "scene_id": 23
+      },
+      {
+        "id": "kulp_4",
+        "label": "6.3.4 · 25 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_4_v1.png",
+        "scene_id": 24
+      }
     ]
+  },
+  {
+    "id": 21,
+    "slug": "21_Alternatif_6_3_1",
+    "technical": false,
+    "label": "Alternatif_6_3_1",
+    "layout": "built_6_3",
+    "gallery_photos": [
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48 (1).jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.35.46.jpeg"
+    ],
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 90,
+    "mirror_cm": 80,
+    "towers": [
+      {
+        "width_cm": 35,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 102,
+    "flush_center_cm": 91,
+    "wc_wall_cm": [
+      92,
+      14
+    ],
+    "wc_upper_cabinets": {
+      "count": 2,
+      "width_cm": 46,
+      "depth_cm": 14,
+      "height_cm": 50,
+      "bottom_cm": 158
+    },
+    "shower_cm": [
+      90,
+      140
+    ],
+    "shower_side_niche_center_cm": 205,
+    "shower_side_niche_cm": [
+      100,
+      30,
+      9
+    ],
+    "rear_tower_left": true,
+    "wc_wall_height_cm": 120,
+    "technical_sheets": false,
+    "shower_door": {
+      "width_cm": 70,
+      "opening": "inward",
+      "leaf_count": 1,
+      "display_angle_deg": 35,
+      "panel": "side",
+      "hinge": "front"
+    },
+    "mirror_shape": "round",
+    "mirror_center_cm": 152,
+    "shower_side_niche_bottom_cm": 103,
+    "vent_spec": {
+      "width_cm": 40,
+      "height_cm": 40,
+      "bottom_cm": 153,
+      "rear_gap_cm": 20
+    },
+    "rear_furniture_gap_cm": 5,
+    "shower_set": {
+      "rain": {
+        "height_cm": 210,
+        "right_distance_cm": 45
+      },
+      "control": {
+        "height_cm": 130,
+        "right_distance_cm": 45
+      },
+      "hand": {
+        "height_cm": 165,
+        "right_distance_cm": 67.5
+      },
+      "outlet": {
+        "height_cm": 100,
+        "right_distance_cm": 22.5
+      },
+      "mixer": {
+        "height_cm": 80,
+        "right_distance_cm": 45
+      },
+      "head_size_cm": 25,
+      "head_reach_cm": 39
+    },
+    "room_width_cm": 220,
+    "vanity_bottom_cm": 15,
+    "vanity_body_height_cm": 55,
+    "basin_height_cm": 15,
+    "furniture_guide": true,
+    "reference_photo": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+    "wood_options": [
+      {
+        "id": "1",
+        "label": "Fotoğraf 1 · sıcak meşe",
+        "path": "malzemeler/alternatif_6_3/mese_1.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.06.18.jpeg",
+        "photo_sample": true
+      },
+      {
+        "id": "2",
+        "label": "Örnek 2 · VG 2220",
+        "path": "malzemeler/alternatif_6_3/mese_2.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.07.28.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "3",
+        "label": "Örnek 3 · altın meşe",
+        "path": "malzemeler/alternatif_6_3/mese_3.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "4",
+        "label": "Örnek 4 · koyu meşe",
+        "path": "malzemeler/alternatif_6_3/mese_4.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13 (1).jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "5",
+        "label": "Örnek 5 · rustik meşe",
+        "path": "malzemeler/alternatif_6_3/mese_5.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.14.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "6",
+        "label": "Fotoğraf 6 · doğal meşe",
+        "path": "malzemeler/alternatif_6_3/mese_6.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.10.30.jpeg",
+        "photo_sample": true
+      }
+    ],
+    "right_tower": {
+      "start_cm": 96,
+      "width_cm": 35,
+      "depth_cm": 14,
+      "bottom_cm": 15,
+      "height_cm": 193,
+      "open_shelves": 5
+    },
+    "reference_appearance": {
+      "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+      "ceiling_srgb": [
+        131,
+        123,
+        115
+      ],
+      "light_srgb": [
+        126.05,
+        118.34,
+        106.89
+      ],
+      "dark_srgb": [
+        78.33,
+        72.09,
+        67.65
+      ],
+      "led_spill": {
+        "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+        "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+        "ceiling": {
+          "source_x": [
+            1113.549094898519,
+            1151.9473395501918
+          ],
+          "length_cm": 30,
+          "offset_below_room_top_cm": 6,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                146,
+                143,
+                130
+              ],
+              "strength": 1,
+              "source_y": 426.84711046086323
+            },
+            {
+              "at": 0.065934,
+              "srgb": [
+                249,
+                246,
+                227
+              ],
+              "strength": 1,
+              "source_y": 433.4308705193855
+            },
+            {
+              "at": 0.175824,
+              "srgb": [
+                239,
+                237,
+                212
+              ],
+              "strength": 1,
+              "source_y": 444.403803950256
+            },
+            {
+              "at": 0.252747,
+              "srgb": [
+                236,
+                232,
+                202
+              ],
+              "strength": 1,
+              "source_y": 452.0848573518654
+            },
+            {
+              "at": 0.318681,
+              "srgb": [
+                170,
+                164,
+                120
+              ],
+              "strength": 1,
+              "source_y": 458.6686174103877
+            },
+            {
+              "at": 0.450549,
+              "srgb": [
+                160,
+                151,
+                112
+              ],
+              "strength": 1,
+              "source_y": 471.83613752743236
+            },
+            {
+              "at": 0.604396,
+              "srgb": [
+                145,
+                135,
+                100
+              ],
+              "strength": 0.808704,
+              "source_y": 487.19824433065105
+            },
+            {
+              "at": 0.725275,
+              "srgb": [
+                131,
+                122,
+                91
+              ],
+              "strength": 0.5,
+              "source_y": 499.26847110460864
+            },
+            {
+              "at": 0.868132,
+              "srgb": [
+                121,
+                110,
+                83
+              ],
+              "strength": 0.145152,
+              "source_y": 513.5332845647404
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                116,
+                107,
+                82
+              ],
+              "strength": 0,
+              "source_y": 526.7008046817849
+            }
+          ]
+        },
+        "niche": {
+          "source_x": [
+            1535.9297860669226,
+            1601.7553483269335
+          ],
+          "length_cm": 18,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                253,
+                252,
+                235
+              ],
+              "strength": 1,
+              "source_y": 685.8083394294075
+            },
+            {
+              "at": 0.090909,
+              "srgb": [
+                250,
+                249,
+                216
+              ],
+              "strength": 1,
+              "source_y": 691.2948061448427
+            },
+            {
+              "at": 0.181818,
+              "srgb": [
+                227,
+                225,
+                188
+              ],
+              "strength": 1,
+              "source_y": 696.781272860278
+            },
+            {
+              "at": 0.272727,
+              "srgb": [
+                202,
+                199,
+                166
+              ],
+              "strength": 1,
+              "source_y": 702.2677395757132
+            },
+            {
+              "at": 0.363636,
+              "srgb": [
+                183,
+                179,
+                142
+              ],
+              "strength": 1,
+              "source_y": 707.7542062911485
+            },
+            {
+              "at": 0.454545,
+              "srgb": [
+                164,
+                159,
+                123
+              ],
+              "strength": 1,
+              "source_y": 713.2406730065837
+            },
+            {
+              "at": 0.545455,
+              "srgb": [
+                145,
+                139,
+                110
+              ],
+              "strength": 1,
+              "source_y": 718.727139722019
+            },
+            {
+              "at": 0.636364,
+              "srgb": [
+                130,
+                123,
+                100
+              ],
+              "strength": 0.896,
+              "source_y": 724.2136064374542
+            },
+            {
+              "at": 0.818182,
+              "srgb": [
+                141,
+                134,
+                117
+              ],
+              "strength": 0.352,
+              "source_y": 735.1865398683248
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                135,
+                128,
+                111
+              ],
+              "strength": 0,
+              "source_y": 746.1594732991954
+            }
+          ]
+        }
+      }
+    },
+    "ai_reference": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png",
+    "ai_description": "Gerçek banyo fotoğrafı üzerine yapay zekâ ile eklenmiş dolap, lavabo ve duşakabin · Örnek 4 koyu meşe",
+    "ai_variants": [
+      {
+        "wood_id": "1",
+        "label": "1 · Sıcak meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_1_v1.png"
+      },
+      {
+        "wood_id": "2",
+        "label": "2 · VG 2220",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_2_v1.png"
+      },
+      {
+        "wood_id": "3",
+        "label": "3 · Altın meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_3_v1.png"
+      },
+      {
+        "wood_id": "4",
+        "label": "4 · Koyu meşe",
+        "path": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png"
+      },
+      {
+        "wood_id": "5",
+        "label": "5 · Rustik meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_5_v1.png"
+      },
+      {
+        "wood_id": "6",
+        "label": "6 · Doğal meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_6_v1.png"
+      },
+      {
+        "wood_id": "7",
+        "label": "7 · Mat grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_7_v1.png"
+      },
+      {
+        "wood_id": "8",
+        "label": "8 · İnce damarlı kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_8_v1.png"
+      },
+      {
+        "wood_id": "9",
+        "label": "9 · Sıcak kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_9_v1.png"
+      },
+      {
+        "wood_id": "10",
+        "label": "10 · Doğal kahverengi kaplama",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_10_v1.png"
+      },
+      {
+        "wood_id": "11",
+        "label": "11 · Açık kahverengi ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_11_v1.png"
+      },
+      {
+        "wood_id": "12",
+        "label": "12 · Mat koyu grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_12_v1.png"
+      },
+      {
+        "wood_id": "13",
+        "label": "13 · Sıcak tonlu ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_13_v1.png"
+      }
+    ],
+    "featured_images": [
+      {
+        "id": "kulp_1",
+        "label": "6.3.1 · 50 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
+        "scene_id": 21
+      },
+      {
+        "id": "kulp_2",
+        "label": "6.3.2 · 50 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_2_v1.png",
+        "scene_id": 22
+      },
+      {
+        "id": "kulp_3",
+        "label": "6.3.3 · 25 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_3_v1.png",
+        "scene_id": 23
+      },
+      {
+        "id": "kulp_4",
+        "label": "6.3.4 · 25 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_4_v1.png",
+        "scene_id": 24
+      }
+    ],
+    "base_scene_id": 20,
+    "gallery_source_slug": "20_Alternatif_6_3",
+    "cabinet_handles": {
+      "length_cm": 50,
+      "finish": "black",
+      "edge_inset_cm": 4,
+      "bar_diameter_cm": 1.2,
+      "clearance_cm": 2.8,
+      "drawer_alignment": "horizontal_centred",
+      "tall_alignment": "vertical_right_edge",
+      "tall_centre_height_cm": 142.5
+    }
+  },
+  {
+    "id": 22,
+    "slug": "22_Alternatif_6_3_2",
+    "technical": false,
+    "label": "Alternatif_6_3_2",
+    "layout": "built_6_3",
+    "gallery_photos": [
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48 (1).jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.35.46.jpeg"
+    ],
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 90,
+    "mirror_cm": 80,
+    "towers": [
+      {
+        "width_cm": 35,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 102,
+    "flush_center_cm": 91,
+    "wc_wall_cm": [
+      92,
+      14
+    ],
+    "wc_upper_cabinets": {
+      "count": 2,
+      "width_cm": 46,
+      "depth_cm": 14,
+      "height_cm": 50,
+      "bottom_cm": 158
+    },
+    "shower_cm": [
+      90,
+      140
+    ],
+    "shower_side_niche_center_cm": 205,
+    "shower_side_niche_cm": [
+      100,
+      30,
+      9
+    ],
+    "rear_tower_left": true,
+    "wc_wall_height_cm": 120,
+    "technical_sheets": false,
+    "shower_door": {
+      "width_cm": 70,
+      "opening": "inward",
+      "leaf_count": 1,
+      "display_angle_deg": 35,
+      "panel": "side",
+      "hinge": "front"
+    },
+    "mirror_shape": "round",
+    "mirror_center_cm": 152,
+    "shower_side_niche_bottom_cm": 103,
+    "vent_spec": {
+      "width_cm": 40,
+      "height_cm": 40,
+      "bottom_cm": 153,
+      "rear_gap_cm": 20
+    },
+    "rear_furniture_gap_cm": 5,
+    "shower_set": {
+      "rain": {
+        "height_cm": 210,
+        "right_distance_cm": 45
+      },
+      "control": {
+        "height_cm": 130,
+        "right_distance_cm": 45
+      },
+      "hand": {
+        "height_cm": 165,
+        "right_distance_cm": 67.5
+      },
+      "outlet": {
+        "height_cm": 100,
+        "right_distance_cm": 22.5
+      },
+      "mixer": {
+        "height_cm": 80,
+        "right_distance_cm": 45
+      },
+      "head_size_cm": 25,
+      "head_reach_cm": 39
+    },
+    "room_width_cm": 220,
+    "vanity_bottom_cm": 15,
+    "vanity_body_height_cm": 55,
+    "basin_height_cm": 15,
+    "furniture_guide": true,
+    "reference_photo": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+    "wood_options": [
+      {
+        "id": "1",
+        "label": "Fotoğraf 1 · sıcak meşe",
+        "path": "malzemeler/alternatif_6_3/mese_1.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.06.18.jpeg",
+        "photo_sample": true
+      },
+      {
+        "id": "2",
+        "label": "Örnek 2 · VG 2220",
+        "path": "malzemeler/alternatif_6_3/mese_2.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.07.28.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "3",
+        "label": "Örnek 3 · altın meşe",
+        "path": "malzemeler/alternatif_6_3/mese_3.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "4",
+        "label": "Örnek 4 · koyu meşe",
+        "path": "malzemeler/alternatif_6_3/mese_4.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13 (1).jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "5",
+        "label": "Örnek 5 · rustik meşe",
+        "path": "malzemeler/alternatif_6_3/mese_5.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.14.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "6",
+        "label": "Fotoğraf 6 · doğal meşe",
+        "path": "malzemeler/alternatif_6_3/mese_6.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.10.30.jpeg",
+        "photo_sample": true
+      }
+    ],
+    "right_tower": {
+      "start_cm": 96,
+      "width_cm": 35,
+      "depth_cm": 14,
+      "bottom_cm": 15,
+      "height_cm": 193,
+      "open_shelves": 5
+    },
+    "reference_appearance": {
+      "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+      "ceiling_srgb": [
+        131,
+        123,
+        115
+      ],
+      "light_srgb": [
+        126.05,
+        118.34,
+        106.89
+      ],
+      "dark_srgb": [
+        78.33,
+        72.09,
+        67.65
+      ],
+      "led_spill": {
+        "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+        "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+        "ceiling": {
+          "source_x": [
+            1113.549094898519,
+            1151.9473395501918
+          ],
+          "length_cm": 30,
+          "offset_below_room_top_cm": 6,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                146,
+                143,
+                130
+              ],
+              "strength": 1,
+              "source_y": 426.84711046086323
+            },
+            {
+              "at": 0.065934,
+              "srgb": [
+                249,
+                246,
+                227
+              ],
+              "strength": 1,
+              "source_y": 433.4308705193855
+            },
+            {
+              "at": 0.175824,
+              "srgb": [
+                239,
+                237,
+                212
+              ],
+              "strength": 1,
+              "source_y": 444.403803950256
+            },
+            {
+              "at": 0.252747,
+              "srgb": [
+                236,
+                232,
+                202
+              ],
+              "strength": 1,
+              "source_y": 452.0848573518654
+            },
+            {
+              "at": 0.318681,
+              "srgb": [
+                170,
+                164,
+                120
+              ],
+              "strength": 1,
+              "source_y": 458.6686174103877
+            },
+            {
+              "at": 0.450549,
+              "srgb": [
+                160,
+                151,
+                112
+              ],
+              "strength": 1,
+              "source_y": 471.83613752743236
+            },
+            {
+              "at": 0.604396,
+              "srgb": [
+                145,
+                135,
+                100
+              ],
+              "strength": 0.808704,
+              "source_y": 487.19824433065105
+            },
+            {
+              "at": 0.725275,
+              "srgb": [
+                131,
+                122,
+                91
+              ],
+              "strength": 0.5,
+              "source_y": 499.26847110460864
+            },
+            {
+              "at": 0.868132,
+              "srgb": [
+                121,
+                110,
+                83
+              ],
+              "strength": 0.145152,
+              "source_y": 513.5332845647404
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                116,
+                107,
+                82
+              ],
+              "strength": 0,
+              "source_y": 526.7008046817849
+            }
+          ]
+        },
+        "niche": {
+          "source_x": [
+            1535.9297860669226,
+            1601.7553483269335
+          ],
+          "length_cm": 18,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                253,
+                252,
+                235
+              ],
+              "strength": 1,
+              "source_y": 685.8083394294075
+            },
+            {
+              "at": 0.090909,
+              "srgb": [
+                250,
+                249,
+                216
+              ],
+              "strength": 1,
+              "source_y": 691.2948061448427
+            },
+            {
+              "at": 0.181818,
+              "srgb": [
+                227,
+                225,
+                188
+              ],
+              "strength": 1,
+              "source_y": 696.781272860278
+            },
+            {
+              "at": 0.272727,
+              "srgb": [
+                202,
+                199,
+                166
+              ],
+              "strength": 1,
+              "source_y": 702.2677395757132
+            },
+            {
+              "at": 0.363636,
+              "srgb": [
+                183,
+                179,
+                142
+              ],
+              "strength": 1,
+              "source_y": 707.7542062911485
+            },
+            {
+              "at": 0.454545,
+              "srgb": [
+                164,
+                159,
+                123
+              ],
+              "strength": 1,
+              "source_y": 713.2406730065837
+            },
+            {
+              "at": 0.545455,
+              "srgb": [
+                145,
+                139,
+                110
+              ],
+              "strength": 1,
+              "source_y": 718.727139722019
+            },
+            {
+              "at": 0.636364,
+              "srgb": [
+                130,
+                123,
+                100
+              ],
+              "strength": 0.896,
+              "source_y": 724.2136064374542
+            },
+            {
+              "at": 0.818182,
+              "srgb": [
+                141,
+                134,
+                117
+              ],
+              "strength": 0.352,
+              "source_y": 735.1865398683248
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                135,
+                128,
+                111
+              ],
+              "strength": 0,
+              "source_y": 746.1594732991954
+            }
+          ]
+        }
+      }
+    },
+    "ai_reference": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png",
+    "ai_description": "Gerçek banyo fotoğrafı üzerine yapay zekâ ile eklenmiş dolap, lavabo ve duşakabin · Örnek 4 koyu meşe",
+    "ai_variants": [
+      {
+        "wood_id": "1",
+        "label": "1 · Sıcak meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_1_v1.png"
+      },
+      {
+        "wood_id": "2",
+        "label": "2 · VG 2220",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_2_v1.png"
+      },
+      {
+        "wood_id": "3",
+        "label": "3 · Altın meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_3_v1.png"
+      },
+      {
+        "wood_id": "4",
+        "label": "4 · Koyu meşe",
+        "path": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png"
+      },
+      {
+        "wood_id": "5",
+        "label": "5 · Rustik meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_5_v1.png"
+      },
+      {
+        "wood_id": "6",
+        "label": "6 · Doğal meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_6_v1.png"
+      },
+      {
+        "wood_id": "7",
+        "label": "7 · Mat grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_7_v1.png"
+      },
+      {
+        "wood_id": "8",
+        "label": "8 · İnce damarlı kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_8_v1.png"
+      },
+      {
+        "wood_id": "9",
+        "label": "9 · Sıcak kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_9_v1.png"
+      },
+      {
+        "wood_id": "10",
+        "label": "10 · Doğal kahverengi kaplama",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_10_v1.png"
+      },
+      {
+        "wood_id": "11",
+        "label": "11 · Açık kahverengi ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_11_v1.png"
+      },
+      {
+        "wood_id": "12",
+        "label": "12 · Mat koyu grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_12_v1.png"
+      },
+      {
+        "wood_id": "13",
+        "label": "13 · Sıcak tonlu ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_13_v1.png"
+      }
+    ],
+    "featured_images": [
+      {
+        "id": "kulp_1",
+        "label": "6.3.1 · 50 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
+        "scene_id": 21
+      },
+      {
+        "id": "kulp_2",
+        "label": "6.3.2 · 50 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_2_v1.png",
+        "scene_id": 22
+      },
+      {
+        "id": "kulp_3",
+        "label": "6.3.3 · 25 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_3_v1.png",
+        "scene_id": 23
+      },
+      {
+        "id": "kulp_4",
+        "label": "6.3.4 · 25 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_4_v1.png",
+        "scene_id": 24
+      }
+    ],
+    "base_scene_id": 20,
+    "gallery_source_slug": "20_Alternatif_6_3",
+    "cabinet_handles": {
+      "length_cm": 50,
+      "finish": "chrome",
+      "edge_inset_cm": 4,
+      "bar_diameter_cm": 1.2,
+      "clearance_cm": 2.8,
+      "drawer_alignment": "horizontal_centred",
+      "tall_alignment": "vertical_right_edge",
+      "tall_centre_height_cm": 142.5
+    }
+  },
+  {
+    "id": 23,
+    "slug": "23_Alternatif_6_3_3",
+    "technical": false,
+    "label": "Alternatif_6_3_3",
+    "layout": "built_6_3",
+    "gallery_photos": [
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48 (1).jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.35.46.jpeg"
+    ],
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 90,
+    "mirror_cm": 80,
+    "towers": [
+      {
+        "width_cm": 35,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 102,
+    "flush_center_cm": 91,
+    "wc_wall_cm": [
+      92,
+      14
+    ],
+    "wc_upper_cabinets": {
+      "count": 2,
+      "width_cm": 46,
+      "depth_cm": 14,
+      "height_cm": 50,
+      "bottom_cm": 158
+    },
+    "shower_cm": [
+      90,
+      140
+    ],
+    "shower_side_niche_center_cm": 205,
+    "shower_side_niche_cm": [
+      100,
+      30,
+      9
+    ],
+    "rear_tower_left": true,
+    "wc_wall_height_cm": 120,
+    "technical_sheets": false,
+    "shower_door": {
+      "width_cm": 70,
+      "opening": "inward",
+      "leaf_count": 1,
+      "display_angle_deg": 35,
+      "panel": "side",
+      "hinge": "front"
+    },
+    "mirror_shape": "round",
+    "mirror_center_cm": 152,
+    "shower_side_niche_bottom_cm": 103,
+    "vent_spec": {
+      "width_cm": 40,
+      "height_cm": 40,
+      "bottom_cm": 153,
+      "rear_gap_cm": 20
+    },
+    "rear_furniture_gap_cm": 5,
+    "shower_set": {
+      "rain": {
+        "height_cm": 210,
+        "right_distance_cm": 45
+      },
+      "control": {
+        "height_cm": 130,
+        "right_distance_cm": 45
+      },
+      "hand": {
+        "height_cm": 165,
+        "right_distance_cm": 67.5
+      },
+      "outlet": {
+        "height_cm": 100,
+        "right_distance_cm": 22.5
+      },
+      "mixer": {
+        "height_cm": 80,
+        "right_distance_cm": 45
+      },
+      "head_size_cm": 25,
+      "head_reach_cm": 39
+    },
+    "room_width_cm": 220,
+    "vanity_bottom_cm": 15,
+    "vanity_body_height_cm": 55,
+    "basin_height_cm": 15,
+    "furniture_guide": true,
+    "reference_photo": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+    "wood_options": [
+      {
+        "id": "1",
+        "label": "Fotoğraf 1 · sıcak meşe",
+        "path": "malzemeler/alternatif_6_3/mese_1.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.06.18.jpeg",
+        "photo_sample": true
+      },
+      {
+        "id": "2",
+        "label": "Örnek 2 · VG 2220",
+        "path": "malzemeler/alternatif_6_3/mese_2.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.07.28.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "3",
+        "label": "Örnek 3 · altın meşe",
+        "path": "malzemeler/alternatif_6_3/mese_3.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "4",
+        "label": "Örnek 4 · koyu meşe",
+        "path": "malzemeler/alternatif_6_3/mese_4.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13 (1).jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "5",
+        "label": "Örnek 5 · rustik meşe",
+        "path": "malzemeler/alternatif_6_3/mese_5.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.14.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "6",
+        "label": "Fotoğraf 6 · doğal meşe",
+        "path": "malzemeler/alternatif_6_3/mese_6.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.10.30.jpeg",
+        "photo_sample": true
+      }
+    ],
+    "right_tower": {
+      "start_cm": 96,
+      "width_cm": 35,
+      "depth_cm": 14,
+      "bottom_cm": 15,
+      "height_cm": 193,
+      "open_shelves": 5
+    },
+    "reference_appearance": {
+      "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+      "ceiling_srgb": [
+        131,
+        123,
+        115
+      ],
+      "light_srgb": [
+        126.05,
+        118.34,
+        106.89
+      ],
+      "dark_srgb": [
+        78.33,
+        72.09,
+        67.65
+      ],
+      "led_spill": {
+        "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+        "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+        "ceiling": {
+          "source_x": [
+            1113.549094898519,
+            1151.9473395501918
+          ],
+          "length_cm": 30,
+          "offset_below_room_top_cm": 6,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                146,
+                143,
+                130
+              ],
+              "strength": 1,
+              "source_y": 426.84711046086323
+            },
+            {
+              "at": 0.065934,
+              "srgb": [
+                249,
+                246,
+                227
+              ],
+              "strength": 1,
+              "source_y": 433.4308705193855
+            },
+            {
+              "at": 0.175824,
+              "srgb": [
+                239,
+                237,
+                212
+              ],
+              "strength": 1,
+              "source_y": 444.403803950256
+            },
+            {
+              "at": 0.252747,
+              "srgb": [
+                236,
+                232,
+                202
+              ],
+              "strength": 1,
+              "source_y": 452.0848573518654
+            },
+            {
+              "at": 0.318681,
+              "srgb": [
+                170,
+                164,
+                120
+              ],
+              "strength": 1,
+              "source_y": 458.6686174103877
+            },
+            {
+              "at": 0.450549,
+              "srgb": [
+                160,
+                151,
+                112
+              ],
+              "strength": 1,
+              "source_y": 471.83613752743236
+            },
+            {
+              "at": 0.604396,
+              "srgb": [
+                145,
+                135,
+                100
+              ],
+              "strength": 0.808704,
+              "source_y": 487.19824433065105
+            },
+            {
+              "at": 0.725275,
+              "srgb": [
+                131,
+                122,
+                91
+              ],
+              "strength": 0.5,
+              "source_y": 499.26847110460864
+            },
+            {
+              "at": 0.868132,
+              "srgb": [
+                121,
+                110,
+                83
+              ],
+              "strength": 0.145152,
+              "source_y": 513.5332845647404
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                116,
+                107,
+                82
+              ],
+              "strength": 0,
+              "source_y": 526.7008046817849
+            }
+          ]
+        },
+        "niche": {
+          "source_x": [
+            1535.9297860669226,
+            1601.7553483269335
+          ],
+          "length_cm": 18,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                253,
+                252,
+                235
+              ],
+              "strength": 1,
+              "source_y": 685.8083394294075
+            },
+            {
+              "at": 0.090909,
+              "srgb": [
+                250,
+                249,
+                216
+              ],
+              "strength": 1,
+              "source_y": 691.2948061448427
+            },
+            {
+              "at": 0.181818,
+              "srgb": [
+                227,
+                225,
+                188
+              ],
+              "strength": 1,
+              "source_y": 696.781272860278
+            },
+            {
+              "at": 0.272727,
+              "srgb": [
+                202,
+                199,
+                166
+              ],
+              "strength": 1,
+              "source_y": 702.2677395757132
+            },
+            {
+              "at": 0.363636,
+              "srgb": [
+                183,
+                179,
+                142
+              ],
+              "strength": 1,
+              "source_y": 707.7542062911485
+            },
+            {
+              "at": 0.454545,
+              "srgb": [
+                164,
+                159,
+                123
+              ],
+              "strength": 1,
+              "source_y": 713.2406730065837
+            },
+            {
+              "at": 0.545455,
+              "srgb": [
+                145,
+                139,
+                110
+              ],
+              "strength": 1,
+              "source_y": 718.727139722019
+            },
+            {
+              "at": 0.636364,
+              "srgb": [
+                130,
+                123,
+                100
+              ],
+              "strength": 0.896,
+              "source_y": 724.2136064374542
+            },
+            {
+              "at": 0.818182,
+              "srgb": [
+                141,
+                134,
+                117
+              ],
+              "strength": 0.352,
+              "source_y": 735.1865398683248
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                135,
+                128,
+                111
+              ],
+              "strength": 0,
+              "source_y": 746.1594732991954
+            }
+          ]
+        }
+      }
+    },
+    "ai_reference": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png",
+    "ai_description": "Gerçek banyo fotoğrafı üzerine yapay zekâ ile eklenmiş dolap, lavabo ve duşakabin · Örnek 4 koyu meşe",
+    "ai_variants": [
+      {
+        "wood_id": "1",
+        "label": "1 · Sıcak meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_1_v1.png"
+      },
+      {
+        "wood_id": "2",
+        "label": "2 · VG 2220",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_2_v1.png"
+      },
+      {
+        "wood_id": "3",
+        "label": "3 · Altın meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_3_v1.png"
+      },
+      {
+        "wood_id": "4",
+        "label": "4 · Koyu meşe",
+        "path": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png"
+      },
+      {
+        "wood_id": "5",
+        "label": "5 · Rustik meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_5_v1.png"
+      },
+      {
+        "wood_id": "6",
+        "label": "6 · Doğal meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_6_v1.png"
+      },
+      {
+        "wood_id": "7",
+        "label": "7 · Mat grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_7_v1.png"
+      },
+      {
+        "wood_id": "8",
+        "label": "8 · İnce damarlı kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_8_v1.png"
+      },
+      {
+        "wood_id": "9",
+        "label": "9 · Sıcak kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_9_v1.png"
+      },
+      {
+        "wood_id": "10",
+        "label": "10 · Doğal kahverengi kaplama",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_10_v1.png"
+      },
+      {
+        "wood_id": "11",
+        "label": "11 · Açık kahverengi ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_11_v1.png"
+      },
+      {
+        "wood_id": "12",
+        "label": "12 · Mat koyu grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_12_v1.png"
+      },
+      {
+        "wood_id": "13",
+        "label": "13 · Sıcak tonlu ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_13_v1.png"
+      }
+    ],
+    "featured_images": [
+      {
+        "id": "kulp_1",
+        "label": "6.3.1 · 50 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
+        "scene_id": 21
+      },
+      {
+        "id": "kulp_2",
+        "label": "6.3.2 · 50 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_2_v1.png",
+        "scene_id": 22
+      },
+      {
+        "id": "kulp_3",
+        "label": "6.3.3 · 25 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_3_v1.png",
+        "scene_id": 23
+      },
+      {
+        "id": "kulp_4",
+        "label": "6.3.4 · 25 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_4_v1.png",
+        "scene_id": 24
+      }
+    ],
+    "base_scene_id": 20,
+    "gallery_source_slug": "20_Alternatif_6_3",
+    "cabinet_handles": {
+      "length_cm": 25,
+      "finish": "black",
+      "edge_inset_cm": 4,
+      "bar_diameter_cm": 1.2,
+      "clearance_cm": 2.8,
+      "drawer_alignment": "horizontal_centred",
+      "tall_alignment": "vertical_right_edge",
+      "tall_centre_height_cm": 142.5
+    }
+  },
+  {
+    "id": 24,
+    "slug": "24_Alternatif_6_3_4",
+    "technical": false,
+    "label": "Alternatif_6_3_4",
+    "layout": "built_6_3",
+    "gallery_photos": [
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48 (1).jpeg",
+      "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.35.46.jpeg"
+    ],
+    "published": true,
+    "render_ready": false,
+    "door_cm": 68,
+    "depth_cm": 50,
+    "vanity_cm": 90,
+    "mirror_cm": 80,
+    "towers": [
+      {
+        "width_cm": 35,
+        "style": "closed"
+      }
+    ],
+    "radiator_start_cm": 102,
+    "flush_center_cm": 91,
+    "wc_wall_cm": [
+      92,
+      14
+    ],
+    "wc_upper_cabinets": {
+      "count": 2,
+      "width_cm": 46,
+      "depth_cm": 14,
+      "height_cm": 50,
+      "bottom_cm": 158
+    },
+    "shower_cm": [
+      90,
+      140
+    ],
+    "shower_side_niche_center_cm": 205,
+    "shower_side_niche_cm": [
+      100,
+      30,
+      9
+    ],
+    "rear_tower_left": true,
+    "wc_wall_height_cm": 120,
+    "technical_sheets": false,
+    "shower_door": {
+      "width_cm": 70,
+      "opening": "inward",
+      "leaf_count": 1,
+      "display_angle_deg": 35,
+      "panel": "side",
+      "hinge": "front"
+    },
+    "mirror_shape": "round",
+    "mirror_center_cm": 152,
+    "shower_side_niche_bottom_cm": 103,
+    "vent_spec": {
+      "width_cm": 40,
+      "height_cm": 40,
+      "bottom_cm": 153,
+      "rear_gap_cm": 20
+    },
+    "rear_furniture_gap_cm": 5,
+    "shower_set": {
+      "rain": {
+        "height_cm": 210,
+        "right_distance_cm": 45
+      },
+      "control": {
+        "height_cm": 130,
+        "right_distance_cm": 45
+      },
+      "hand": {
+        "height_cm": 165,
+        "right_distance_cm": 67.5
+      },
+      "outlet": {
+        "height_cm": 100,
+        "right_distance_cm": 22.5
+      },
+      "mixer": {
+        "height_cm": 80,
+        "right_distance_cm": 45
+      },
+      "head_size_cm": 25,
+      "head_reach_cm": 39
+    },
+    "room_width_cm": 220,
+    "vanity_bottom_cm": 15,
+    "vanity_body_height_cm": 55,
+    "basin_height_cm": 15,
+    "furniture_guide": true,
+    "reference_photo": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+    "wood_options": [
+      {
+        "id": "1",
+        "label": "Fotoğraf 1 · sıcak meşe",
+        "path": "malzemeler/alternatif_6_3/mese_1.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.06.18.jpeg",
+        "photo_sample": true
+      },
+      {
+        "id": "2",
+        "label": "Örnek 2 · VG 2220",
+        "path": "malzemeler/alternatif_6_3/mese_2.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.07.28.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "3",
+        "label": "Örnek 3 · altın meşe",
+        "path": "malzemeler/alternatif_6_3/mese_3.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "4",
+        "label": "Örnek 4 · koyu meşe",
+        "path": "malzemeler/alternatif_6_3/mese_4.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.13 (1).jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "5",
+        "label": "Örnek 5 · rustik meşe",
+        "path": "malzemeler/alternatif_6_3/mese_5.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.09.14.jpeg",
+        "photo_sample": false
+      },
+      {
+        "id": "6",
+        "label": "Fotoğraf 6 · doğal meşe",
+        "path": "malzemeler/alternatif_6_3/mese_6.jpg",
+        "source": "WhatsApp Image 2026-10-18 at 22.10.30.jpeg",
+        "photo_sample": true
+      }
+    ],
+    "right_tower": {
+      "start_cm": 96,
+      "width_cm": 35,
+      "depth_cm": 14,
+      "bottom_cm": 15,
+      "height_cm": 193,
+      "open_shelves": 5
+    },
+    "reference_appearance": {
+      "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+      "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+      "ceiling_srgb": [
+        131,
+        123,
+        115
+      ],
+      "light_srgb": [
+        126.05,
+        118.34,
+        106.89
+      ],
+      "dark_srgb": [
+        78.33,
+        72.09,
+        67.65
+      ],
+      "led_spill": {
+        "source": "Fotolar_2026_1018/WhatsApp Image 2026-10-18 at 22.14.48.jpeg",
+        "source_sha256": "10af6bc04703d3d076b3df24cb017df1efc8ecc39d9a3568711850a1293da6e9",
+        "ceiling": {
+          "source_x": [
+            1113.549094898519,
+            1151.9473395501918
+          ],
+          "length_cm": 30,
+          "offset_below_room_top_cm": 6,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                146,
+                143,
+                130
+              ],
+              "strength": 1,
+              "source_y": 426.84711046086323
+            },
+            {
+              "at": 0.065934,
+              "srgb": [
+                249,
+                246,
+                227
+              ],
+              "strength": 1,
+              "source_y": 433.4308705193855
+            },
+            {
+              "at": 0.175824,
+              "srgb": [
+                239,
+                237,
+                212
+              ],
+              "strength": 1,
+              "source_y": 444.403803950256
+            },
+            {
+              "at": 0.252747,
+              "srgb": [
+                236,
+                232,
+                202
+              ],
+              "strength": 1,
+              "source_y": 452.0848573518654
+            },
+            {
+              "at": 0.318681,
+              "srgb": [
+                170,
+                164,
+                120
+              ],
+              "strength": 1,
+              "source_y": 458.6686174103877
+            },
+            {
+              "at": 0.450549,
+              "srgb": [
+                160,
+                151,
+                112
+              ],
+              "strength": 1,
+              "source_y": 471.83613752743236
+            },
+            {
+              "at": 0.604396,
+              "srgb": [
+                145,
+                135,
+                100
+              ],
+              "strength": 0.808704,
+              "source_y": 487.19824433065105
+            },
+            {
+              "at": 0.725275,
+              "srgb": [
+                131,
+                122,
+                91
+              ],
+              "strength": 0.5,
+              "source_y": 499.26847110460864
+            },
+            {
+              "at": 0.868132,
+              "srgb": [
+                121,
+                110,
+                83
+              ],
+              "strength": 0.145152,
+              "source_y": 513.5332845647404
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                116,
+                107,
+                82
+              ],
+              "strength": 0,
+              "source_y": 526.7008046817849
+            }
+          ]
+        },
+        "niche": {
+          "source_x": [
+            1535.9297860669226,
+            1601.7553483269335
+          ],
+          "length_cm": 18,
+          "samples": [
+            {
+              "at": 0.0,
+              "srgb": [
+                253,
+                252,
+                235
+              ],
+              "strength": 1,
+              "source_y": 685.8083394294075
+            },
+            {
+              "at": 0.090909,
+              "srgb": [
+                250,
+                249,
+                216
+              ],
+              "strength": 1,
+              "source_y": 691.2948061448427
+            },
+            {
+              "at": 0.181818,
+              "srgb": [
+                227,
+                225,
+                188
+              ],
+              "strength": 1,
+              "source_y": 696.781272860278
+            },
+            {
+              "at": 0.272727,
+              "srgb": [
+                202,
+                199,
+                166
+              ],
+              "strength": 1,
+              "source_y": 702.2677395757132
+            },
+            {
+              "at": 0.363636,
+              "srgb": [
+                183,
+                179,
+                142
+              ],
+              "strength": 1,
+              "source_y": 707.7542062911485
+            },
+            {
+              "at": 0.454545,
+              "srgb": [
+                164,
+                159,
+                123
+              ],
+              "strength": 1,
+              "source_y": 713.2406730065837
+            },
+            {
+              "at": 0.545455,
+              "srgb": [
+                145,
+                139,
+                110
+              ],
+              "strength": 1,
+              "source_y": 718.727139722019
+            },
+            {
+              "at": 0.636364,
+              "srgb": [
+                130,
+                123,
+                100
+              ],
+              "strength": 0.896,
+              "source_y": 724.2136064374542
+            },
+            {
+              "at": 0.818182,
+              "srgb": [
+                141,
+                134,
+                117
+              ],
+              "strength": 0.352,
+              "source_y": 735.1865398683248
+            },
+            {
+              "at": 1.0,
+              "srgb": [
+                135,
+                128,
+                111
+              ],
+              "strength": 0,
+              "source_y": 746.1594732991954
+            }
+          ]
+        }
+      }
+    },
+    "ai_reference": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png",
+    "ai_description": "Gerçek banyo fotoğrafı üzerine yapay zekâ ile eklenmiş dolap, lavabo ve duşakabin · Örnek 4 koyu meşe",
+    "ai_variants": [
+      {
+        "wood_id": "1",
+        "label": "1 · Sıcak meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_1_v1.png"
+      },
+      {
+        "wood_id": "2",
+        "label": "2 · VG 2220",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_2_v1.png"
+      },
+      {
+        "wood_id": "3",
+        "label": "3 · Altın meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_3_v1.png"
+      },
+      {
+        "wood_id": "4",
+        "label": "4 · Koyu meşe",
+        "path": "gorseller/AI_Alternatif_6_3/gercek_fotograf_koyu_mese_v1.png"
+      },
+      {
+        "wood_id": "5",
+        "label": "5 · Rustik meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_5_v1.png"
+      },
+      {
+        "wood_id": "6",
+        "label": "6 · Doğal meşe",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_6_v1.png"
+      },
+      {
+        "wood_id": "7",
+        "label": "7 · Mat grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_7_v1.png"
+      },
+      {
+        "wood_id": "8",
+        "label": "8 · İnce damarlı kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_8_v1.png"
+      },
+      {
+        "wood_id": "9",
+        "label": "9 · Sıcak kahverengi",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_9_v1.png"
+      },
+      {
+        "wood_id": "10",
+        "label": "10 · Doğal kahverengi kaplama",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_10_v1.png"
+      },
+      {
+        "wood_id": "11",
+        "label": "11 · Açık kahverengi ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_11_v1.png"
+      },
+      {
+        "wood_id": "12",
+        "label": "12 · Mat koyu grej",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_12_v1.png"
+      },
+      {
+        "wood_id": "13",
+        "label": "13 · Sıcak tonlu ahşap",
+        "path": "gorseller/AI_Alternatif_6_3/ahsap_secenekleri/mese_13_v1.png"
+      }
+    ],
+    "featured_images": [
+      {
+        "id": "kulp_1",
+        "label": "6.3.1 · 50 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_1_v1.png",
+        "scene_id": 21
+      },
+      {
+        "id": "kulp_2",
+        "label": "6.3.2 · 50 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_2_v1.png",
+        "scene_id": 22
+      },
+      {
+        "id": "kulp_3",
+        "label": "6.3.3 · 25 cm siyah kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_3_v1.png",
+        "scene_id": 23
+      },
+      {
+        "id": "kulp_4",
+        "label": "6.3.4 · 25 cm krom kulp",
+        "path": "gorseller/AI_Alternatif_6_3/kulp_secenekleri/kulp_4_v1.png",
+        "scene_id": 24
+      }
+    ],
+    "base_scene_id": 20,
+    "gallery_source_slug": "20_Alternatif_6_3",
+    "cabinet_handles": {
+      "length_cm": 25,
+      "finish": "chrome",
+      "edge_inset_cm": 4,
+      "bar_diameter_cm": 1.2,
+      "clearance_cm": 2.8,
+      "drawer_alignment": "horizontal_centred",
+      "tall_alignment": "vertical_right_edge",
+      "tall_centre_height_cm": 142.5
+    }
   }
 ]
